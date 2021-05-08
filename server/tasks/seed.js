@@ -152,6 +152,7 @@ async function main() {
             id,
             teamJsonData[i].str_team_name,
             `https://cdn.sofifa.com/teams/${id}/120.png`,
+            teamUrlJsonData[i].str_url,
             teamJsonData[i].str_league,
             teamIdJsonData[i].int_league_id,
             teamJsonData[i].int_overall,
@@ -173,7 +174,7 @@ async function main() {
     }
 
     console.log('Done seeding database');
-	  await db.serverConfig.close();
+    await db.serverConfig.close();
 };
 
 main();
