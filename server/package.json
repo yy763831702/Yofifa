@@ -1,1 +1,20 @@
-
+{
+  "name": "yofifa_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node ./tasks/seed.js",
+    "start": "node app.js"
+  },
+  "author": "Hao Wang, Yunxiang Fu, Qixuan Huang, Xiaolin Yang, Yun Yang",
+  "license": "ISC",
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6"
+  }
+}
