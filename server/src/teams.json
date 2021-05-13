@@ -2,7 +2,7 @@
   {
     "int_team_id": 1,
     "str_team_name": "Liverpool",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 85,
     "int_attack": 86,
     "int_midfield": 84,
@@ -22,7 +22,7 @@
   {
     "int_team_id": 2,
     "str_team_name": "Manchester City",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 85,
     "int_attack": 86,
     "int_midfield": 86,
@@ -42,7 +42,7 @@
   {
     "int_team_id": 3,
     "str_team_name": "Real Madrid",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 85,
     "int_attack": 84,
     "int_midfield": 87,
@@ -62,7 +62,7 @@
   {
     "int_team_id": 4,
     "str_team_name": "FC Bayern München",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 84,
     "int_attack": 91,
     "int_midfield": 84,
@@ -82,7 +82,7 @@
   {
     "int_team_id": 5,
     "str_team_name": "FC Barcelona",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 84,
     "int_attack": 82,
     "int_midfield": 87,
@@ -102,7 +102,7 @@
   {
     "int_team_id": 6,
     "str_team_name": "Juventus",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 83,
     "int_attack": 87,
     "int_midfield": 81,
@@ -122,7 +122,7 @@
   {
     "int_team_id": 7,
     "str_team_name": "Paris Saint-Germain",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 83,
     "int_attack": 86,
     "int_midfield": 82,
@@ -142,7 +142,7 @@
   {
     "int_team_id": 8,
     "str_team_name": "Atlético Madrid",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 83,
     "int_attack": 84,
     "int_midfield": 82,
@@ -162,7 +162,7 @@
   {
     "int_team_id": 9,
     "str_team_name": "Chelsea",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 82,
     "int_attack": 85,
     "int_midfield": 83,
@@ -182,7 +182,7 @@
   {
     "int_team_id": 10,
     "str_team_name": "Manchester United",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 82,
     "int_attack": 84,
     "int_midfield": 82,
@@ -202,7 +202,7 @@
   {
     "int_team_id": 11,
     "str_team_name": "Tottenham Hotspur",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 82,
     "int_attack": 86,
     "int_midfield": 82,
@@ -222,7 +222,7 @@
   {
     "int_team_id": 12,
     "str_team_name": "Borussia Dortmund",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 82,
     "int_attack": 84,
     "int_midfield": 82,
@@ -242,7 +242,7 @@
   {
     "int_team_id": 13,
     "str_team_name": "Inter",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 82,
     "int_attack": 83,
     "int_midfield": 82,
@@ -262,7 +262,7 @@
   {
     "int_team_id": 14,
     "str_team_name": "Arsenal",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 80,
     "int_attack": 84,
     "int_midfield": 81,
@@ -282,7 +282,7 @@
   {
     "int_team_id": 15,
     "str_team_name": "RB Leipzig",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 80,
     "int_attack": 78,
     "int_midfield": 80,
@@ -302,7 +302,7 @@
   {
     "int_team_id": 16,
     "str_team_name": "Lazio",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 80,
     "int_attack": 82,
     "int_midfield": 80,
@@ -322,7 +322,7 @@
   {
     "int_team_id": 17,
     "str_team_name": "Napoli",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 80,
     "int_attack": 81,
     "int_midfield": 80,
@@ -342,7 +342,7 @@
   {
     "int_team_id": 18,
     "str_team_name": "Leicester City",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 80,
     "int_attack": 81,
     "int_midfield": 79,
@@ -362,7 +362,7 @@
   {
     "int_team_id": 19,
     "str_team_name": "Sevilla FC",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 80,
     "int_attack": 80,
     "int_midfield": 80,
@@ -382,7 +382,7 @@
   {
     "int_team_id": 20,
     "str_team_name": "Villarreal CF",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 80,
     "int_attack": 81,
     "int_midfield": 80,
@@ -402,7 +402,7 @@
   {
     "int_team_id": 21,
     "str_team_name": "Everton",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 79,
     "int_attack": 81,
     "int_midfield": 78,
@@ -422,7 +422,7 @@
   {
     "int_team_id": 22,
     "str_team_name": "Borussia Mönchengladbach",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 79,
     "int_attack": 79,
     "int_midfield": 79,
@@ -442,7 +442,7 @@
   {
     "int_team_id": 23,
     "str_team_name": "Bayer 04 Leverkusen",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 79,
     "int_attack": 78,
     "int_midfield": 78,
@@ -462,7 +462,7 @@
   {
     "int_team_id": 24,
     "str_team_name": "Atalanta",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 79,
     "int_attack": 83,
     "int_midfield": 79,
@@ -482,7 +482,7 @@
   {
     "int_team_id": 25,
     "str_team_name": "Milan",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 79,
     "int_attack": 83,
     "int_midfield": 77,
@@ -502,7 +502,7 @@
   {
     "int_team_id": 26,
     "str_team_name": "Athletic Club de Bilbao",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 79,
     "int_attack": 79,
     "int_midfield": 78,
@@ -522,7 +522,7 @@
   {
     "int_team_id": 27,
     "str_team_name": "Real Sociedad",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 79,
     "int_attack": 81,
     "int_midfield": 81,
@@ -542,7 +542,7 @@
   {
     "int_team_id": 28,
     "str_team_name": "SL Benfica",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 79,
     "int_attack": 74,
     "int_midfield": 80,
@@ -562,7 +562,7 @@
   {
     "int_team_id": 29,
     "str_team_name": "West Ham United",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 78,
     "int_attack": 79,
     "int_midfield": 78,
@@ -582,7 +582,7 @@
   {
     "int_team_id": 30,
     "str_team_name": "Roma",
-    "str_league": "",
+    "str_league": "Italian Serie A",
     "int_overall": 78,
     "int_attack": 79,
     "int_midfield": 78,
@@ -602,7 +602,7 @@
   {
     "int_team_id": 31,
     "str_team_name": "Wolverhampton Wanderers",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 78,
     "int_attack": 78,
     "int_midfield": 82,
@@ -622,7 +622,7 @@
   {
     "int_team_id": 32,
     "str_team_name": "Real Betis",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 78,
     "int_attack": 76,
     "int_midfield": 79,
@@ -642,7 +642,7 @@
   {
     "int_team_id": 33,
     "str_team_name": "Olympique de Marseille",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 78,
     "int_attack": 78,
     "int_midfield": 78,
@@ -662,7 +662,7 @@
   {
     "int_team_id": 34,
     "str_team_name": "FC Porto",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 78,
     "int_attack": 78,
     "int_midfield": 78,
@@ -682,7 +682,7 @@
   {
     "int_team_id": 35,
     "str_team_name": "Ajax",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 78,
     "int_attack": 79,
     "int_midfield": 77,
@@ -702,7 +702,7 @@
   {
     "int_team_id": 36,
     "str_team_name": "Crystal Palace",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 77,
     "int_attack": 79,
     "int_midfield": 76,
@@ -722,7 +722,7 @@
   {
     "int_team_id": 37,
     "str_team_name": "Newcastle United",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 77,
     "int_attack": 76,
     "int_midfield": 77,
@@ -742,7 +742,7 @@
   {
     "int_team_id": 38,
     "str_team_name": "Eintracht Frankfurt",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 77,
     "int_attack": 78,
     "int_midfield": 76,
@@ -762,7 +762,7 @@
   {
     "int_team_id": 39,
     "str_team_name": "TSG 1899 Hoffenheim",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 77,
     "int_attack": 79,
     "int_midfield": 76,
@@ -782,7 +782,7 @@
   {
     "int_team_id": 40,
     "str_team_name": "LOSC Lille",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 77,
     "int_attack": 77,
     "int_midfield": 77,
@@ -802,7 +802,7 @@
   {
     "int_team_id": 41,
     "str_team_name": "Olympique Lyonnais",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 77,
     "int_attack": 78,
     "int_midfield": 77,
@@ -822,7 +822,7 @@
   {
     "int_team_id": 42,
     "str_team_name": "Getafe CF",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 77,
     "int_attack": 77,
     "int_midfield": 77,
@@ -842,7 +842,7 @@
   {
     "int_team_id": 43,
     "str_team_name": "AS Monaco",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 77,
     "int_attack": 80,
     "int_midfield": 76,
@@ -862,7 +862,7 @@
   {
     "int_team_id": 44,
     "str_team_name": "VfL Wolfsburg",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 77,
     "int_attack": 77,
     "int_midfield": 77,
@@ -882,7 +882,7 @@
   {
     "int_team_id": 45,
     "str_team_name": "Valencia CF",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 77,
     "int_attack": 77,
     "int_midfield": 77,
@@ -902,7 +902,7 @@
   {
     "int_team_id": 46,
     "str_team_name": "Sporting CP",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 77,
     "int_attack": 76,
     "int_midfield": 75,
@@ -922,7 +922,7 @@
   {
     "int_team_id": 47,
     "str_team_name": "Granada CF",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 77,
     "int_attack": 77,
     "int_midfield": 77,
@@ -942,7 +942,7 @@
   {
     "int_team_id": 48,
     "str_team_name": "Aston Villa",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 76,
     "int_attack": 76,
     "int_midfield": 76,
@@ -962,7 +962,7 @@
   {
     "int_team_id": 49,
     "str_team_name": "Burnley",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 76,
     "int_attack": 76,
     "int_midfield": 76,
@@ -982,7 +982,7 @@
   {
     "int_team_id": 50,
     "str_team_name": "Brighton & Hove Albion",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 76,
     "int_attack": 75,
     "int_midfield": 76,
@@ -1002,7 +1002,7 @@
   {
     "int_team_id": 51,
     "str_team_name": "Southampton",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 76,
     "int_attack": 77,
     "int_midfield": 76,
@@ -1022,7 +1022,7 @@
   {
     "int_team_id": 52,
     "str_team_name": "Flamengo",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 76,
     "int_attack": 77,
     "int_midfield": 75,
@@ -1042,7 +1042,7 @@
   {
     "int_team_id": 53,
     "str_team_name": "Fiorentina",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 76,
     "int_attack": 77,
     "int_midfield": 77,
@@ -1062,7 +1062,7 @@
   {
     "int_team_id": 54,
     "str_team_name": "Torino",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 76,
     "int_attack": 78,
     "int_midfield": 75,
@@ -1082,7 +1082,7 @@
   {
     "int_team_id": 55,
     "str_team_name": "Levante UD",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 76,
     "int_attack": 78,
     "int_midfield": 76,
@@ -1102,7 +1102,7 @@
   {
     "int_team_id": 56,
     "str_team_name": "Stade Rennais FC",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 76,
     "int_attack": 75,
     "int_midfield": 77,
@@ -1122,7 +1122,7 @@
   {
     "int_team_id": 57,
     "str_team_name": "River Plate",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 76,
     "int_attack": 75,
     "int_midfield": 77,
@@ -1142,7 +1142,7 @@
   {
     "int_team_id": 58,
     "str_team_name": "Boca Juniors",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 76,
     "int_attack": 75,
     "int_midfield": 75,
@@ -1162,7 +1162,7 @@
   {
     "int_team_id": 59,
     "str_team_name": "SC Braga",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 76,
     "int_attack": 79,
     "int_midfield": 74,
@@ -1182,7 +1182,7 @@
   {
     "int_team_id": 60,
     "str_team_name": "Medipol Başakşehir FK",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 76,
     "int_attack": 75,
     "int_midfield": 76,
@@ -1202,7 +1202,7 @@
   {
     "int_team_id": 61,
     "str_team_name": "Hertha BSC",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 76,
     "int_attack": 77,
     "int_midfield": 77,
@@ -1222,7 +1222,7 @@
   {
     "int_team_id": 62,
     "str_team_name": "RC Celta",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 76,
     "int_attack": 78,
     "int_midfield": 74,
@@ -1242,7 +1242,7 @@
   {
     "int_team_id": 63,
     "str_team_name": "Deportivo Alavés",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 76,
     "int_attack": 77,
     "int_midfield": 74,
@@ -1262,7 +1262,7 @@
   {
     "int_team_id": 64,
     "str_team_name": "SD Eibar",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 76,
     "int_attack": 75,
     "int_midfield": 77,
@@ -1282,7 +1282,7 @@
   {
     "int_team_id": 65,
     "str_team_name": "CA Osasuna",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 76,
     "int_attack": 76,
     "int_midfield": 77,
@@ -1302,7 +1302,7 @@
   {
     "int_team_id": 66,
     "str_team_name": "PSV",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 76,
     "int_attack": 79,
     "int_midfield": 75,
@@ -1322,7 +1322,7 @@
   {
     "int_team_id": 67,
     "str_team_name": "Sheffield United",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 75,
     "int_attack": 74,
     "int_midfield": 77,
@@ -1342,7 +1342,7 @@
   {
     "int_team_id": 68,
     "str_team_name": "Watford",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 75,
     "int_attack": 74,
     "int_midfield": 75,
@@ -1362,7 +1362,7 @@
   {
     "int_team_id": 69,
     "str_team_name": "Leeds United",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 75,
     "int_attack": 77,
     "int_midfield": 75,
@@ -1382,7 +1382,7 @@
   {
     "int_team_id": 70,
     "str_team_name": "Olympiacos CFP",
-    "str_league": "Greek Super League (1)",
+    "str_league": "Greek Super League",
     "int_overall": 75,
     "int_attack": 78,
     "int_midfield": 76,
@@ -1402,7 +1402,7 @@
   {
     "int_team_id": 71,
     "str_team_name": "FC Schalke 04",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 75,
     "int_attack": 75,
     "int_midfield": 77,
@@ -1422,7 +1422,7 @@
   {
     "int_team_id": 72,
     "str_team_name": "Cagliari",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 75,
     "int_attack": 75,
     "int_midfield": 74,
@@ -1442,7 +1442,7 @@
   {
     "int_team_id": 73,
     "str_team_name": "Galatasaray SK",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 75,
     "int_attack": 80,
     "int_midfield": 74,
@@ -1462,7 +1462,7 @@
   {
     "int_team_id": 74,
     "str_team_name": "Fenerbahçe SK",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 75,
     "int_attack": 75,
     "int_midfield": 75,
@@ -1482,7 +1482,7 @@
   {
     "int_team_id": 75,
     "str_team_name": "OGC Nice",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 75,
     "int_attack": 76,
     "int_midfield": 74,
@@ -1502,7 +1502,7 @@
   {
     "int_team_id": 76,
     "str_team_name": "Sassuolo",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 75,
     "int_attack": 77,
     "int_midfield": 76,
@@ -1522,7 +1522,7 @@
   {
     "int_team_id": 77,
     "str_team_name": "Palmeiras",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 75,
     "int_attack": 74,
     "int_midfield": 77,
@@ -1542,7 +1542,7 @@
   {
     "int_team_id": 78,
     "str_team_name": "Fulham",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 75,
     "int_attack": 76,
     "int_midfield": 74,
@@ -1562,7 +1562,7 @@
   {
     "int_team_id": 79,
     "str_team_name": "Shakhtar Donetsk",
-    "str_league": "Ukrainian Premier League (1)",
+    "str_league": "Ukrainian Premier League",
     "int_overall": 75,
     "int_attack": 79,
     "int_midfield": 76,
@@ -1582,7 +1582,7 @@
   {
     "int_team_id": 80,
     "str_team_name": "RCD Espanyol",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 75,
     "int_attack": 76,
     "int_midfield": 76,
@@ -1602,7 +1602,7 @@
   {
     "int_team_id": 81,
     "str_team_name": "Real Valladolid CF",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 75,
     "int_attack": 76,
     "int_midfield": 76,
@@ -1622,7 +1622,7 @@
   {
     "int_team_id": 82,
     "str_team_name": "Racing Club",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 75,
     "int_attack": 73,
     "int_midfield": 76,
@@ -1642,7 +1642,7 @@
   {
     "int_team_id": 83,
     "str_team_name": "Club Brugge KV",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 75,
     "int_attack": 73,
     "int_midfield": 76,
@@ -1662,7 +1662,7 @@
   {
     "int_team_id": 84,
     "str_team_name": "Feyenoord",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 75,
     "int_attack": 75,
     "int_midfield": 75,
@@ -1682,7 +1682,7 @@
   {
     "int_team_id": 85,
     "str_team_name": "Monterrey",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 74,
     "int_attack": 78,
     "int_midfield": 74,
@@ -1702,7 +1702,7 @@
   {
     "int_team_id": 86,
     "str_team_name": "SK Slavia Praha",
-    "str_league": "Czech Republic Gambrinus Liga (1)",
+    "str_league": "Czech Republic Gambrinus Liga",
     "int_overall": 74,
     "int_attack": 71,
     "int_midfield": 73,
@@ -1722,7 +1722,7 @@
   {
     "int_team_id": 87,
     "str_team_name": "Atlético Mineiro",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 74,
     "int_attack": 74,
     "int_midfield": 74,
@@ -1742,7 +1742,7 @@
   {
     "int_team_id": 88,
     "str_team_name": "Internacional",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 74,
     "int_attack": 71,
     "int_midfield": 74,
@@ -1762,7 +1762,7 @@
   {
     "int_team_id": 89,
     "str_team_name": "SC Freiburg",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 74,
     "int_attack": 73,
     "int_midfield": 74,
@@ -1782,7 +1782,7 @@
   {
     "int_team_id": 90,
     "str_team_name": "1. FC Köln",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 74,
     "int_attack": 75,
     "int_midfield": 74,
@@ -1802,7 +1802,7 @@
   {
     "int_team_id": 91,
     "str_team_name": "SV Werder Bremen",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 74,
     "int_attack": 74,
     "int_midfield": 70,
@@ -1822,7 +1822,7 @@
   {
     "int_team_id": 92,
     "str_team_name": "Sampdoria",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 74,
     "int_attack": 77,
     "int_midfield": 74,
@@ -1842,7 +1842,7 @@
   {
     "int_team_id": 93,
     "str_team_name": "Parma",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 74,
     "int_attack": 75,
     "int_midfield": 75,
@@ -1862,7 +1862,7 @@
   {
     "int_team_id": 94,
     "str_team_name": "Udinese",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 74,
     "int_attack": 74,
     "int_midfield": 75,
@@ -1882,7 +1882,7 @@
   {
     "int_team_id": 95,
     "str_team_name": "FC Augsburg",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 74,
     "int_attack": 76,
     "int_midfield": 74,
@@ -1902,7 +1902,7 @@
   {
     "int_team_id": 96,
     "str_team_name": "FC Girondins de Bordeaux",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 74,
     "int_attack": 73,
     "int_midfield": 75,
@@ -1922,7 +1922,7 @@
   {
     "int_team_id": 97,
     "str_team_name": "PFC CSKA Moscow",
-    "str_league": "Russian Premier League (1)",
+    "str_league": "Russian Premier League",
     "int_overall": 74,
     "int_attack": 74,
     "int_midfield": 71,
@@ -1942,7 +1942,7 @@
   {
     "int_team_id": 98,
     "str_team_name": "Montpellier HSC",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 74,
     "int_attack": 77,
     "int_midfield": 75,
@@ -1962,7 +1962,7 @@
   {
     "int_team_id": 99,
     "str_team_name": "FC Nantes",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 74,
     "int_attack": 70,
     "int_midfield": 74,
@@ -1982,7 +1982,7 @@
   {
     "int_team_id": 100,
     "str_team_name": "Beşiktaş JK",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 74,
     "int_attack": 74,
     "int_midfield": 74,
@@ -2002,7 +2002,7 @@
   {
     "int_team_id": 101,
     "str_team_name": "RC Strasbourg Alsace",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 74,
     "int_attack": 74,
     "int_midfield": 74,
@@ -2022,7 +2022,7 @@
   {
     "int_team_id": 102,
     "str_team_name": "Celtic",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 74,
     "int_attack": 73,
     "int_midfield": 74,
@@ -2042,7 +2042,7 @@
   {
     "int_team_id": 103,
     "str_team_name": "São Paulo",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 74,
     "int_attack": 74,
     "int_midfield": 73,
@@ -2062,7 +2062,7 @@
   {
     "int_team_id": 104,
     "str_team_name": "Grêmio",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 74,
     "int_attack": 75,
     "int_midfield": 72,
@@ -2082,7 +2082,7 @@
   {
     "int_team_id": 105,
     "str_team_name": "Bournemouth",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 74,
     "int_attack": 73,
     "int_midfield": 74,
@@ -2102,7 +2102,7 @@
   {
     "int_team_id": 106,
     "str_team_name": "Lokomotiv Moscow",
-    "str_league": "Russian Premier League (1)",
+    "str_league": "Russian Premier League",
     "int_overall": 74,
     "int_attack": 75,
     "int_midfield": 71,
@@ -2122,7 +2122,7 @@
   {
     "int_team_id": 107,
     "str_team_name": "Spartak Moscow",
-    "str_league": "Russian Premier League (1)",
+    "str_league": "Russian Premier League",
     "int_overall": 74,
     "int_attack": 74,
     "int_midfield": 75,
@@ -2142,7 +2142,7 @@
   {
     "int_team_id": 108,
     "str_team_name": "1. FSV Mainz 05",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 74,
     "int_attack": 74,
     "int_midfield": 75,
@@ -2162,7 +2162,7 @@
   {
     "int_team_id": 109,
     "str_team_name": "Tigres U.A.N.L.",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 74,
     "int_attack": 75,
     "int_midfield": 75,
@@ -2182,7 +2182,7 @@
   {
     "int_team_id": 110,
     "str_team_name": "Dynamo Kyiv",
-    "str_league": "Ukrainian Premier League (1)",
+    "str_league": "Ukrainian Premier League",
     "int_overall": 74,
     "int_attack": 72,
     "int_midfield": 75,
@@ -2202,7 +2202,7 @@
   {
     "int_team_id": 111,
     "str_team_name": "Bologna",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 74,
     "int_attack": 75,
     "int_midfield": 75,
@@ -2222,7 +2222,7 @@
   {
     "int_team_id": 112,
     "str_team_name": "Genoa",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 74,
     "int_attack": 71,
     "int_midfield": 71,
@@ -2242,7 +2242,7 @@
   {
     "int_team_id": 113,
     "str_team_name": "SD Huesca",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 74,
     "int_attack": 72,
     "int_midfield": 73,
@@ -2262,7 +2262,7 @@
   {
     "int_team_id": 114,
     "str_team_name": "Angers SCO",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 74,
     "int_attack": 74,
     "int_midfield": 74,
@@ -2282,7 +2282,7 @@
   {
     "int_team_id": 115,
     "str_team_name": "Norwich City",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 73,
     "int_attack": 76,
     "int_midfield": 72,
@@ -2302,7 +2302,7 @@
   {
     "int_team_id": 116,
     "str_team_name": "Sparta Praha",
-    "str_league": "Czech Republic Gambrinus Liga (1)",
+    "str_league": "Czech Republic Gambrinus Liga",
     "int_overall": 73,
     "int_attack": 72,
     "int_midfield": 73,
@@ -2322,7 +2322,7 @@
   {
     "int_team_id": 117,
     "str_team_name": "CD Leganés",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 73,
     "int_attack": 72,
     "int_midfield": 71,
@@ -2342,7 +2342,7 @@
   {
     "int_team_id": 118,
     "str_team_name": "AS Saint-Étienne",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 73,
     "int_attack": 76,
     "int_midfield": 72,
@@ -2362,7 +2362,7 @@
   {
     "int_team_id": 119,
     "str_team_name": "Santos",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 73,
     "int_attack": 74,
     "int_midfield": 72,
@@ -2382,7 +2382,7 @@
   {
     "int_team_id": 120,
     "str_team_name": "1. FC Union Berlin",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 73,
     "int_attack": 71,
     "int_midfield": 72,
@@ -2402,7 +2402,7 @@
   {
     "int_team_id": 121,
     "str_team_name": "Rangers FC",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 73,
     "int_attack": 73,
     "int_midfield": 72,
@@ -2422,7 +2422,7 @@
   {
     "int_team_id": 122,
     "str_team_name": "Cruz Azul",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 73,
     "int_attack": 72,
     "int_midfield": 74,
@@ -2442,7 +2442,7 @@
   {
     "int_team_id": 123,
     "str_team_name": "Club América",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 73,
     "int_attack": 75,
     "int_midfield": 72,
@@ -2462,7 +2462,7 @@
   {
     "int_team_id": 124,
     "str_team_name": "Al Hilal",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 73,
     "int_attack": 75,
     "int_midfield": 75,
@@ -2482,7 +2482,7 @@
   {
     "int_team_id": 125,
     "str_team_name": "West Bromwich Albion",
-    "str_league": "English Premier League (1)",
+    "str_league": "English Premier League",
     "int_overall": 73,
     "int_attack": 72,
     "int_midfield": 73,
@@ -2502,7 +2502,7 @@
   {
     "int_team_id": 126,
     "str_team_name": "AZ Alkmaar",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 73,
     "int_attack": 74,
     "int_midfield": 74,
@@ -2522,7 +2522,7 @@
   {
     "int_team_id": 127,
     "str_team_name": "Stade de Reims",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 73,
     "int_attack": 71,
     "int_midfield": 72,
@@ -2542,7 +2542,7 @@
   {
     "int_team_id": 128,
     "str_team_name": "Viktoria Plzeň",
-    "str_league": "Czech Republic Gambrinus Liga (1)",
+    "str_league": "Czech Republic Gambrinus Liga",
     "int_overall": 73,
     "int_attack": 72,
     "int_midfield": 72,
@@ -2562,7 +2562,7 @@
   {
     "int_team_id": 129,
     "str_team_name": "PAOK",
-    "str_league": "Greek Super League (1)",
+    "str_league": "Greek Super League",
     "int_overall": 73,
     "int_attack": 71,
     "int_midfield": 73,
@@ -2582,7 +2582,7 @@
   {
     "int_team_id": 130,
     "str_team_name": "KRC Genk",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 73,
     "int_attack": 73,
     "int_midfield": 71,
@@ -2602,7 +2602,7 @@
   {
     "int_team_id": 131,
     "str_team_name": "KAA Gent",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 73,
     "int_attack": 71,
     "int_midfield": 74,
@@ -2622,7 +2622,7 @@
   {
     "int_team_id": 132,
     "str_team_name": "Club León",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 73,
     "int_attack": 74,
     "int_midfield": 74,
@@ -2642,7 +2642,7 @@
   {
     "int_team_id": 133,
     "str_team_name": "FC Red Bull Salzburg",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 73,
     "int_attack": 74,
     "int_midfield": 73,
@@ -2662,7 +2662,7 @@
   {
     "int_team_id": 134,
     "str_team_name": "Hellas Verona",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 73,
     "int_attack": 75,
     "int_midfield": 74,
@@ -2682,7 +2682,7 @@
   {
     "int_team_id": 135,
     "str_team_name": "Elche CF",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 73,
     "int_attack": 73,
     "int_midfield": 73,
@@ -2702,7 +2702,7 @@
   {
     "int_team_id": 136,
     "str_team_name": "Royal Antwerp FC",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 73,
     "int_attack": 76,
     "int_midfield": 72,
@@ -2722,7 +2722,7 @@
   {
     "int_team_id": 137,
     "str_team_name": "Rio Ave FC",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 73,
     "int_attack": 73,
     "int_midfield": 71,
@@ -2742,7 +2742,7 @@
   {
     "int_team_id": 138,
     "str_team_name": "San Lorenzo de Almagro",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 73,
     "int_attack": 74,
     "int_midfield": 71,
@@ -2762,7 +2762,7 @@
   {
     "int_team_id": 139,
     "str_team_name": "Botafogo",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 72,
     "int_attack": 71,
     "int_midfield": 71,
@@ -2782,7 +2782,7 @@
   {
     "int_team_id": 140,
     "str_team_name": "Independiente",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 72,
     "int_attack": 73,
     "int_midfield": 71,
@@ -2802,7 +2802,7 @@
   {
     "int_team_id": 141,
     "str_team_name": "Nottingham Forest",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 72,
     "int_attack": 72,
     "int_midfield": 71,
@@ -2822,7 +2822,7 @@
   {
     "int_team_id": 142,
     "str_team_name": "AEK Athens",
-    "str_league": "Greek Super League (1)",
+    "str_league": "Greek Super League",
     "int_overall": 72,
     "int_attack": 75,
     "int_midfield": 73,
@@ -2842,7 +2842,7 @@
   {
     "int_team_id": 143,
     "str_team_name": "Hamburger SV",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 72,
     "int_attack": 71,
     "int_midfield": 70,
@@ -2862,7 +2862,7 @@
   {
     "int_team_id": 144,
     "str_team_name": "VfB Stuttgart",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 72,
     "int_attack": 73,
     "int_midfield": 72,
@@ -2882,7 +2882,7 @@
   {
     "int_team_id": 145,
     "str_team_name": "Seattle Sounders FC",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 72,
     "int_attack": 72,
     "int_midfield": 73,
@@ -2902,7 +2902,7 @@
   {
     "int_team_id": 146,
     "str_team_name": "FC København",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 72,
     "int_attack": 72,
     "int_midfield": 73,
@@ -2922,7 +2922,7 @@
   {
     "int_team_id": 147,
     "str_team_name": "Fluminense",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 72,
     "int_attack": 70,
     "int_midfield": 73,
@@ -2942,7 +2942,7 @@
   {
     "int_team_id": 148,
     "str_team_name": "Racing Club de Lens",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 72,
     "int_attack": 71,
     "int_midfield": 73,
@@ -2962,7 +2962,7 @@
   {
     "int_team_id": 149,
     "str_team_name": "FC Metz",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 72,
     "int_attack": 71,
     "int_midfield": 72,
@@ -2982,7 +2982,7 @@
   {
     "int_team_id": 150,
     "str_team_name": "Stade Brestois 29",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 72,
     "int_attack": 71,
     "int_midfield": 71,
@@ -3002,7 +3002,7 @@
   {
     "int_team_id": 151,
     "str_team_name": "Universidad Católica",
-    "str_league": "Chilian Campeonato Nacional (1)",
+    "str_league": "Chilian Campeonato Nacional",
     "int_overall": 72,
     "int_attack": 70,
     "int_midfield": 73,
@@ -3022,7 +3022,7 @@
   {
     "int_team_id": 152,
     "str_team_name": "FC Basel 1893",
-    "str_league": "Swiss Super League (1)",
+    "str_league": "Swiss Super League",
     "int_overall": 72,
     "int_attack": 71,
     "int_midfield": 71,
@@ -3042,7 +3042,7 @@
   {
     "int_team_id": 153,
     "str_team_name": "BSC Young Boys",
-    "str_league": "Swiss Super League (1)",
+    "str_league": "Swiss Super League",
     "int_overall": 72,
     "int_attack": 70,
     "int_midfield": 73,
@@ -3062,7 +3062,7 @@
   {
     "int_team_id": 154,
     "str_team_name": "Benevento",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 72,
     "int_attack": 72,
     "int_midfield": 71,
@@ -3082,7 +3082,7 @@
   {
     "int_team_id": 155,
     "str_team_name": "Cádiz CF",
-    "str_league": "Spain Primera Division (1)",
+    "str_league": "Spain Primera Division",
     "int_overall": 72,
     "int_attack": 73,
     "int_midfield": 72,
@@ -3102,7 +3102,7 @@
   {
     "int_team_id": 156,
     "str_team_name": "Sivasspor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 72,
     "int_attack": 71,
     "int_midfield": 72,
@@ -3122,7 +3122,7 @@
   {
     "int_team_id": 157,
     "str_team_name": "Trabzonspor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 72,
     "int_attack": 72,
     "int_midfield": 71,
@@ -3142,7 +3142,7 @@
   {
     "int_team_id": 158,
     "str_team_name": "Coritiba",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 72,
     "int_attack": 70,
     "int_midfield": 72,
@@ -3162,7 +3162,7 @@
   {
     "int_team_id": 159,
     "str_team_name": "RCD Mallorca",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 72,
     "int_attack": 72,
     "int_midfield": 74,
@@ -3182,7 +3182,7 @@
   {
     "int_team_id": 160,
     "str_team_name": "Dinamo Zagreb",
-    "str_league": "Croatian Prva HNL (1)",
+    "str_league": "Croatian Prva HNL",
     "int_overall": 72,
     "int_attack": 74,
     "int_midfield": 72,
@@ -3202,7 +3202,7 @@
   {
     "int_team_id": 161,
     "str_team_name": "Nîmes Olympique",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 72,
     "int_attack": 71,
     "int_midfield": 72,
@@ -3222,7 +3222,7 @@
   {
     "int_team_id": 162,
     "str_team_name": "Vélez Sarsfield",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 72,
     "int_attack": 74,
     "int_midfield": 71,
@@ -3242,7 +3242,7 @@
   {
     "int_team_id": 163,
     "str_team_name": "RSC Anderlecht",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 72,
     "int_attack": 70,
     "int_midfield": 72,
@@ -3262,7 +3262,7 @@
   {
     "int_team_id": 164,
     "str_team_name": "Standard de Liège",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 72,
     "int_attack": 70,
     "int_midfield": 72,
@@ -3282,7 +3282,7 @@
   {
     "int_team_id": 165,
     "str_team_name": "Olimpia Asunción",
-    "str_league": "Paraguayan Primera División (1)",
+    "str_league": "Paraguayan Primera División",
     "int_overall": 72,
     "int_attack": 74,
     "int_midfield": 72,
@@ -3302,7 +3302,7 @@
   {
     "int_team_id": 166,
     "str_team_name": "Reading",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 71,
     "int_attack": 69,
     "int_midfield": 71,
@@ -3322,7 +3322,7 @@
   {
     "int_team_id": 167,
     "str_team_name": "Preston North End",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 71,
     "int_attack": 66,
     "int_midfield": 71,
@@ -3342,7 +3342,7 @@
   {
     "int_team_id": 168,
     "str_team_name": "Al Nassr",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 71,
     "int_attack": 79,
     "int_midfield": 69,
@@ -3362,7 +3362,7 @@
   {
     "int_team_id": 169,
     "str_team_name": "Stoke City",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 71,
     "int_attack": 69,
     "int_midfield": 70,
@@ -3382,7 +3382,7 @@
   {
     "int_team_id": 170,
     "str_team_name": "Club Athletico Paranaense",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 70,
@@ -3402,7 +3402,7 @@
   {
     "int_team_id": 171,
     "str_team_name": "Portland Timbers",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 73,
@@ -3422,7 +3422,7 @@
   {
     "int_team_id": 172,
     "str_team_name": "Fortuna Düsseldorf",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 71,
     "int_attack": 73,
     "int_midfield": 70,
@@ -3442,7 +3442,7 @@
   {
     "int_team_id": 173,
     "str_team_name": "Vasco da Gama",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 71,
@@ -3462,7 +3462,7 @@
   {
     "int_team_id": 174,
     "str_team_name": "Club Atlético Lanús",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 71,
     "int_attack": 73,
     "int_midfield": 70,
@@ -3482,7 +3482,7 @@
   {
     "int_team_id": 175,
     "str_team_name": "Bahia",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 71,
     "int_attack": 69,
     "int_midfield": 71,
@@ -3502,7 +3502,7 @@
   {
     "int_team_id": 176,
     "str_team_name": "Santos Laguna",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 70,
@@ -3522,7 +3522,7 @@
   {
     "int_team_id": 177,
     "str_team_name": "UD Almería",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 71,
     "int_attack": 70,
     "int_midfield": 70,
@@ -3542,7 +3542,7 @@
   {
     "int_team_id": 178,
     "str_team_name": "Birmingham City",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 72,
@@ -3562,7 +3562,7 @@
   {
     "int_team_id": 179,
     "str_team_name": "U.N.A.M.",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 71,
     "int_attack": 75,
     "int_midfield": 70,
@@ -3582,7 +3582,7 @@
   {
     "int_team_id": 180,
     "str_team_name": "Panathinaikos FC",
-    "str_league": "Greek Super League (1)",
+    "str_league": "Greek Super League",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 72,
@@ -3602,7 +3602,7 @@
   {
     "int_team_id": 181,
     "str_team_name": "Defensa y Justicia",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 70,
@@ -3622,7 +3622,7 @@
   {
     "int_team_id": 182,
     "str_team_name": "Vitória Guimarães",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 71,
     "int_attack": 73,
     "int_midfield": 72,
@@ -3642,7 +3642,7 @@
   {
     "int_team_id": 183,
     "str_team_name": "Yeni Malatyaspor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 70,
@@ -3662,7 +3662,7 @@
   {
     "int_team_id": 184,
     "str_team_name": "FC Utrecht",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 71,
     "int_attack": 72,
     "int_midfield": 71,
@@ -3682,7 +3682,7 @@
   {
     "int_team_id": 185,
     "str_team_name": "Colo-Colo",
-    "str_league": "Chilian Campeonato Nacional (1)",
+    "str_league": "Chilian Campeonato Nacional",
     "int_overall": 71,
     "int_attack": 69,
     "int_midfield": 70,
@@ -3702,7 +3702,7 @@
   {
     "int_team_id": 186,
     "str_team_name": "Brentford",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 70,
@@ -3722,7 +3722,7 @@
   {
     "int_team_id": 187,
     "str_team_name": "SPAL",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie B",
     "int_overall": 71,
     "int_attack": 72,
     "int_midfield": 69,
@@ -3742,7 +3742,7 @@
   {
     "int_team_id": 188,
     "str_team_name": "Beijing Sinobo Guoan FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 71,
     "int_attack": 78,
     "int_midfield": 73,
@@ -3762,7 +3762,7 @@
   {
     "int_team_id": 189,
     "str_team_name": "Sporting de Charleroi",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 71,
     "int_attack": 70,
     "int_midfield": 72,
@@ -3782,7 +3782,7 @@
   {
     "int_team_id": 190,
     "str_team_name": "DSC Arminia Bielefeld",
-    "str_league": "German 1. Bundesliga (1)",
+    "str_league": "German 1. Bundesliga",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 72,
@@ -3802,7 +3802,7 @@
   {
     "int_team_id": 191,
     "str_team_name": "Club Libertad",
-    "str_league": "Paraguayan Primera División (1)",
+    "str_league": "Paraguayan Primera División",
     "int_overall": 71,
     "int_attack": 70,
     "int_midfield": 69,
@@ -3822,7 +3822,7 @@
   {
     "int_team_id": 192,
     "str_team_name": "Cardiff City",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 71,
     "int_attack": 70,
     "int_midfield": 72,
@@ -3842,7 +3842,7 @@
   {
     "int_team_id": 193,
     "str_team_name": "Çaykur Rizespor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 71,
     "int_attack": 73,
     "int_midfield": 70,
@@ -3862,7 +3862,7 @@
   {
     "int_team_id": 194,
     "str_team_name": "Columbus Crew SC",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 71,
     "int_attack": 70,
     "int_midfield": 72,
@@ -3882,7 +3882,7 @@
   {
     "int_team_id": 195,
     "str_team_name": "Goiás",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 71,
     "int_attack": 70,
     "int_midfield": 72,
@@ -3902,7 +3902,7 @@
   {
     "int_team_id": 196,
     "str_team_name": "Estudiantes de La Plata",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 71,
     "int_attack": 69,
     "int_midfield": 72,
@@ -3922,7 +3922,7 @@
   {
     "int_team_id": 197,
     "str_team_name": "Nacional de Montevideo",
-    "str_league": "Uruguayan Primera División (1)",
+    "str_league": "Uruguayan Primera División",
     "int_overall": 71,
     "int_attack": 72,
     "int_midfield": 71,
@@ -3942,7 +3942,7 @@
   {
     "int_team_id": 198,
     "str_team_name": "Guangzhou Evergrande Taobao FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 71,
     "int_attack": 74,
     "int_midfield": 70,
@@ -3962,7 +3962,7 @@
   {
     "int_team_id": 199,
     "str_team_name": "Hannover 96",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 70,
@@ -3982,7 +3982,7 @@
   {
     "int_team_id": 200,
     "str_team_name": "Antalyaspor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 71,
     "int_attack": 71,
     "int_midfield": 71,
@@ -4002,7 +4002,7 @@
   {
     "int_team_id": 201,
     "str_team_name": "Dijon FCO",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 71,
     "int_attack": 72,
     "int_midfield": 71,
@@ -4022,7 +4022,7 @@
   {
     "int_team_id": 202,
     "str_team_name": "FC Midtjylland",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 71,
     "int_attack": 70,
     "int_midfield": 72,
@@ -4042,7 +4042,7 @@
   {
     "int_team_id": 203,
     "str_team_name": "Junior FC",
-    "str_league": "Colombian Liga Postobón (1)",
+    "str_league": "Colombian Liga Postobón",
     "int_overall": 71,
     "int_attack": 73,
     "int_midfield": 70,
@@ -4062,7 +4062,7 @@
   {
     "int_team_id": 204,
     "str_team_name": "Girona FC",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 71,
     "int_attack": 74,
     "int_midfield": 70,
@@ -4082,7 +4082,7 @@
   {
     "int_team_id": 205,
     "str_team_name": "Peñarol",
-    "str_league": "Uruguayan Primera División (1)",
+    "str_league": "Uruguayan Primera División",
     "int_overall": 71,
     "int_attack": 70,
     "int_midfield": 68,
@@ -4102,7 +4102,7 @@
   {
     "int_team_id": 206,
     "str_team_name": "Alanyaspor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 71,
     "int_attack": 69,
     "int_midfield": 72,
@@ -4122,7 +4122,7 @@
   {
     "int_team_id": 207,
     "str_team_name": "Atlético Clube Goianiense",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 71,
     "int_attack": 70,
     "int_midfield": 71,
@@ -4142,7 +4142,7 @@
   {
     "int_team_id": 208,
     "str_team_name": "LASK Linz",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 71,
     "int_attack": 70,
     "int_midfield": 70,
@@ -4162,7 +4162,7 @@
   {
     "int_team_id": 209,
     "str_team_name": "Inter Miami",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 71,
     "int_attack": 72,
     "int_midfield": 72,
@@ -4182,7 +4182,7 @@
   {
     "int_team_id": 210,
     "str_team_name": "Blackburn Rovers",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 71,
@@ -4202,7 +4202,7 @@
   {
     "int_team_id": 211,
     "str_team_name": "Al Ahli",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 70,
     "int_attack": 77,
     "int_midfield": 71,
@@ -4222,7 +4222,7 @@
   {
     "int_team_id": 212,
     "str_team_name": "CD Tenerife",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 70,
     "int_attack": 73,
     "int_midfield": 70,
@@ -4242,7 +4242,7 @@
   {
     "int_team_id": 213,
     "str_team_name": "Middlesbrough",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 70,
     "int_attack": 71,
     "int_midfield": 69,
@@ -4262,7 +4262,7 @@
   {
     "int_team_id": 214,
     "str_team_name": "Fatih Karagümrük S.K.",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 70,
@@ -4282,7 +4282,7 @@
   {
     "int_team_id": 215,
     "str_team_name": "Sheffield Wednesday",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 71,
@@ -4302,7 +4302,7 @@
   {
     "int_team_id": 216,
     "str_team_name": "Club Atlético Talleres",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 69,
@@ -4322,7 +4322,7 @@
   {
     "int_team_id": 217,
     "str_team_name": "Toronto FC",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 70,
     "int_attack": 74,
     "int_midfield": 71,
@@ -4342,7 +4342,7 @@
   {
     "int_team_id": 218,
     "str_team_name": "Al Shabab",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 70,
     "int_attack": 74,
     "int_midfield": 69,
@@ -4362,7 +4362,7 @@
   {
     "int_team_id": 219,
     "str_team_name": "Newell's Old Boys",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 70,
     "int_attack": 73,
     "int_midfield": 69,
@@ -4382,7 +4382,7 @@
   {
     "int_team_id": 220,
     "str_team_name": "En Avant de Guingamp",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 68,
@@ -4402,7 +4402,7 @@
   {
     "int_team_id": 221,
     "str_team_name": "Club Tijuana",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 70,
     "int_attack": 73,
     "int_midfield": 68,
@@ -4422,7 +4422,7 @@
   {
     "int_team_id": 222,
     "str_team_name": "Malmö FF",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 70,
     "int_attack": 72,
     "int_midfield": 70,
@@ -4442,7 +4442,7 @@
   {
     "int_team_id": 223,
     "str_team_name": "Pachuca",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 70,
     "int_attack": 67,
     "int_midfield": 66,
@@ -4462,7 +4462,7 @@
   {
     "int_team_id": 224,
     "str_team_name": "Club Atlético Colón",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 70,
     "int_attack": 72,
     "int_midfield": 70,
@@ -4482,7 +4482,7 @@
   {
     "int_team_id": 225,
     "str_team_name": "Guadalajara",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 70,
     "int_attack": 71,
     "int_midfield": 70,
@@ -4502,7 +4502,7 @@
   {
     "int_team_id": 226,
     "str_team_name": "Deportivo Toluca",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 70,
@@ -4522,7 +4522,7 @@
   {
     "int_team_id": 227,
     "str_team_name": "Derby County",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 71,
@@ -4542,7 +4542,7 @@
   {
     "int_team_id": 228,
     "str_team_name": "Millwall",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 70,
@@ -4562,7 +4562,7 @@
   {
     "int_team_id": 229,
     "str_team_name": "Los Angeles FC",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 70,
     "int_attack": 75,
     "int_midfield": 69,
@@ -4582,7 +4582,7 @@
   {
     "int_team_id": 230,
     "str_team_name": "Boavista FC",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 70,
@@ -4602,7 +4602,7 @@
   {
     "int_team_id": 231,
     "str_team_name": "Shanghai Greenland Shenhua FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 70,
     "int_attack": 72,
     "int_midfield": 69,
@@ -4622,7 +4622,7 @@
   {
     "int_team_id": 232,
     "str_team_name": "Kawasaki Frontale",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 70,
     "int_attack": 73,
     "int_midfield": 70,
@@ -4642,7 +4642,7 @@
   {
     "int_team_id": 233,
     "str_team_name": "Bristol City",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 69,
@@ -4662,7 +4662,7 @@
   {
     "int_team_id": 234,
     "str_team_name": "Crotone",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie A",
     "int_overall": 70,
     "int_attack": 68,
     "int_midfield": 69,
@@ -4682,7 +4682,7 @@
   {
     "int_team_id": 235,
     "str_team_name": "MKE Ankaragücü",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 69,
@@ -4702,7 +4702,7 @@
   {
     "int_team_id": 236,
     "str_team_name": "Spezia",
-    "str_league": "",
+    "str_league": "Italian Serie A",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 69,
@@ -4722,7 +4722,7 @@
   {
     "int_team_id": 237,
     "str_team_name": "Kayserispor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 70,
@@ -4742,7 +4742,7 @@
   {
     "int_team_id": 238,
     "str_team_name": "Shanghai SIPG FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 70,
     "int_attack": 75,
     "int_midfield": 72,
@@ -4762,7 +4762,7 @@
   {
     "int_team_id": 239,
     "str_team_name": "Swansea City",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 70,
     "int_attack": 72,
     "int_midfield": 70,
@@ -4782,7 +4782,7 @@
   {
     "int_team_id": 240,
     "str_team_name": "Atiker Konyaspor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 70,
@@ -4802,7 +4802,7 @@
   {
     "int_team_id": 241,
     "str_team_name": "Famalicão",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 70,
     "int_attack": 68,
     "int_midfield": 67,
@@ -4822,7 +4822,7 @@
   {
     "int_team_id": 242,
     "str_team_name": "1. FC Nürnberg",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 69,
@@ -4842,7 +4842,7 @@
   {
     "int_team_id": 243,
     "str_team_name": "Argentinos Juniors",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 70,
     "int_attack": 71,
     "int_midfield": 68,
@@ -4862,7 +4862,7 @@
   {
     "int_team_id": 244,
     "str_team_name": "DC United",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 70,
@@ -4882,7 +4882,7 @@
   {
     "int_team_id": 245,
     "str_team_name": "Denizlispor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 70,
     "int_attack": 75,
     "int_midfield": 68,
@@ -4902,7 +4902,7 @@
   {
     "int_team_id": 246,
     "str_team_name": "Sporting Kansas City",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 70,
     "int_attack": 73,
     "int_midfield": 69,
@@ -4922,7 +4922,7 @@
   {
     "int_team_id": 247,
     "str_team_name": "Gazişehir Gaziantep F.K.",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 70,
@@ -4942,7 +4942,7 @@
   {
     "int_team_id": 248,
     "str_team_name": "New York City FC",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 69,
@@ -4962,7 +4962,7 @@
   {
     "int_team_id": 249,
     "str_team_name": "Brescia",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie B",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 67,
@@ -4982,7 +4982,7 @@
   {
     "int_team_id": 250,
     "str_team_name": "Ulsan Hyundai FC",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 70,
     "int_attack": 71,
     "int_midfield": 70,
@@ -5002,7 +5002,7 @@
   {
     "int_team_id": 251,
     "str_team_name": "AC Monza",
-    "str_league": "Italian Serie B (2)",
+    "str_league": "Italian Serie B",
     "int_overall": 70,
     "int_attack": 68,
     "int_midfield": 69,
@@ -5022,7 +5022,7 @@
   {
     "int_team_id": 252,
     "str_team_name": "FC Lorient",
-    "str_league": "French Ligue 1 (1)",
+    "str_league": "French Ligue 1",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 70,
@@ -5042,7 +5042,7 @@
   {
     "int_team_id": 253,
     "str_team_name": "Rayo Vallecano",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 71,
@@ -5062,7 +5062,7 @@
   {
     "int_team_id": 254,
     "str_team_name": "Real Zaragoza",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 70,
     "int_attack": 70,
     "int_midfield": 67,
@@ -5082,7 +5082,7 @@
   {
     "int_team_id": 255,
     "str_team_name": "Club Atlas",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 70,
     "int_attack": 69,
     "int_midfield": 71,
@@ -5102,7 +5102,7 @@
   {
     "int_team_id": 256,
     "str_team_name": "Philadelphia Union",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 70,
@@ -5122,7 +5122,7 @@
   {
     "int_team_id": 257,
     "str_team_name": "Independiente del Valle",
-    "str_league": "Ecuadorian Serie A (1)",
+    "str_league": "Ecuadorian Serie A",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 68,
@@ -5142,7 +5142,7 @@
   {
     "int_team_id": 258,
     "str_team_name": "Toulouse Football Club",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 67,
@@ -5162,7 +5162,7 @@
   {
     "int_team_id": 259,
     "str_team_name": "Amiens SC",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 69,
     "int_attack": 64,
     "int_midfield": 70,
@@ -5182,7 +5182,7 @@
   {
     "int_team_id": 260,
     "str_team_name": "Vissel Kobe",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 70,
@@ -5202,7 +5202,7 @@
   {
     "int_team_id": 261,
     "str_team_name": "Cerezo Osaka",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 68,
@@ -5222,7 +5222,7 @@
   {
     "int_team_id": 262,
     "str_team_name": "Yokohama F. Marinos",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 70,
@@ -5242,7 +5242,7 @@
   {
     "int_team_id": 263,
     "str_team_name": "Minnesota United FC",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 69,
     "int_attack": 73,
     "int_midfield": 70,
@@ -5262,7 +5262,7 @@
   {
     "int_team_id": 264,
     "str_team_name": "ESTAC Troyes",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 69,
     "int_attack": 67,
     "int_midfield": 70,
@@ -5282,7 +5282,7 @@
   {
     "int_team_id": 265,
     "str_team_name": "Atlético de San Luis",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 67,
@@ -5302,7 +5302,7 @@
   {
     "int_team_id": 266,
     "str_team_name": "Rosenborg BK",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 69,
     "int_attack": 67,
     "int_midfield": 71,
@@ -5322,7 +5322,7 @@
   {
     "int_team_id": 267,
     "str_team_name": "SC Paderborn 07",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 67,
@@ -5342,7 +5342,7 @@
   {
     "int_team_id": 268,
     "str_team_name": "Portimonense SC",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 71,
@@ -5362,7 +5362,7 @@
   {
     "int_team_id": 269,
     "str_team_name": "AJ Auxerre",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 69,
@@ -5382,7 +5382,7 @@
   {
     "int_team_id": 270,
     "str_team_name": "Club Atlético Banfield",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 70,
@@ -5402,7 +5402,7 @@
   {
     "int_team_id": 271,
     "str_team_name": "Puebla FC",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 69,
     "int_attack": 66,
     "int_midfield": 71,
@@ -5422,7 +5422,7 @@
   {
     "int_team_id": 272,
     "str_team_name": "Legia Warszawa",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 69,
@@ -5442,7 +5442,7 @@
   {
     "int_team_id": 273,
     "str_team_name": "Kaizer Chiefs",
-    "str_league": "South African Premier Division (1)",
+    "str_league": "South African Premier Division",
     "int_overall": 69,
     "int_attack": 72,
     "int_midfield": 67,
@@ -5462,7 +5462,7 @@
   {
     "int_team_id": 274,
     "str_team_name": "Lecce",
-    "str_league": "Italian Serie A (1)",
+    "str_league": "Italian Serie B",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 69,
@@ -5482,7 +5482,7 @@
   {
     "int_team_id": 275,
     "str_team_name": "Atlético Tucumán",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 68,
@@ -5502,7 +5502,7 @@
   {
     "int_team_id": 276,
     "str_team_name": "Al Ittihad",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 69,
     "int_attack": 71,
     "int_midfield": 69,
@@ -5522,7 +5522,7 @@
   {
     "int_team_id": 277,
     "str_team_name": "Os Belenenses",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 68,
@@ -5542,7 +5542,7 @@
   {
     "int_team_id": 278,
     "str_team_name": "SV Sandhausen",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 69,
@@ -5562,7 +5562,7 @@
   {
     "int_team_id": 279,
     "str_team_name": "CD Nacional",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 68,
@@ -5582,7 +5582,7 @@
   {
     "int_team_id": 280,
     "str_team_name": "FC Paços de Ferreira",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 70,
@@ -5602,7 +5602,7 @@
   {
     "int_team_id": 281,
     "str_team_name": "Unión de Santa Fe",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 69,
@@ -5622,7 +5622,7 @@
   {
     "int_team_id": 282,
     "str_team_name": "Clube Sport Marítimo",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 68,
@@ -5642,7 +5642,7 @@
   {
     "int_team_id": 283,
     "str_team_name": "Moreirense FC",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 69,
     "int_attack": 67,
     "int_midfield": 70,
@@ -5662,7 +5662,7 @@
   {
     "int_team_id": 284,
     "str_team_name": "Shandong Luneng TaiShan FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 69,
     "int_attack": 74,
     "int_midfield": 69,
@@ -5682,7 +5682,7 @@
   {
     "int_team_id": 285,
     "str_team_name": "Willem II",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 71,
@@ -5702,7 +5702,7 @@
   {
     "int_team_id": 286,
     "str_team_name": "Vitesse",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 69,
     "int_attack": 67,
     "int_midfield": 70,
@@ -5722,7 +5722,7 @@
   {
     "int_team_id": 287,
     "str_team_name": "1. FC Heidenheim 1846",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 69,
@@ -5742,7 +5742,7 @@
   {
     "int_team_id": 288,
     "str_team_name": "KV Mechelen",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 70,
@@ -5762,7 +5762,7 @@
   {
     "int_team_id": 289,
     "str_team_name": "LDU Quito",
-    "str_league": "Ecuadorian Serie A (1)",
+    "str_league": "Ecuadorian Serie A",
     "int_overall": 69,
     "int_attack": 65,
     "int_midfield": 69,
@@ -5782,7 +5782,7 @@
   {
     "int_team_id": 290,
     "str_team_name": "Huddersfield Town",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 69,
     "int_attack": 67,
     "int_midfield": 68,
@@ -5802,7 +5802,7 @@
   {
     "int_team_id": 291,
     "str_team_name": "FCSB (Steaua)",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 68,
@@ -5822,7 +5822,7 @@
   {
     "int_team_id": 292,
     "str_team_name": "SV Zulte-Waregem",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 68,
@@ -5842,7 +5842,7 @@
   {
     "int_team_id": 293,
     "str_team_name": "Santa Clara",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 69,
@@ -5862,7 +5862,7 @@
   {
     "int_team_id": 294,
     "str_team_name": "VfL Bochum 1848",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 69,
@@ -5882,7 +5882,7 @@
   {
     "int_team_id": 295,
     "str_team_name": "Molde FK",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 69,
@@ -5902,7 +5902,7 @@
   {
     "int_team_id": 296,
     "str_team_name": "Gençlerbirliği SK",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 69,
     "int_attack": 73,
     "int_midfield": 69,
@@ -5922,7 +5922,7 @@
   {
     "int_team_id": 297,
     "str_team_name": "Göztepe SK",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 69,
     "int_attack": 71,
     "int_midfield": 70,
@@ -5942,7 +5942,7 @@
   {
     "int_team_id": 298,
     "str_team_name": "SV Darmstadt 98",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 69,
@@ -5962,7 +5962,7 @@
   {
     "int_team_id": 299,
     "str_team_name": "New England Revolution",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 69,
     "int_attack": 71,
     "int_midfield": 67,
@@ -5982,7 +5982,7 @@
   {
     "int_team_id": 300,
     "str_team_name": "FC Dallas",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 69,
     "int_attack": 74,
     "int_midfield": 70,
@@ -6002,7 +6002,7 @@
   {
     "int_team_id": 301,
     "str_team_name": "LA Galaxy",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 69,
     "int_attack": 76,
     "int_midfield": 72,
@@ -6022,7 +6022,7 @@
   {
     "int_team_id": 302,
     "str_team_name": "Chievo Verona",
-    "str_league": "Italian Serie B (2)",
+    "str_league": "Italian Serie B",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 69,
@@ -6042,7 +6042,7 @@
   {
     "int_team_id": 303,
     "str_team_name": "Jeonbuk Hyundai Motors",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 69,
@@ -6062,7 +6062,7 @@
   {
     "int_team_id": 304,
     "str_team_name": "Real Sporting de Gijón",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 69,
     "int_attack": 71,
     "int_midfield": 68,
@@ -6082,7 +6082,7 @@
   {
     "int_team_id": 305,
     "str_team_name": "Fortaleza",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 69,
@@ -6102,7 +6102,7 @@
   {
     "int_team_id": 306,
     "str_team_name": "Stade Malherbe Caen",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 69,
@@ -6122,7 +6122,7 @@
   {
     "int_team_id": 307,
     "str_team_name": "Ceará Sporting Club",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 69,
     "int_attack": 66,
     "int_midfield": 69,
@@ -6142,7 +6142,7 @@
   {
     "int_team_id": 308,
     "str_team_name": "UD Las Palmas",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 68,
@@ -6162,7 +6162,7 @@
   {
     "int_team_id": 309,
     "str_team_name": "KAS Eupen",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 68,
@@ -6182,7 +6182,7 @@
   {
     "int_team_id": 310,
     "str_team_name": "Orlando City SC",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 69,
     "int_attack": 66,
     "int_midfield": 71,
@@ -6202,7 +6202,7 @@
   {
     "int_team_id": 311,
     "str_team_name": "CFR Cluj",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 69,
     "int_attack": 68,
     "int_midfield": 68,
@@ -6222,7 +6222,7 @@
   {
     "int_team_id": 312,
     "str_team_name": "Farense",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 68,
@@ -6242,7 +6242,7 @@
   {
     "int_team_id": 313,
     "str_team_name": "América de Cali",
-    "str_league": "Colombian Liga Postobón (1)",
+    "str_league": "Colombian Liga Postobón",
     "int_overall": 69,
     "int_attack": 72,
     "int_midfield": 67,
@@ -6262,7 +6262,7 @@
   {
     "int_team_id": 314,
     "str_team_name": "Kasimpaşa SK",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 69,
     "int_attack": 71,
     "int_midfield": 70,
@@ -6282,7 +6282,7 @@
   {
     "int_team_id": 315,
     "str_team_name": "Atlético Nacional",
-    "str_league": "Colombian Liga Postobón (1)",
+    "str_league": "Colombian Liga Postobón",
     "int_overall": 69,
     "int_attack": 67,
     "int_midfield": 70,
@@ -6302,7 +6302,7 @@
   {
     "int_team_id": 316,
     "str_team_name": "FC Juárez",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 69,
     "int_attack": 75,
     "int_midfield": 68,
@@ -6322,7 +6322,7 @@
   {
     "int_team_id": 317,
     "str_team_name": "KV Kortrijk",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 69,
     "int_attack": 63,
     "int_midfield": 69,
@@ -6342,7 +6342,7 @@
   {
     "int_team_id": 318,
     "str_team_name": "Millonarios FC",
-    "str_league": "Colombian Liga Postobón (1)",
+    "str_league": "Colombian Liga Postobón",
     "int_overall": 69,
     "int_attack": 69,
     "int_midfield": 67,
@@ -6362,7 +6362,7 @@
   {
     "int_team_id": 319,
     "str_team_name": "Atlanta United",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 69,
     "int_attack": 67,
     "int_midfield": 69,
@@ -6382,7 +6382,7 @@
   {
     "int_team_id": 320,
     "str_team_name": "SK Rapid Wien",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 69,
     "int_attack": 70,
     "int_midfield": 69,
@@ -6402,7 +6402,7 @@
   {
     "int_team_id": 321,
     "str_team_name": "FK Austria Wien",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 67,
@@ -6422,7 +6422,7 @@
   {
     "int_team_id": 322,
     "str_team_name": "Club Necaxa",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 67,
@@ -6442,7 +6442,7 @@
   {
     "int_team_id": 323,
     "str_team_name": "Sanfrecce Hiroshima",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 67,
@@ -6462,7 +6462,7 @@
   {
     "int_team_id": 324,
     "str_team_name": "Queens Park Rangers",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 68,
     "int_attack": 68,
     "int_midfield": 69,
@@ -6482,7 +6482,7 @@
   {
     "int_team_id": 325,
     "str_team_name": "FC Emmen",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 69,
@@ -6502,7 +6502,7 @@
   {
     "int_team_id": 326,
     "str_team_name": "Kashiwa Reysol",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 68,
     "int_attack": 71,
     "int_midfield": 68,
@@ -6522,7 +6522,7 @@
   {
     "int_team_id": 327,
     "str_team_name": "Kashima Antlers",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 68,
@@ -6542,7 +6542,7 @@
   {
     "int_team_id": 328,
     "str_team_name": "Montreal Impact",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 69,
@@ -6562,7 +6562,7 @@
   {
     "int_team_id": 329,
     "str_team_name": "Universitatea Craiova",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 68,
     "int_attack": 65,
     "int_midfield": 69,
@@ -6582,7 +6582,7 @@
   {
     "int_team_id": 330,
     "str_team_name": "San Jose Earthquakes",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 68,
     "int_attack": 68,
     "int_midfield": 70,
@@ -6602,7 +6602,7 @@
   {
     "int_team_id": 331,
     "str_team_name": "Málaga CF",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 67,
@@ -6622,7 +6622,7 @@
   {
     "int_team_id": 332,
     "str_team_name": "Albacete BP",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 68,
@@ -6642,7 +6642,7 @@
   {
     "int_team_id": 333,
     "str_team_name": "Holstein Kiel",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 70,
@@ -6662,7 +6662,7 @@
   {
     "int_team_id": 334,
     "str_team_name": "Aberdeen",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 68,
@@ -6682,7 +6682,7 @@
   {
     "int_team_id": 335,
     "str_team_name": "Orlando Pirates",
-    "str_league": "South African Premier Division (1)",
+    "str_league": "South African Premier Division",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 67,
@@ -6702,7 +6702,7 @@
   {
     "int_team_id": 336,
     "str_team_name": "Al Ain FC",
-    "str_league": "UAE Arabian Gulf League (1)",
+    "str_league": "UAE Arabian Gulf League",
     "int_overall": 68,
     "int_attack": 74,
     "int_midfield": 68,
@@ -6722,7 +6722,7 @@
   {
     "int_team_id": 337,
     "str_team_name": "Godoy Cruz",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 67,
@@ -6742,7 +6742,7 @@
   {
     "int_team_id": 338,
     "str_team_name": "Gil Vicente FC",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 68,
     "int_attack": 68,
     "int_midfield": 66,
@@ -6762,7 +6762,7 @@
   {
     "int_team_id": 339,
     "str_team_name": "Lech Poznań",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 68,
     "int_attack": 68,
     "int_midfield": 68,
@@ -6782,7 +6782,7 @@
   {
     "int_team_id": 340,
     "str_team_name": "SC Heerenveen",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 68,
@@ -6802,7 +6802,7 @@
   {
     "int_team_id": 341,
     "str_team_name": "FC Groningen",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 68,
     "int_attack": 65,
     "int_midfield": 68,
@@ -6822,7 +6822,7 @@
   {
     "int_team_id": 342,
     "str_team_name": "FC Luzern",
-    "str_league": "Swiss Super League (1)",
+    "str_league": "Swiss Super League",
     "int_overall": 68,
     "int_attack": 68,
     "int_midfield": 67,
@@ -6842,7 +6842,7 @@
   {
     "int_team_id": 343,
     "str_team_name": "Barcelona Sporting Club",
-    "str_league": "Ecuadorian Serie A (1)",
+    "str_league": "Ecuadorian Serie A",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 65,
@@ -6862,7 +6862,7 @@
   {
     "int_team_id": 344,
     "str_team_name": "Dinamo Bucureşti",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 70,
@@ -6882,7 +6882,7 @@
   {
     "int_team_id": 345,
     "str_team_name": "Beerschot AC",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 68,
     "int_attack": 68,
     "int_midfield": 68,
@@ -6902,7 +6902,7 @@
   {
     "int_team_id": 346,
     "str_team_name": "Hatayspor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 68,
     "int_attack": 68,
     "int_midfield": 66,
@@ -6922,7 +6922,7 @@
   {
     "int_team_id": 347,
     "str_team_name": "Sint-Truidense VV",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 68,
@@ -6942,7 +6942,7 @@
   {
     "int_team_id": 348,
     "str_team_name": "New York Red Bulls",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 69,
@@ -6962,7 +6962,7 @@
   {
     "int_team_id": 349,
     "str_team_name": "Chicago Fire",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 68,
     "int_attack": 71,
     "int_midfield": 70,
@@ -6982,7 +6982,7 @@
   {
     "int_team_id": 350,
     "str_team_name": "Colorado Rapids",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 69,
@@ -7002,7 +7002,7 @@
   {
     "int_team_id": 351,
     "str_team_name": "Houston Dynamo",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 68,
@@ -7022,7 +7022,7 @@
   {
     "int_team_id": 352,
     "str_team_name": "Hammarby IF",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 68,
     "int_attack": 68,
     "int_midfield": 69,
@@ -7042,7 +7042,7 @@
   {
     "int_team_id": 353,
     "str_team_name": "Djurgårdens IF",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 68,
     "int_attack": 65,
     "int_midfield": 69,
@@ -7062,7 +7062,7 @@
   {
     "int_team_id": 354,
     "str_team_name": "Royal Excel Mouscron",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 68,
     "int_attack": 72,
     "int_midfield": 67,
@@ -7082,7 +7082,7 @@
   {
     "int_team_id": 355,
     "str_team_name": "Empoli",
-    "str_league": "Italian Serie B (2)",
+    "str_league": "Italian Serie B",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 68,
@@ -7102,7 +7102,7 @@
   {
     "int_team_id": 356,
     "str_team_name": "Mazatlán FC",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 68,
@@ -7122,7 +7122,7 @@
   {
     "int_team_id": 357,
     "str_team_name": "FC Seoul",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 68,
@@ -7142,7 +7142,7 @@
   {
     "int_team_id": 358,
     "str_team_name": "Gimnasia y Esgrima La Plata",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 68,
@@ -7162,7 +7162,7 @@
   {
     "int_team_id": 359,
     "str_team_name": "Nagoya Grampus",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 69,
@@ -7182,7 +7182,7 @@
   {
     "int_team_id": 360,
     "str_team_name": "Gamba Osaka",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 67,
@@ -7202,7 +7202,7 @@
   {
     "int_team_id": 361,
     "str_team_name": "AD Alcorcón",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 67,
@@ -7222,7 +7222,7 @@
   {
     "int_team_id": 362,
     "str_team_name": "VfL Osnabrück",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 68,
@@ -7242,7 +7242,7 @@
   {
     "int_team_id": 363,
     "str_team_name": "SD Ponferradina",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 67,
@@ -7262,7 +7262,7 @@
   {
     "int_team_id": 364,
     "str_team_name": "Real Oviedo",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 69,
@@ -7282,7 +7282,7 @@
   {
     "int_team_id": 365,
     "str_team_name": "BB Erzurumspor",
-    "str_league": "Turkish Süper Lig (1)",
+    "str_league": "Turkish Süper Lig",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 68,
@@ -7302,7 +7302,7 @@
   {
     "int_team_id": 366,
     "str_team_name": "Deportivo Cali",
-    "str_league": "Colombian Liga Postobón (1)",
+    "str_league": "Colombian Liga Postobón",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 66,
@@ -7322,7 +7322,7 @@
   {
     "int_team_id": 367,
     "str_team_name": "CD Lugo",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 67,
@@ -7342,7 +7342,7 @@
   {
     "int_team_id": 368,
     "str_team_name": "CF Fuenlabrada",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 68,
     "int_attack": 69,
     "int_midfield": 67,
@@ -7362,7 +7362,7 @@
   {
     "int_team_id": 369,
     "str_team_name": "Nashville SC",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 68,
     "int_attack": 62,
     "int_midfield": 68,
@@ -7382,7 +7382,7 @@
   {
     "int_team_id": 370,
     "str_team_name": "FC Cartagena",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 68,
@@ -7402,7 +7402,7 @@
   {
     "int_team_id": 371,
     "str_team_name": "Rosario Central",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 68,
     "int_attack": 67,
     "int_midfield": 69,
@@ -7422,7 +7422,7 @@
   {
     "int_team_id": 372,
     "str_team_name": "Oud-Heverlee Leuven",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 69,
@@ -7442,7 +7442,7 @@
   {
     "int_team_id": 373,
     "str_team_name": "Vancouver Whitecaps FC",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 68,
     "int_attack": 72,
     "int_midfield": 66,
@@ -7462,7 +7462,7 @@
   {
     "int_team_id": 374,
     "str_team_name": "FC St. Pauli",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 68,
     "int_attack": 68,
     "int_midfield": 66,
@@ -7482,7 +7482,7 @@
   {
     "int_team_id": 375,
     "str_team_name": "FC Erzgebirge Aue",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 68,
     "int_attack": 70,
     "int_midfield": 68,
@@ -7502,7 +7502,7 @@
   {
     "int_team_id": 376,
     "str_team_name": "FC Cincinnati",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 68,
     "int_attack": 66,
     "int_midfield": 69,
@@ -7522,7 +7522,7 @@
   {
     "int_team_id": 377,
     "str_team_name": "Rotherham United",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 67,
     "int_attack": 66,
     "int_midfield": 66,
@@ -7542,7 +7542,7 @@
   {
     "int_team_id": 378,
     "str_team_name": "Coventry City",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 68,
@@ -7562,7 +7562,7 @@
   {
     "int_team_id": 379,
     "str_team_name": "Brøndby IF",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 66,
@@ -7582,7 +7582,7 @@
   {
     "int_team_id": 380,
     "str_team_name": "Grenoble Foot 38",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 67,
@@ -7602,7 +7602,7 @@
   {
     "int_team_id": 381,
     "str_team_name": "Aarhus GF",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 67,
     "int_attack": 65,
     "int_midfield": 68,
@@ -7622,7 +7622,7 @@
   {
     "int_team_id": 382,
     "str_team_name": "Al Wehda",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 67,
     "int_attack": 70,
     "int_midfield": 66,
@@ -7642,7 +7642,7 @@
   {
     "int_team_id": 383,
     "str_team_name": "FC Viitorul",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 66,
@@ -7662,7 +7662,7 @@
   {
     "int_team_id": 384,
     "str_team_name": "FC Tokyo",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 67,
     "int_attack": 70,
     "int_midfield": 67,
@@ -7682,7 +7682,7 @@
   {
     "int_team_id": 385,
     "str_team_name": "Oita Trinita",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 67,
     "int_attack": 66,
     "int_midfield": 66,
@@ -7702,7 +7702,7 @@
   {
     "int_team_id": 386,
     "str_team_name": "Jiangsu Suning FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 67,
     "int_attack": 76,
     "int_midfield": 66,
@@ -7722,7 +7722,7 @@
   {
     "int_team_id": 387,
     "str_team_name": "Karlsruher SC",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 66,
@@ -7742,7 +7742,7 @@
   {
     "int_team_id": 388,
     "str_team_name": "Aalborg BK",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 67,
     "int_attack": 69,
     "int_midfield": 68,
@@ -7762,7 +7762,7 @@
   {
     "int_team_id": 619,
     "str_team_name": "Kalmar FF",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 63,
@@ -7782,7 +7782,7 @@
   {
     "int_team_id": 389,
     "str_team_name": "Arsenal de Sarandí",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 67,
     "int_attack": 65,
     "int_midfield": 69,
@@ -7802,7 +7802,7 @@
   {
     "int_team_id": 390,
     "str_team_name": "Hokkaido Consadole Sapporo",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 66,
@@ -7822,7 +7822,7 @@
   {
     "int_team_id": 391,
     "str_team_name": "IFK Göteborg",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 67,
     "int_attack": 62,
     "int_midfield": 69,
@@ -7842,7 +7842,7 @@
   {
     "int_team_id": 392,
     "str_team_name": "Waasland-Beveren",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 67,
@@ -7862,7 +7862,7 @@
   {
     "int_team_id": 393,
     "str_team_name": "Central Córdoba",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 67,
     "int_attack": 71,
     "int_midfield": 67,
@@ -7882,7 +7882,7 @@
   {
     "int_team_id": 394,
     "str_team_name": "Wisła Kraków",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 67,
     "int_attack": 65,
     "int_midfield": 66,
@@ -7902,7 +7902,7 @@
   {
     "int_team_id": 395,
     "str_team_name": "Club Atlético Aldosivi",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 66,
@@ -7922,7 +7922,7 @@
   {
     "int_team_id": 396,
     "str_team_name": "Club Atlético Huracán",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 67,
@@ -7942,7 +7942,7 @@
   {
     "int_team_id": 397,
     "str_team_name": "AC Ajaccio",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 67,
     "int_attack": 66,
     "int_midfield": 67,
@@ -7962,7 +7962,7 @@
   {
     "int_team_id": 398,
     "str_team_name": "FC Twente",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 65,
@@ -7982,7 +7982,7 @@
   {
     "int_team_id": 399,
     "str_team_name": "Valenciennes FC",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 67,
@@ -8002,7 +8002,7 @@
   {
     "int_team_id": 400,
     "str_team_name": "Club Bolívar",
-    "str_league": "Liga de Fútbol Profesional Boliviano (1)",
+    "str_league": "Liga de Fútbol Profesional Boliviano",
     "int_overall": 67,
     "int_attack": 63,
     "int_midfield": 67,
@@ -8022,7 +8022,7 @@
   {
     "int_team_id": 401,
     "str_team_name": "PEC Zwolle",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 67,
     "int_attack": 66,
     "int_midfield": 67,
@@ -8042,7 +8042,7 @@
   {
     "int_team_id": 402,
     "str_team_name": "Luton Town",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 67,
@@ -8062,7 +8062,7 @@
   {
     "int_team_id": 403,
     "str_team_name": "CD Tondela",
-    "str_league": "Portuguese Liga ZON SAGRES (1)",
+    "str_league": "Portuguese Liga ZON SAGRES",
     "int_overall": 67,
     "int_attack": 66,
     "int_midfield": 66,
@@ -8082,7 +8082,7 @@
   {
     "int_team_id": 404,
     "str_team_name": "Barnsley",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 67,
     "int_attack": 69,
     "int_midfield": 67,
@@ -8102,7 +8102,7 @@
   {
     "int_team_id": 405,
     "str_team_name": "FK Bodø/Glimt",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 67,
     "int_attack": 69,
     "int_midfield": 67,
@@ -8122,7 +8122,7 @@
   {
     "int_team_id": 406,
     "str_team_name": "Deportivo Binacional",
-    "str_league": "Peruvian Primera División (1)",
+    "str_league": "Peruvian Primera División",
     "int_overall": 67,
     "int_attack": 64,
     "int_midfield": 66,
@@ -8142,7 +8142,7 @@
   {
     "int_team_id": 407,
     "str_team_name": "Unión La Calera",
-    "str_league": "Chilian Campeonato Nacional (1)",
+    "str_league": "Chilian Campeonato Nacional",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 67,
@@ -8162,7 +8162,7 @@
   {
     "int_team_id": 408,
     "str_team_name": "Jagiellonia Białystok",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 67,
     "int_attack": 66,
     "int_midfield": 67,
@@ -8182,7 +8182,7 @@
   {
     "int_team_id": 409,
     "str_team_name": "Wuhan Zall",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 67,
     "int_attack": 72,
     "int_midfield": 65,
@@ -8202,7 +8202,7 @@
   {
     "int_team_id": 410,
     "str_team_name": "Henan Jianye FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 67,
     "int_attack": 72,
     "int_midfield": 66,
@@ -8222,7 +8222,7 @@
   {
     "int_team_id": 411,
     "str_team_name": "Eintracht Braunschweig",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 68,
@@ -8242,7 +8242,7 @@
   {
     "int_team_id": 412,
     "str_team_name": "KV Oostende",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 68,
@@ -8262,7 +8262,7 @@
   {
     "int_team_id": 413,
     "str_team_name": "AIK",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 69,
@@ -8282,7 +8282,7 @@
   {
     "int_team_id": 414,
     "str_team_name": "FC Sion",
-    "str_league": "Swiss Super League (1)",
+    "str_league": "Swiss Super League",
     "int_overall": 67,
     "int_attack": 69,
     "int_midfield": 66,
@@ -8302,7 +8302,7 @@
   {
     "int_team_id": 415,
     "str_team_name": "IFK Norrköping",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 68,
@@ -8322,7 +8322,7 @@
   {
     "int_team_id": 416,
     "str_team_name": "Pohang Steelers",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 67,
     "int_attack": 69,
     "int_midfield": 67,
@@ -8342,7 +8342,7 @@
   {
     "int_team_id": 417,
     "str_team_name": "Paris FC",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 67,
     "int_attack": 66,
     "int_midfield": 67,
@@ -8362,7 +8362,7 @@
   {
     "int_team_id": 418,
     "str_team_name": "Le Havre AC",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 67,
     "int_attack": 64,
     "int_midfield": 67,
@@ -8382,7 +8382,7 @@
   {
     "int_team_id": 419,
     "str_team_name": "Wolfsberger AC",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 67,
@@ -8402,7 +8402,7 @@
   {
     "int_team_id": 420,
     "str_team_name": "Astra Giurgiu",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 67,
     "int_attack": 70,
     "int_midfield": 64,
@@ -8422,7 +8422,7 @@
   {
     "int_team_id": 421,
     "str_team_name": "SK Sturm Graz",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 68,
@@ -8442,7 +8442,7 @@
   {
     "int_team_id": 422,
     "str_team_name": "KSV Cercle Brugge",
-    "str_league": "Belgian Jupiler Pro League (1)",
+    "str_league": "Belgian Jupiler Pro League",
     "int_overall": 67,
     "int_attack": 66,
     "int_midfield": 68,
@@ -8462,7 +8462,7 @@
   {
     "int_team_id": 423,
     "str_team_name": "Urawa Red Diamonds",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 66,
@@ -8482,7 +8482,7 @@
   {
     "int_team_id": 424,
     "str_team_name": "Real Salt Lake",
-    "str_league": "USA Major League Soccer (1)",
+    "str_league": "USA Major League Soccer",
     "int_overall": 67,
     "int_attack": 71,
     "int_midfield": 67,
@@ -8502,7 +8502,7 @@
   {
     "int_team_id": 425,
     "str_team_name": "UD Logroñés",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 67,
     "int_attack": 67,
     "int_midfield": 66,
@@ -8522,7 +8522,7 @@
   {
     "int_team_id": 426,
     "str_team_name": "Ettifaq FC",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 67,
     "int_attack": 65,
     "int_midfield": 69,
@@ -8542,7 +8542,7 @@
   {
     "int_team_id": 427,
     "str_team_name": "Club Guaraní",
-    "str_league": "Paraguayan Primera División (1)",
+    "str_league": "Paraguayan Primera División",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 67,
@@ -8562,7 +8562,7 @@
   {
     "int_team_id": 428,
     "str_team_name": "Lechia Gdańsk",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 67,
     "int_attack": 68,
     "int_midfield": 65,
@@ -8582,7 +8582,7 @@
   {
     "int_team_id": 429,
     "str_team_name": "Oceânico FC",
-    "str_league": "Campeonato Brasileiro Série A (1)",
+    "str_league": "Campeonato Brasileiro Série A",
     "int_overall": 67,
     "int_attack": 66,
     "int_midfield": 66,
@@ -8602,7 +8602,7 @@
   {
     "int_team_id": 430,
     "str_team_name": "Al Faisaly",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 65,
@@ -8622,7 +8622,7 @@
   {
     "int_team_id": 431,
     "str_team_name": "Al Taawoun",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 66,
     "int_attack": 68,
     "int_midfield": 65,
@@ -8642,7 +8642,7 @@
   {
     "int_team_id": 432,
     "str_team_name": "Clermont Foot 63",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 66,
     "int_attack": 64,
     "int_midfield": 67,
@@ -8662,7 +8662,7 @@
   {
     "int_team_id": 433,
     "str_team_name": "Heracles Almelo",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 65,
@@ -8682,7 +8682,7 @@
   {
     "int_team_id": 434,
     "str_team_name": "Shimizu S-Pulse",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 66,
     "int_attack": 68,
     "int_midfield": 67,
@@ -8702,7 +8702,7 @@
   {
     "int_team_id": 435,
     "str_team_name": "SSV Jahn Regensburg",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 67,
@@ -8722,7 +8722,7 @@
   {
     "int_team_id": 436,
     "str_team_name": "Sparta Rotterdam",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 67,
@@ -8742,7 +8742,7 @@
   {
     "int_team_id": 437,
     "str_team_name": "VVV-Venlo",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 68,
@@ -8762,7 +8762,7 @@
   {
     "int_team_id": 438,
     "str_team_name": "FC Lugano",
-    "str_league": "Swiss Super League (1)",
+    "str_league": "Swiss Super League",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 66,
@@ -8782,7 +8782,7 @@
   {
     "int_team_id": 439,
     "str_team_name": "Coquimbo Unido",
-    "str_league": "Chilian Campeonato Nacional (1)",
+    "str_league": "Chilian Campeonato Nacional",
     "int_overall": 66,
     "int_attack": 68,
     "int_midfield": 62,
@@ -8802,7 +8802,7 @@
   {
     "int_team_id": 440,
     "str_team_name": "Querétaro",
-    "str_league": "Mexican Liga MX (1)",
+    "str_league": "Mexican Liga MX",
     "int_overall": 66,
     "int_attack": 69,
     "int_midfield": 64,
@@ -8822,7 +8822,7 @@
   {
     "int_team_id": 441,
     "str_team_name": "Hibernian",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 67,
@@ -8842,7 +8842,7 @@
   {
     "int_team_id": 442,
     "str_team_name": "Kilmarnock",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 67,
@@ -8862,7 +8862,7 @@
   {
     "int_team_id": 443,
     "str_team_name": "Hebei China Fortune FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 66,
     "int_attack": 74,
     "int_midfield": 61,
@@ -8882,7 +8882,7 @@
   {
     "int_team_id": 444,
     "str_team_name": "Motherwell",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 66,
@@ -8902,7 +8902,7 @@
   {
     "int_team_id": 445,
     "str_team_name": "Charlton Athletic",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 66,
     "int_attack": 64,
     "int_midfield": 68,
@@ -8922,7 +8922,7 @@
   {
     "int_team_id": 446,
     "str_team_name": "Sunderland",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 67,
@@ -8942,7 +8942,7 @@
   {
     "int_team_id": 447,
     "str_team_name": "Deportivo Pasto",
-    "str_league": "Colombian Liga Postobón (1)",
+    "str_league": "Colombian Liga Postobón",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 66,
@@ -8962,7 +8962,7 @@
   {
     "int_team_id": 448,
     "str_team_name": "RKC Waalwijk",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 66,
@@ -8982,7 +8982,7 @@
   {
     "int_team_id": 449,
     "str_team_name": "FC Würzburger Kickers",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 65,
@@ -9002,7 +9002,7 @@
   {
     "int_team_id": 450,
     "str_team_name": "Fortuna Sittard",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 66,
     "int_attack": 70,
     "int_midfield": 67,
@@ -9022,7 +9022,7 @@
   {
     "int_team_id": 451,
     "str_team_name": "Jorge Wilstermann",
-    "str_league": "Liga de Fútbol Profesional Boliviano (1)",
+    "str_league": "Liga de Fútbol Profesional Boliviano",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 64,
@@ -9042,7 +9042,7 @@
   {
     "int_team_id": 452,
     "str_team_name": "FC St. Gallen",
-    "str_league": "Swiss Super League (1)",
+    "str_league": "Swiss Super League",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 68,
@@ -9062,7 +9062,7 @@
   {
     "int_team_id": 453,
     "str_team_name": "Fleetwood Town",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 66,
@@ -9082,7 +9082,7 @@
   {
     "int_team_id": 454,
     "str_team_name": "FC Ingolstadt 04",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 66,
     "int_attack": 64,
     "int_midfield": 64,
@@ -9102,7 +9102,7 @@
   {
     "int_team_id": 455,
     "str_team_name": "Emelec",
-    "str_league": "Ecuadorian Serie A (1)",
+    "str_league": "Ecuadorian Serie A",
     "int_overall": 66,
     "int_attack": 68,
     "int_midfield": 65,
@@ -9122,7 +9122,7 @@
   {
     "int_team_id": 456,
     "str_team_name": "ADO Den Haag",
-    "str_league": "Holland Eredivisie (1)",
+    "str_league": "Holland Eredivisie",
     "int_overall": 66,
     "int_attack": 64,
     "int_midfield": 66,
@@ -9142,7 +9142,7 @@
   {
     "int_team_id": 457,
     "str_team_name": "Wycombe Wanderers",
-    "str_league": "English League Championship (2)",
+    "str_league": "English League Championship",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 65,
@@ -9162,7 +9162,7 @@
   {
     "int_team_id": 458,
     "str_team_name": "Delfín SC",
-    "str_league": "Ecuadorian Serie A (1)",
+    "str_league": "Ecuadorian Serie A",
     "int_overall": 66,
     "int_attack": 68,
     "int_midfield": 65,
@@ -9182,7 +9182,7 @@
   {
     "int_team_id": 459,
     "str_team_name": "SK Brann",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 65,
@@ -9202,7 +9202,7 @@
   {
     "int_team_id": 460,
     "str_team_name": "Vålerenga Fotball",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 65,
@@ -9222,7 +9222,7 @@
   {
     "int_team_id": 461,
     "str_team_name": "Pogoń Szczecin",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 65,
@@ -9242,7 +9242,7 @@
   {
     "int_team_id": 462,
     "str_team_name": "Cracovia",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 66,
@@ -9262,7 +9262,7 @@
   {
     "int_team_id": 463,
     "str_team_name": "Shenzhen FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 66,
     "int_attack": 68,
     "int_midfield": 65,
@@ -9282,7 +9282,7 @@
   {
     "int_team_id": 464,
     "str_team_name": "Oxford United",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 65,
@@ -9302,7 +9302,7 @@
   {
     "int_team_id": 465,
     "str_team_name": "Hull City",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 66,
@@ -9322,7 +9322,7 @@
   {
     "int_team_id": 466,
     "str_team_name": "SpVgg Greuther Fürth",
-    "str_league": "German 2. Bundesliga (2)",
+    "str_league": "German 2. Bundesliga",
     "int_overall": 66,
     "int_attack": 68,
     "int_midfield": 66,
@@ -9342,7 +9342,7 @@
   {
     "int_team_id": 467,
     "str_team_name": "SønderjyskE",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 66,
@@ -9362,7 +9362,7 @@
   {
     "int_team_id": 468,
     "str_team_name": "CE Sabadell FC",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 66,
     "int_attack": 68,
     "int_midfield": 66,
@@ -9382,7 +9382,7 @@
   {
     "int_team_id": 469,
     "str_team_name": "IF Elfsborg",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 66,
@@ -9402,7 +9402,7 @@
   {
     "int_team_id": 470,
     "str_team_name": "Vegalta Sendai",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 66,
@@ -9422,7 +9422,7 @@
   {
     "int_team_id": 471,
     "str_team_name": "BK Häcken",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 65,
@@ -9442,7 +9442,7 @@
   {
     "int_team_id": 472,
     "str_team_name": "La Berrichonne de Châteauroux",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 66,
@@ -9462,7 +9462,7 @@
   {
     "int_team_id": 473,
     "str_team_name": "Suwon Samsung Bluewings",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 66,
@@ -9482,7 +9482,7 @@
   {
     "int_team_id": 474,
     "str_team_name": "TSV Hartberg",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 66,
     "int_attack": 69,
     "int_midfield": 64,
@@ -9502,7 +9502,7 @@
   {
     "int_team_id": 475,
     "str_team_name": "FC Sochaux-Montbéliard",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 66,
@@ -9522,7 +9522,7 @@
   {
     "int_team_id": 476,
     "str_team_name": "Audax Italiano",
-    "str_league": "Chilian Campeonato Nacional (1)",
+    "str_league": "Chilian Campeonato Nacional",
     "int_overall": 66,
     "int_attack": 69,
     "int_midfield": 65,
@@ -9542,7 +9542,7 @@
   {
     "int_team_id": 477,
     "str_team_name": "SV Wehen Wiesbaden",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 66,
@@ -9562,7 +9562,7 @@
   {
     "int_team_id": 478,
     "str_team_name": "Piast Gliwice",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 64,
@@ -9582,7 +9582,7 @@
   {
     "int_team_id": 479,
     "str_team_name": "C.D. Castellón",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 66,
@@ -9602,7 +9602,7 @@
   {
     "int_team_id": 480,
     "str_team_name": "Śląsk Wrocław",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 66,
     "int_attack": 64,
     "int_midfield": 66,
@@ -9622,7 +9622,7 @@
   {
     "int_team_id": 481,
     "str_team_name": "CD Mirandés",
-    "str_league": "Spanish Segunda División (2)",
+    "str_league": "Spanish Segunda División",
     "int_overall": 66,
     "int_attack": 65,
     "int_midfield": 65,
@@ -9642,7 +9642,7 @@
   {
     "int_team_id": 482,
     "str_team_name": "Patronato",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 66,
@@ -9662,7 +9662,7 @@
   {
     "int_team_id": 483,
     "str_team_name": "SG Dynamo Dresden",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 64,
@@ -9682,7 +9682,7 @@
   {
     "int_team_id": 484,
     "str_team_name": "Dalian YiFang FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 66,
     "int_attack": 73,
     "int_midfield": 66,
@@ -9702,7 +9702,7 @@
   {
     "int_team_id": 485,
     "str_team_name": "Gaz Metan Mediaş",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 66,
     "int_attack": 67,
     "int_midfield": 65,
@@ -9722,7 +9722,7 @@
   {
     "int_team_id": 486,
     "str_team_name": "Portsmouth",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 66,
     "int_attack": 66,
     "int_midfield": 66,
@@ -9742,7 +9742,7 @@
   {
     "int_team_id": 487,
     "str_team_name": "Sangju Sangmu FC",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -9762,7 +9762,7 @@
   {
     "int_team_id": 488,
     "str_team_name": "Daegu FC",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 65,
     "int_attack": 69,
     "int_midfield": 65,
@@ -9782,7 +9782,7 @@
   {
     "int_team_id": 489,
     "str_team_name": "Al Raed",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 65,
     "int_attack": 66,
     "int_midfield": 65,
@@ -9802,7 +9802,7 @@
   {
     "int_team_id": 490,
     "str_team_name": "Shonan Bellmare",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 65,
     "int_attack": 66,
     "int_midfield": 62,
@@ -9822,7 +9822,7 @@
   {
     "int_team_id": 491,
     "str_team_name": "SV Ried",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 65,
     "int_attack": 62,
     "int_midfield": 65,
@@ -9842,7 +9842,7 @@
   {
     "int_team_id": 492,
     "str_team_name": "Odense Boldklub",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -9862,7 +9862,7 @@
   {
     "int_team_id": 493,
     "str_team_name": "Chamois Niortais Football Club",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 65,
     "int_attack": 67,
     "int_midfield": 66,
@@ -9882,7 +9882,7 @@
   {
     "int_team_id": 494,
     "str_team_name": "FC Hansa Rostock",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 65,
     "int_attack": 64,
     "int_midfield": 64,
@@ -9902,7 +9902,7 @@
   {
     "int_team_id": 495,
     "str_team_name": "1. FC Kaiserslautern",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -9922,7 +9922,7 @@
   {
     "int_team_id": 496,
     "str_team_name": "AS Nancy Lorraine",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 65,
     "int_attack": 62,
     "int_midfield": 63,
@@ -9942,7 +9942,7 @@
   {
     "int_team_id": 497,
     "str_team_name": "Nacional Asunción",
-    "str_league": "Paraguayan Primera División (1)",
+    "str_league": "Paraguayan Primera División",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -9962,7 +9962,7 @@
   {
     "int_team_id": 498,
     "str_team_name": "Perth Glory",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 65,
     "int_attack": 71,
     "int_midfield": 64,
@@ -9982,7 +9982,7 @@
   {
     "int_team_id": 499,
     "str_team_name": "Sydney FC",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 65,
     "int_attack": 63,
     "int_midfield": 68,
@@ -10002,7 +10002,7 @@
   {
     "int_team_id": 500,
     "str_team_name": "Rodez Aveyron Football",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 65,
     "int_attack": 64,
     "int_midfield": 65,
@@ -10022,7 +10022,7 @@
   {
     "int_team_id": 501,
     "str_team_name": "Viking FK",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 65,
     "int_attack": 67,
     "int_midfield": 64,
@@ -10042,7 +10042,7 @@
   {
     "int_team_id": 502,
     "str_team_name": "Guangzhou R&F FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 67,
@@ -10062,7 +10062,7 @@
   {
     "int_team_id": 503,
     "str_team_name": "Yokohama FC",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 65,
     "int_attack": 66,
     "int_midfield": 65,
@@ -10082,7 +10082,7 @@
   {
     "int_team_id": 504,
     "str_team_name": "IK Sirius",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 65,
     "int_attack": 66,
     "int_midfield": 64,
@@ -10102,7 +10102,7 @@
   {
     "int_team_id": 505,
     "str_team_name": "Kristiansund BK",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 65,
     "int_attack": 60,
     "int_midfield": 65,
@@ -10122,7 +10122,7 @@
   {
     "int_team_id": 506,
     "str_team_name": "Viktoria Köln",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 65,
     "int_attack": 67,
     "int_midfield": 65,
@@ -10142,7 +10142,7 @@
   {
     "int_team_id": 507,
     "str_team_name": "Vejle Boldklub",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 65,
     "int_attack": 62,
     "int_midfield": 65,
@@ -10162,7 +10162,7 @@
   {
     "int_team_id": 508,
     "str_team_name": "Servette FC",
-    "str_league": "Swiss Super League (1)",
+    "str_league": "Swiss Super League",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -10182,7 +10182,7 @@
   {
     "int_team_id": 509,
     "str_team_name": "Sport Huancayo",
-    "str_league": "Peruvian Primera División (1)",
+    "str_league": "Peruvian Primera División",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -10202,7 +10202,7 @@
   {
     "int_team_id": 510,
     "str_team_name": "Ipswich Town",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -10222,7 +10222,7 @@
   {
     "int_team_id": 511,
     "str_team_name": "Melbourne City FC",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 65,
     "int_attack": 67,
     "int_midfield": 63,
@@ -10242,7 +10242,7 @@
   {
     "int_team_id": 512,
     "str_team_name": "Club Atlético Tigre",
-    "str_league": "Argentina Primera División  (1)",
+    "str_league": "Argentina Primera División",
     "int_overall": 65,
     "int_attack": 63,
     "int_midfield": 64,
@@ -10262,7 +10262,7 @@
   {
     "int_team_id": 513,
     "str_team_name": "Club Plaza Colonia",
-    "str_league": "Uruguayan Primera División (1)",
+    "str_league": "Uruguayan Primera División",
     "int_overall": 65,
     "int_attack": 64,
     "int_midfield": 64,
@@ -10282,7 +10282,7 @@
   {
     "int_team_id": 514,
     "str_team_name": "FC Zürich",
-    "str_league": "Swiss Super League (1)",
+    "str_league": "Swiss Super League",
     "int_overall": 65,
     "int_attack": 62,
     "int_midfield": 66,
@@ -10302,7 +10302,7 @@
   {
     "int_team_id": 515,
     "str_team_name": "Shrewsbury",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 65,
     "int_attack": 64,
     "int_midfield": 62,
@@ -10322,7 +10322,7 @@
   {
     "int_team_id": 516,
     "str_team_name": "Blackpool",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 65,
     "int_attack": 64,
     "int_midfield": 64,
@@ -10342,7 +10342,7 @@
   {
     "int_team_id": 517,
     "str_team_name": "SD Aucas",
-    "str_league": "Ecuadorian Serie A (1)",
+    "str_league": "Ecuadorian Serie A",
     "int_overall": 65,
     "int_attack": 64,
     "int_midfield": 63,
@@ -10362,7 +10362,7 @@
   {
     "int_team_id": 518,
     "str_team_name": "River Plate Asunción",
-    "str_league": "Paraguayan Primera División (1)",
+    "str_league": "Paraguayan Primera División",
     "int_overall": 65,
     "int_attack": 67,
     "int_midfield": 61,
@@ -10382,7 +10382,7 @@
   {
     "int_team_id": 519,
     "str_team_name": "Always Ready",
-    "str_league": "Liga de Fútbol Profesional Boliviano (1)",
+    "str_league": "Liga de Fútbol Profesional Boliviano",
     "int_overall": 65,
     "int_attack": 66,
     "int_midfield": 64,
@@ -10402,7 +10402,7 @@
   {
     "int_team_id": 520,
     "str_team_name": "Peterborough United",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 65,
     "int_attack": 67,
     "int_midfield": 65,
@@ -10422,7 +10422,7 @@
   {
     "int_team_id": 521,
     "str_team_name": "Stabæk Fotball",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 65,
     "int_attack": 63,
     "int_midfield": 66,
@@ -10442,7 +10442,7 @@
   {
     "int_team_id": 522,
     "str_team_name": "Universidad Católica del Ecuador",
-    "str_league": "Ecuadorian Serie A (1)",
+    "str_league": "Ecuadorian Serie A",
     "int_overall": 65,
     "int_attack": 64,
     "int_midfield": 65,
@@ -10462,7 +10462,7 @@
   {
     "int_team_id": 523,
     "str_team_name": "Raków Częstochowa",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 65,
     "int_attack": 66,
     "int_midfield": 65,
@@ -10482,7 +10482,7 @@
   {
     "int_team_id": 524,
     "str_team_name": "Centro Atlético Fénix",
-    "str_league": "Uruguayan Primera División (1)",
+    "str_league": "Uruguayan Primera División",
     "int_overall": 65,
     "int_attack": 62,
     "int_midfield": 62,
@@ -10502,7 +10502,7 @@
   {
     "int_team_id": 525,
     "str_team_name": "Zagłębie Lubin",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 65,
     "int_attack": 64,
     "int_midfield": 66,
@@ -10522,7 +10522,7 @@
   {
     "int_team_id": 526,
     "str_team_name": "Tianjin TEDA FC",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 65,
     "int_attack": 69,
     "int_midfield": 61,
@@ -10542,7 +10542,7 @@
   {
     "int_team_id": 527,
     "str_team_name": "FC Botoşani",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 65,
     "int_attack": 60,
     "int_midfield": 65,
@@ -10562,7 +10562,7 @@
   {
     "int_team_id": 528,
     "str_team_name": "SCR Altach",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 66,
@@ -10582,7 +10582,7 @@
   {
     "int_team_id": 529,
     "str_team_name": "Alianza Lima",
-    "str_league": "Peruvian Primera División (1)",
+    "str_league": "Peruvian Primera División",
     "int_overall": 65,
     "int_attack": 62,
     "int_midfield": 65,
@@ -10602,7 +10602,7 @@
   {
     "int_team_id": 530,
     "str_team_name": "Abha Club",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 65,
     "int_attack": 70,
     "int_midfield": 66,
@@ -10622,7 +10622,7 @@
   {
     "int_team_id": 531,
     "str_team_name": "Górnik Zabrze",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 65,
     "int_attack": 67,
     "int_midfield": 63,
@@ -10642,7 +10642,7 @@
   {
     "int_team_id": 532,
     "str_team_name": "KFC Uerdingen 05",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 65,
     "int_attack": 63,
     "int_midfield": 65,
@@ -10662,7 +10662,7 @@
   {
     "int_team_id": 533,
     "str_team_name": "SpVgg Unterhaching",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 65,
     "int_attack": 61,
     "int_midfield": 64,
@@ -10682,7 +10682,7 @@
   {
     "int_team_id": 534,
     "str_team_name": "Incheon United FC",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -10702,7 +10702,7 @@
   {
     "int_team_id": 535,
     "str_team_name": "Helsingborgs IF",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -10722,7 +10722,7 @@
   {
     "int_team_id": 536,
     "str_team_name": "Odds BK",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -10742,7 +10742,7 @@
   {
     "int_team_id": 537,
     "str_team_name": "Liverpool Fútbol Club",
-    "str_league": "Uruguayan Primera División (1)",
+    "str_league": "Uruguayan Primera División",
     "int_overall": 65,
     "int_attack": 64,
     "int_midfield": 63,
@@ -10762,7 +10762,7 @@
   {
     "int_team_id": 538,
     "str_team_name": "CD Huachipato",
-    "str_league": "Chilian Campeonato Nacional (1)",
+    "str_league": "Chilian Campeonato Nacional",
     "int_overall": 65,
     "int_attack": 66,
     "int_midfield": 64,
@@ -10782,7 +10782,7 @@
   {
     "int_team_id": 539,
     "str_team_name": "Sepsi OSK",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 65,
     "int_attack": 61,
     "int_midfield": 65,
@@ -10802,7 +10802,7 @@
   {
     "int_team_id": 540,
     "str_team_name": "El Nacional",
-    "str_league": "Ecuadorian Serie A (1)",
+    "str_league": "Ecuadorian Serie A",
     "int_overall": 65,
     "int_attack": 64,
     "int_midfield": 63,
@@ -10822,7 +10822,7 @@
   {
     "int_team_id": 541,
     "str_team_name": "FC Hermannstadt",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 65,
     "int_attack": 59,
     "int_midfield": 65,
@@ -10842,7 +10842,7 @@
   {
     "int_team_id": 542,
     "str_team_name": "Melgar FBC",
-    "str_league": "Peruvian Primera División (1)",
+    "str_league": "Peruvian Primera División",
     "int_overall": 65,
     "int_attack": 63,
     "int_midfield": 64,
@@ -10862,7 +10862,7 @@
   {
     "int_team_id": 543,
     "str_team_name": "Pau FC",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -10882,7 +10882,7 @@
   {
     "int_team_id": 544,
     "str_team_name": "Gangwon FC",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 65,
     "int_attack": 66,
     "int_midfield": 65,
@@ -10902,7 +10902,7 @@
   {
     "int_team_id": 545,
     "str_team_name": "Randers FC",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 65,
     "int_attack": 65,
     "int_midfield": 65,
@@ -10922,7 +10922,7 @@
   {
     "int_team_id": 546,
     "str_team_name": "FC Nordsjælland",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 65,
     "int_attack": 66,
     "int_midfield": 65,
@@ -10942,7 +10942,7 @@
   {
     "int_team_id": 547,
     "str_team_name": "SV Meppen",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 64,
     "int_attack": 59,
     "int_midfield": 64,
@@ -10962,7 +10962,7 @@
   {
     "int_team_id": 548,
     "str_team_name": "Milton Keynes Dons",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 64,
     "int_attack": 64,
     "int_midfield": 63,
@@ -10982,7 +10982,7 @@
   {
     "int_team_id": 549,
     "str_team_name": "Al Fateh",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 64,
     "int_attack": 62,
     "int_midfield": 65,
@@ -11002,7 +11002,7 @@
   {
     "int_team_id": 550,
     "str_team_name": "Salford City",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 64,
@@ -11022,7 +11022,7 @@
   {
     "int_team_id": 551,
     "str_team_name": "Sagan Tosu",
-    "str_league": "Japanese J. League Division 1 (1)",
+    "str_league": "Japanese J. League Division 1",
     "int_overall": 64,
     "int_attack": 63,
     "int_midfield": 64,
@@ -11042,7 +11042,7 @@
   {
     "int_team_id": 552,
     "str_team_name": "Cusco FC",
-    "str_league": "Peruvian Primera División (1)",
+    "str_league": "Peruvian Primera División",
     "int_overall": 64,
     "int_attack": 64,
     "int_midfield": 64,
@@ -11062,7 +11062,7 @@
   {
     "int_team_id": 553,
     "str_team_name": "FC Voluntari",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 62,
@@ -11082,7 +11082,7 @@
   {
     "int_team_id": 554,
     "str_team_name": "TSV 1860 München",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 64,
@@ -11102,7 +11102,7 @@
   {
     "int_team_id": 555,
     "str_team_name": "Wisła Płock",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 64,
     "int_attack": 63,
     "int_midfield": 64,
@@ -11122,7 +11122,7 @@
   {
     "int_team_id": 556,
     "str_team_name": "MSV Duisburg",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 64,
@@ -11142,7 +11142,7 @@
   {
     "int_team_id": 557,
     "str_team_name": "River Plate Montevideo",
-    "str_league": "Uruguayan Primera División (1)",
+    "str_league": "Uruguayan Primera División",
     "int_overall": 64,
     "int_attack": 64,
     "int_midfield": 62,
@@ -11162,7 +11162,7 @@
   {
     "int_team_id": 558,
     "str_team_name": "Damac FC",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 64,
     "int_attack": 63,
     "int_midfield": 63,
@@ -11182,7 +11182,7 @@
   {
     "int_team_id": 559,
     "str_team_name": "Dundalk",
-    "str_league": "Rep. Ireland Airtricity League (1)",
+    "str_league": "Rep. Ireland Airtricity League",
     "int_overall": 64,
     "int_attack": 67,
     "int_midfield": 64,
@@ -11202,7 +11202,7 @@
   {
     "int_team_id": 560,
     "str_team_name": "FC Lausanne-Sport",
-    "str_league": "Swiss Super League (1)",
+    "str_league": "Swiss Super League",
     "int_overall": 64,
     "int_attack": 63,
     "int_midfield": 64,
@@ -11222,7 +11222,7 @@
   {
     "int_team_id": 561,
     "str_team_name": "Sarpsborg 08 FF",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 64,
@@ -11242,7 +11242,7 @@
   {
     "int_team_id": 562,
     "str_team_name": "Livingston FC",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 64,
@@ -11262,7 +11262,7 @@
   {
     "int_team_id": 563,
     "str_team_name": "Club Blooming",
-    "str_league": "Liga de Fútbol Profesional Boliviano (1)",
+    "str_league": "Liga de Fútbol Profesional Boliviano",
     "int_overall": 64,
     "int_attack": 64,
     "int_midfield": 62,
@@ -11282,7 +11282,7 @@
   {
     "int_team_id": 564,
     "str_team_name": "Wigan Athletic",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 64,
     "int_attack": 67,
     "int_midfield": 65,
@@ -11302,7 +11302,7 @@
   {
     "int_team_id": 565,
     "str_team_name": "GwangJu FC",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 64,
     "int_attack": 68,
     "int_midfield": 62,
@@ -11322,7 +11322,7 @@
   {
     "int_team_id": 566,
     "str_team_name": "Doncaster Rovers",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 64,
     "int_attack": 62,
     "int_midfield": 67,
@@ -11342,7 +11342,7 @@
   {
     "int_team_id": 567,
     "str_team_name": "Hallescher FC",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 64,
     "int_attack": 66,
     "int_midfield": 62,
@@ -11362,7 +11362,7 @@
   {
     "int_team_id": 568,
     "str_team_name": "Strømsgodset IF",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 64,
     "int_attack": 63,
     "int_midfield": 65,
@@ -11382,7 +11382,7 @@
   {
     "int_team_id": 569,
     "str_team_name": "AC Horsens",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 64,
     "int_attack": 63,
     "int_midfield": 63,
@@ -11402,7 +11402,7 @@
   {
     "int_team_id": 570,
     "str_team_name": "Burton Albion",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 64,
     "int_attack": 63,
     "int_midfield": 65,
@@ -11422,7 +11422,7 @@
   {
     "int_team_id": 571,
     "str_team_name": "Bristol Rovers",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 64,
     "int_attack": 61,
     "int_midfield": 64,
@@ -11442,7 +11442,7 @@
   {
     "int_team_id": 572,
     "str_team_name": "USL Dunkerque",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 64,
     "int_attack": 64,
     "int_midfield": 64,
@@ -11462,7 +11462,7 @@
   {
     "int_team_id": 573,
     "str_team_name": "Dundee United",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 65,
@@ -11482,7 +11482,7 @@
   {
     "int_team_id": 574,
     "str_team_name": "WSG Tirol",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 63,
@@ -11502,7 +11502,7 @@
   {
     "int_team_id": 575,
     "str_team_name": "Örebro SK",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 64,
     "int_attack": 64,
     "int_midfield": 64,
@@ -11522,7 +11522,7 @@
   {
     "int_team_id": 576,
     "str_team_name": "St. Johnstone FC",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 65,
@@ -11542,7 +11542,7 @@
   {
     "int_team_id": 577,
     "str_team_name": "SV Waldhof Mannheim",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 64,
     "int_attack": 64,
     "int_midfield": 65,
@@ -11562,7 +11562,7 @@
   {
     "int_team_id": 578,
     "str_team_name": "SKN St. Pölten",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 64,
     "int_attack": 64,
     "int_midfield": 65,
@@ -11582,7 +11582,7 @@
   {
     "int_team_id": 579,
     "str_team_name": "FC Admira Wacker Mödling",
-    "str_league": "Austrian Football Bundesliga (1)",
+    "str_league": "Austrian Football Bundesliga",
     "int_overall": 64,
     "int_attack": 62,
     "int_midfield": 64,
@@ -11602,7 +11602,7 @@
   {
     "int_team_id": 580,
     "str_team_name": "Sol de América",
-    "str_league": "Paraguayan Primera División (1)",
+    "str_league": "Paraguayan Primera División",
     "int_overall": 64,
     "int_attack": 66,
     "int_midfield": 65,
@@ -11622,7 +11622,7 @@
   {
     "int_team_id": 581,
     "str_team_name": "Seongnam FC",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 64,
@@ -11642,7 +11642,7 @@
   {
     "int_team_id": 582,
     "str_team_name": "Türkgücü München",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 64,
     "int_attack": 63,
     "int_midfield": 63,
@@ -11662,7 +11662,7 @@
   {
     "int_team_id": 583,
     "str_team_name": "Politehnica Iaşi",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 64,
     "int_attack": 64,
     "int_midfield": 65,
@@ -11682,7 +11682,7 @@
   {
     "int_team_id": 584,
     "str_team_name": "HJK Helsinki",
-    "str_league": "Finnish Veikkausliiga (1)",
+    "str_league": "Finnish Veikkausliiga",
     "int_overall": 64,
     "int_attack": 64,
     "int_midfield": 66,
@@ -11702,7 +11702,7 @@
   {
     "int_team_id": 585,
     "str_team_name": "Independiente Medellín",
-    "str_league": "Colombian Liga Postobón (1)",
+    "str_league": "Colombian Liga Postobón",
     "int_overall": 64,
     "int_attack": 65,
     "int_midfield": 63,
@@ -11722,7 +11722,7 @@
   {
     "int_team_id": 586,
     "str_team_name": "FC Chambly Oise",
-    "str_league": "French Ligue 2 (2)",
+    "str_league": "French Ligue 2",
     "int_overall": 64,
     "int_attack": 63,
     "int_midfield": 63,
@@ -11742,7 +11742,7 @@
   {
     "int_team_id": 587,
     "str_team_name": "1. FC Magdeburg",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 64,
     "int_attack": 63,
     "int_midfield": 63,
@@ -11762,7 +11762,7 @@
   {
     "int_team_id": 588,
     "str_team_name": "FSV Zwickau",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 63,
@@ -11782,7 +11782,7 @@
   {
     "int_team_id": 589,
     "str_team_name": "Gillingham",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 61,
@@ -11802,7 +11802,7 @@
   {
     "int_team_id": 590,
     "str_team_name": "1. FC Saarbrücken",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 63,
     "int_attack": 65,
     "int_midfield": 63,
@@ -11822,7 +11822,7 @@
   {
     "int_team_id": 591,
     "str_team_name": "Östersunds FK",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 63,
     "int_attack": 62,
     "int_midfield": 63,
@@ -11842,7 +11842,7 @@
   {
     "int_team_id": 592,
     "str_team_name": "Nacional Potosí",
-    "str_league": "Liga de Fútbol Profesional Boliviano (1)",
+    "str_league": "Liga de Fútbol Profesional Boliviano",
     "int_overall": 63,
     "int_attack": 61,
     "int_midfield": 65,
@@ -11862,7 +11862,7 @@
   {
     "int_team_id": 593,
     "str_team_name": "Mjøndalen IF",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 63,
     "int_attack": 62,
     "int_midfield": 63,
@@ -11882,7 +11882,7 @@
   {
     "int_team_id": 594,
     "str_team_name": "VfB Lübeck",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 63,
@@ -11902,7 +11902,7 @@
   {
     "int_team_id": 595,
     "str_team_name": "Chongqing Dangdai Lifan FC SWM Team",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 63,
     "int_attack": 65,
     "int_midfield": 59,
@@ -11922,7 +11922,7 @@
   {
     "int_team_id": 596,
     "str_team_name": "Western Sydney Wanderers",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 66,
@@ -11942,7 +11942,7 @@
   {
     "int_team_id": 597,
     "str_team_name": "Shamrock Rovers",
-    "str_league": "Rep. Ireland Airtricity League (1)",
+    "str_league": "Rep. Ireland Airtricity League",
     "int_overall": 63,
     "int_attack": 66,
     "int_midfield": 63,
@@ -11962,7 +11962,7 @@
   {
     "int_team_id": 598,
     "str_team_name": "Qingdao Huanghai F.C.",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 63,
     "int_attack": 55,
     "int_midfield": 62,
@@ -11982,7 +11982,7 @@
   {
     "int_team_id": 599,
     "str_team_name": "Al Hazem",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 63,
     "int_attack": 65,
     "int_midfield": 62,
@@ -12002,7 +12002,7 @@
   {
     "int_team_id": 600,
     "str_team_name": "Stal Mielec",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 64,
@@ -12022,7 +12022,7 @@
   {
     "int_team_id": 601,
     "str_team_name": "Bayern München II",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 63,
     "int_attack": 65,
     "int_midfield": 64,
@@ -12042,7 +12042,7 @@
   {
     "int_team_id": 602,
     "str_team_name": "Western United FC",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 63,
     "int_attack": 67,
     "int_midfield": 64,
@@ -12062,7 +12062,7 @@
   {
     "int_team_id": 603,
     "str_team_name": "Crewe Alexandra",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 63,
     "int_attack": 64,
     "int_midfield": 63,
@@ -12082,7 +12082,7 @@
   {
     "int_team_id": 604,
     "str_team_name": "Oriente Petrolero",
-    "str_league": "Liga de Fútbol Profesional Boliviano (1)",
+    "str_league": "Liga de Fútbol Profesional Boliviano",
     "int_overall": 63,
     "int_attack": 65,
     "int_midfield": 63,
@@ -12102,7 +12102,7 @@
   {
     "int_team_id": 605,
     "str_team_name": "AFC Wimbledon",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 63,
     "int_attack": 61,
     "int_midfield": 63,
@@ -12122,7 +12122,7 @@
   {
     "int_team_id": 606,
     "str_team_name": "Port Vale",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 63,
     "int_attack": 62,
     "int_midfield": 63,
@@ -12142,7 +12142,7 @@
   {
     "int_team_id": 607,
     "str_team_name": "Plymouth Argyle",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 61,
@@ -12162,7 +12162,7 @@
   {
     "int_team_id": 608,
     "str_team_name": "Northampton Town",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 63,
     "int_attack": 62,
     "int_midfield": 63,
@@ -12182,7 +12182,7 @@
   {
     "int_team_id": 609,
     "str_team_name": "Caracas FC",
-    "str_league": "Venezuelan Primera División (1)",
+    "str_league": "Venezuelan Primera División",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 63,
@@ -12202,7 +12202,7 @@
   {
     "int_team_id": 610,
     "str_team_name": "Swindon Town",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 63,
@@ -12222,7 +12222,7 @@
   {
     "int_team_id": 611,
     "str_team_name": "Colchester United",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 63,
@@ -12242,7 +12242,7 @@
   {
     "int_team_id": 612,
     "str_team_name": "AC Mineros de Guayana",
-    "str_league": "Venezuelan Primera División (1)",
+    "str_league": "Venezuelan Primera División",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 63,
@@ -12262,7 +12262,7 @@
   {
     "int_team_id": 613,
     "str_team_name": "Mansfield Town",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 63,
     "int_attack": 64,
     "int_midfield": 63,
@@ -12282,7 +12282,7 @@
   {
     "int_team_id": 614,
     "str_team_name": "Lincoln City",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 63,
@@ -12302,7 +12302,7 @@
   {
     "int_team_id": 615,
     "str_team_name": "Wellington Phoenix",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 63,
     "int_attack": 59,
     "int_midfield": 64,
@@ -12322,7 +12322,7 @@
   {
     "int_team_id": 616,
     "str_team_name": "FC Argeș",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 63,
     "int_attack": 57,
     "int_midfield": 63,
@@ -12342,7 +12342,7 @@
   {
     "int_team_id": 617,
     "str_team_name": "Lyngby BK",
-    "str_league": "Danish Superliga (1)",
+    "str_league": "Danish Superliga",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 63,
@@ -12362,7 +12362,7 @@
   {
     "int_team_id": 618,
     "str_team_name": "UTA Arad",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 63,
     "int_attack": 64,
     "int_midfield": 59,
@@ -12382,7 +12382,7 @@
   {
     "int_team_id": 620,
     "str_team_name": "Al Fayha",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 63,
     "int_attack": 65,
     "int_midfield": 63,
@@ -12402,7 +12402,7 @@
   {
     "int_team_id": 621,
     "str_team_name": "FK Haugesund",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 64,
@@ -12422,7 +12422,7 @@
   {
     "int_team_id": 622,
     "str_team_name": "Busan IPark",
-    "str_league": "Korean K League 1 (1)",
+    "str_league": "Korean K League 1",
     "int_overall": 63,
     "int_attack": 64,
     "int_midfield": 63,
@@ -12442,7 +12442,7 @@
   {
     "int_team_id": 623,
     "str_team_name": "St. Mirren",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 63,
     "int_attack": 64,
     "int_midfield": 62,
@@ -12462,7 +12462,7 @@
   {
     "int_team_id": 624,
     "str_team_name": "Tranmere Rovers",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 63,
@@ -12482,7 +12482,7 @@
   {
     "int_team_id": 625,
     "str_team_name": "Sandefjord Fotball",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 63,
     "int_attack": 62,
     "int_midfield": 62,
@@ -12502,7 +12502,7 @@
   {
     "int_team_id": 626,
     "str_team_name": "Estudiantes de Mérida",
-    "str_league": "Venezuelan Primera División (1)",
+    "str_league": "Venezuelan Primera División",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 64,
@@ -12522,7 +12522,7 @@
   {
     "int_team_id": 627,
     "str_team_name": "Chindia Târgovişte",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 62,
@@ -12542,7 +12542,7 @@
   {
     "int_team_id": 628,
     "str_team_name": "Podbeskidzie Bielsko-Biała",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 63,
     "int_attack": 63,
     "int_midfield": 62,
@@ -12562,7 +12562,7 @@
   {
     "int_team_id": 629,
     "str_team_name": "Academica Clinceni",
-    "str_league": "Romanian Liga I (1)",
+    "str_league": "Romanian Liga I",
     "int_overall": 63,
     "int_attack": 65,
     "int_midfield": 64,
@@ -12582,7 +12582,7 @@
   {
     "int_team_id": 630,
     "str_team_name": "IK Start",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 63,
     "int_attack": 62,
     "int_midfield": 64,
@@ -12602,7 +12602,7 @@
   {
     "int_team_id": 631,
     "str_team_name": "Bolton Wanderers",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 62,
     "int_attack": 64,
     "int_midfield": 63,
@@ -12622,7 +12622,7 @@
   {
     "int_team_id": 632,
     "str_team_name": "Walsall",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 62,
     "int_attack": 63,
     "int_midfield": 62,
@@ -12642,7 +12642,7 @@
   {
     "int_team_id": 633,
     "str_team_name": "Bradford City",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 62,
     "int_attack": 62,
     "int_midfield": 61,
@@ -12662,7 +12662,7 @@
   {
     "int_team_id": 634,
     "str_team_name": "Aragua FC",
-    "str_league": "Venezuelan Primera División (1)",
+    "str_league": "Venezuelan Primera División",
     "int_overall": 62,
     "int_attack": 60,
     "int_midfield": 62,
@@ -12682,7 +12682,7 @@
   {
     "int_team_id": 635,
     "str_team_name": "FC Vaduz",
-    "str_league": "Swiss Super League (1)",
+    "str_league": "Swiss Super League",
     "int_overall": 62,
     "int_attack": 63,
     "int_midfield": 63,
@@ -12702,7 +12702,7 @@
   {
     "int_team_id": 636,
     "str_team_name": "Melbourne Victory",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 62,
     "int_attack": 56,
     "int_midfield": 62,
@@ -12722,7 +12722,7 @@
   {
     "int_team_id": 637,
     "str_team_name": "Newcastle Jets",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 62,
     "int_attack": 64,
     "int_midfield": 63,
@@ -12742,7 +12742,7 @@
   {
     "int_team_id": 638,
     "str_team_name": "Falkenbergs FF",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 62,
     "int_attack": 62,
     "int_midfield": 62,
@@ -12762,7 +12762,7 @@
   {
     "int_team_id": 639,
     "str_team_name": "Crawley Town",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 62,
     "int_attack": 56,
     "int_midfield": 61,
@@ -12782,7 +12782,7 @@
   {
     "int_team_id": 640,
     "str_team_name": "Forest Green Rovers",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 62,
     "int_attack": 60,
     "int_midfield": 62,
@@ -12802,7 +12802,7 @@
   {
     "int_team_id": 641,
     "str_team_name": "Varbergs BoIS",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 62,
     "int_attack": 65,
     "int_midfield": 62,
@@ -12822,7 +12822,7 @@
   {
     "int_team_id": 642,
     "str_team_name": "Shijiazhuang Ever Bright F.C.",
-    "str_league": "Chinese Super League (1)",
+    "str_league": "Chinese Super League",
     "int_overall": 62,
     "int_attack": 58,
     "int_midfield": 65,
@@ -12842,7 +12842,7 @@
   {
     "int_team_id": 643,
     "str_team_name": "Ross County FC",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 62,
     "int_attack": 64,
     "int_midfield": 62,
@@ -12862,7 +12862,7 @@
   {
     "int_team_id": 644,
     "str_team_name": "Newport County",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 62,
     "int_attack": 60,
     "int_midfield": 62,
@@ -12882,7 +12882,7 @@
   {
     "int_team_id": 645,
     "str_team_name": "Warta Poznań",
-    "str_league": "Polish T-Mobile Ekstraklasa (1)",
+    "str_league": "Polish T-Mobile Ekstraklasa",
     "int_overall": 62,
     "int_attack": 61,
     "int_midfield": 63,
@@ -12902,7 +12902,7 @@
   {
     "int_team_id": 646,
     "str_team_name": "Oldham Athletic",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 62,
     "int_attack": 62,
     "int_midfield": 61,
@@ -12922,7 +12922,7 @@
   {
     "int_team_id": 647,
     "str_team_name": "Exeter City",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 62,
     "int_attack": 62,
     "int_midfield": 62,
@@ -12942,7 +12942,7 @@
   {
     "int_team_id": 648,
     "str_team_name": "Cheltenham Town",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 62,
     "int_attack": 60,
     "int_midfield": 63,
@@ -12962,7 +12962,7 @@
   {
     "int_team_id": 649,
     "str_team_name": "Rochdale",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 62,
     "int_attack": 60,
     "int_midfield": 63,
@@ -12982,7 +12982,7 @@
   {
     "int_team_id": 650,
     "str_team_name": "SC Verl",
-    "str_league": "German 3. Bundesliga (3)",
+    "str_league": "German 3. Bundesliga",
     "int_overall": 62,
     "int_attack": 64,
     "int_midfield": 61,
@@ -13002,7 +13002,7 @@
   {
     "int_team_id": 651,
     "str_team_name": "Club Atlético Grau",
-    "str_league": "Peruvian Primera División (1)",
+    "str_league": "Peruvian Primera División",
     "int_overall": 62,
     "int_attack": 64,
     "int_midfield": 60,
@@ -13022,7 +13022,7 @@
   {
     "int_team_id": 652,
     "str_team_name": "Macarthur FC",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 62,
     "int_attack": 58,
     "int_midfield": 63,
@@ -13042,7 +13042,7 @@
   {
     "int_team_id": 653,
     "str_team_name": "Hamilton Academical FC",
-    "str_league": "Scottish Premiership (1)",
+    "str_league": "Scottish Premiership",
     "int_overall": 62,
     "int_attack": 61,
     "int_midfield": 61,
@@ -13062,7 +13062,7 @@
   {
     "int_team_id": 654,
     "str_team_name": "Mjällby AIF",
-    "str_league": "Swedish Allsvenskan (1)",
+    "str_league": "Swedish Allsvenskan",
     "int_overall": 62,
     "int_attack": 63,
     "int_midfield": 62,
@@ -13082,7 +13082,7 @@
   {
     "int_team_id": 655,
     "str_team_name": "Aalesunds FK",
-    "str_league": "Norwegian Eliteserien (1)",
+    "str_league": "Norwegian Eliteserien",
     "int_overall": 62,
     "int_attack": 61,
     "int_midfield": 63,
@@ -13102,7 +13102,7 @@
   {
     "int_team_id": 656,
     "str_team_name": "Accrington Stanley",
-    "str_league": "English League One (3)",
+    "str_league": "English League One",
     "int_overall": 62,
     "int_attack": 61,
     "int_midfield": 63,
@@ -13122,7 +13122,7 @@
   {
     "int_team_id": 657,
     "str_team_name": "Adelaide United",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 61,
     "int_attack": 61,
     "int_midfield": 62,
@@ -13142,7 +13142,7 @@
   {
     "int_team_id": 658,
     "str_team_name": "Brisbane Roar",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 61,
     "int_attack": 62,
     "int_midfield": 59,
@@ -13162,7 +13162,7 @@
   {
     "int_team_id": 659,
     "str_team_name": "Grimsby Town",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 61,
     "int_attack": 60,
     "int_midfield": 59,
@@ -13182,7 +13182,7 @@
   {
     "int_team_id": 660,
     "str_team_name": "Morecambe",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 61,
     "int_attack": 60,
     "int_midfield": 62,
@@ -13202,7 +13202,7 @@
   {
     "int_team_id": 661,
     "str_team_name": "Stevenage",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 61,
     "int_attack": 61,
     "int_midfield": 57,
@@ -13222,7 +13222,7 @@
   {
     "int_team_id": 662,
     "str_team_name": "Cambridge United",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 61,
     "int_attack": 61,
     "int_midfield": 62,
@@ -13242,7 +13242,7 @@
   {
     "int_team_id": 663,
     "str_team_name": "Scunthorpe United",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 61,
     "int_attack": 61,
     "int_midfield": 59,
@@ -13262,7 +13262,7 @@
   {
     "int_team_id": 664,
     "str_team_name": "Sportivo Luqueño",
-    "str_league": "Paraguayan Primera División (1)",
+    "str_league": "Paraguayan Primera División",
     "int_overall": 61,
     "int_attack": 59,
     "int_midfield": 62,
@@ -13282,7 +13282,7 @@
   {
     "int_team_id": 665,
     "str_team_name": "Southend United",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 61,
     "int_attack": 56,
     "int_midfield": 61,
@@ -13302,7 +13302,7 @@
   {
     "int_team_id": 666,
     "str_team_name": "Leyton Orient",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 61,
     "int_attack": 59,
     "int_midfield": 62,
@@ -13322,7 +13322,7 @@
   {
     "int_team_id": 667,
     "str_team_name": "Al Adalah",
-    "str_league": "Saudi Abdul L. Jameel League (1)",
+    "str_league": "Saudi Abdul L. Jameel League",
     "int_overall": 61,
     "int_attack": 62,
     "int_midfield": 62,
@@ -13342,7 +13342,7 @@
   {
     "int_team_id": 668,
     "str_team_name": "Carlisle United",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 61,
     "int_attack": 59,
     "int_midfield": 62,
@@ -13362,7 +13362,7 @@
   {
     "int_team_id": 669,
     "str_team_name": "Zamora FC",
-    "str_league": "Venezuelan Primera División (1)",
+    "str_league": "Venezuelan Primera División",
     "int_overall": 60,
     "int_attack": 60,
     "int_midfield": 60,
@@ -13382,7 +13382,7 @@
   {
     "int_team_id": 670,
     "str_team_name": "Central Coast Mariners",
-    "str_league": "Australian Hyundai A-League (1)",
+    "str_league": "Australian Hyundai A-League",
     "int_overall": 60,
     "int_attack": 58,
     "int_midfield": 61,
@@ -13402,7 +13402,7 @@
   {
     "int_team_id": 671,
     "str_team_name": "Bohemian FC",
-    "str_league": "Rep. Ireland Airtricity League (1)",
+    "str_league": "Rep. Ireland Airtricity League",
     "int_overall": 60,
     "int_attack": 61,
     "int_midfield": 59,
@@ -13422,7 +13422,7 @@
   {
     "int_team_id": 672,
     "str_team_name": "Barrow",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 60,
     "int_attack": 59,
     "int_midfield": 61,
@@ -13442,7 +13442,7 @@
   {
     "int_team_id": 673,
     "str_team_name": "Harrogate Town",
-    "str_league": "English League Two (4)",
+    "str_league": "English League Two",
     "int_overall": 59,
     "int_attack": 58,
     "int_midfield": 59,
@@ -13462,7 +13462,7 @@
   {
     "int_team_id": 674,
     "str_team_name": "St. Patrick's Athletic",
-    "str_league": "Rep. Ireland Airtricity League (1)",
+    "str_league": "Rep. Ireland Airtricity League",
     "int_overall": 59,
     "int_attack": 58,
     "int_midfield": 60,
@@ -13482,7 +13482,7 @@
   {
     "int_team_id": 675,
     "str_team_name": "Derry City",
-    "str_league": "Rep. Ireland Airtricity League (1)",
+    "str_league": "Rep. Ireland Airtricity League",
     "int_overall": 59,
     "int_attack": 48,
     "int_midfield": 59,
@@ -13502,7 +13502,7 @@
   {
     "int_team_id": 676,
     "str_team_name": "Llaneros de Guanare",
-    "str_league": "Venezuelan Primera División (1)",
+    "str_league": "Venezuelan Primera División",
     "int_overall": 59,
     "int_attack": 54,
     "int_midfield": 59,
@@ -13522,7 +13522,7 @@
   {
     "int_team_id": 677,
     "str_team_name": "Sligo Rovers",
-    "str_league": "Rep. Ireland Airtricity League (1)",
+    "str_league": "Rep. Ireland Airtricity League",
     "int_overall": 58,
     "int_attack": 59,
     "int_midfield": 57,
@@ -13542,7 +13542,7 @@
   {
     "int_team_id": 678,
     "str_team_name": "Shelbourne FC",
-    "str_league": "Rep. Ireland Airtricity League (1)",
+    "str_league": "Rep. Ireland Airtricity League",
     "int_overall": 57,
     "int_attack": 57,
     "int_midfield": 57,
@@ -13562,7 +13562,7 @@
   {
     "int_team_id": 679,
     "str_team_name": "Finn Harps",
-    "str_league": "Rep. Ireland Airtricity League (1)",
+    "str_league": "Rep. Ireland Airtricity League",
     "int_overall": 56,
     "int_attack": 55,
     "int_midfield": 56,
@@ -13582,7 +13582,7 @@
   {
     "int_team_id": 680,
     "str_team_name": "Cork City",
-    "str_league": "Rep. Ireland Airtricity League (1)",
+    "str_league": "Rep. Ireland Airtricity League",
     "int_overall": 56,
     "int_attack": 55,
     "int_midfield": 58,
@@ -13602,7 +13602,7 @@
   {
     "int_team_id": 681,
     "str_team_name": "Waterford FC",
-    "str_league": "Rep. Ireland Airtricity League (1)",
+    "str_league": "Rep. Ireland Airtricity League",
     "int_overall": 56,
     "int_attack": 58,
     "int_midfield": 54,
