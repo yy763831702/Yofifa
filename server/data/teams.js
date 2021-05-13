@@ -50,7 +50,7 @@ module.exports = {
      * freekicks: Determines how many attacking players are in the box for when the team takes Free Kicks.
      */
     async addTeam(
-        id, team_name, team_img, team_url, league, league_id, overall, attack, midfield, defence, 
+        id, team_name, team_img, team_url, league, league_nation_code, league_id, overall, attack, midfield, defence, 
         international_prestige, domestic_prestige, transfer_budget, defensive_style, team_width, 
         depth, offensive_style, width, players_in_box, corners, freekicks
     ) {
@@ -61,6 +61,7 @@ module.exports = {
             team_img: team_img,
             team_url: team_url,
             league: league,
+            league_nation_code: league_nation_code,
             league_id: league_id,
             overall: overall,
             attack: attack,
