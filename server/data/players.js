@@ -74,10 +74,10 @@ module.exports = {
 
     async addPlayer(
         sofifa_id, player_url, player_img, short_name, long_name, age, dob, height_cm, weight_kg, 
-        nationality, club_name, league_name, league_rank, overall, potential, value_eur, wage_eur, 
-        player_positions, preferred_foot, international_reputation, weak_foot, skill_moves, 
-        work_rate, body_type, real_face, release_clause_eur, player_tags, team_position, 
-        team_jersey_number, loaned_from, joined, contract_valid_until, nation_position, 
+        nationality, nation_code, club_name, league_name, league_rank, overall, potential, 
+        value_eur, wage_eur, player_positions, preferred_foot, international_reputation, 
+        weak_foot, skill_moves, work_rate, body_type, real_face, release_clause_eur, player_tags, 
+        team_position, team_jersey_number, loaned_from, joined, contract_valid_until, nation_position, 
         nation_jersey_number, pace, shooting, passing, dribbling, defending, physic, gk_diving, 
         gk_handling, gk_kicking, gk_reflexes, gk_speed, gk_positioning, player_traits, 
         attacking_crossing, attacking_finishing, attacking_heading_accuracy, attacking_short_passing, 
@@ -103,6 +103,7 @@ module.exports = {
             height_cm: height_cm,
             weight_kg: weight_kg,
             nationality: nationality,
+            nation_code: nation_code,
             club_name: club_name,
             league_name: league_name,
             league_rank: league_rank,
