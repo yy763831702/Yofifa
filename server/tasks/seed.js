@@ -7,10 +7,17 @@ const playerJsonData = require('../src/players.json');
 const teamUrlJsonData = require('../src/teams_url.json');
 const teamIdJsonData = require('../src/teams_league_id.json');
 const teamJsonData = require('../src/teams.json');
+const countryCode = require('../src/country_code.json');
 
 async function main() {
     const db = await dbConnection();
     await db.dropDatabase();
+    console.log('Start seeding database');
+
+    let map = new Map();
+    for (let obj of countryCode) {
+        map.set(obj.Name, obj.Code.toLowerCase());
+    }
 
     const formatNumber = (n) => {
         const ranges = [
@@ -26,14 +33,18 @@ async function main() {
         return '\u20AC' + n.toString();
     };
 
+    let id;
+    let nationCode;
+    let playerImageSource;
     // seed players data
     for (let p of playerJsonData) {
-        let id = p.sofifa_id.toString();
+        id = p.sofifa_id.toString();
         while (id.length < 6) {
             id = '0' + id;
         }
         id = id.substring(0, 3) + '/' + id.substring(3);
-        const playerImageSource = `https://cdn.sofifa.com/players/${id}/21_120.png`;
+        nationCode = map.get(p.nationality);
+        playerImageSource = `https://cdn.sofifa.com/players/${id}/21_120.png`;
         await players.addPlayer(
             p.sofifa_id,
             p.player_url,
@@ -45,6 +56,7 @@ async function main() {
             p.height_cm,
             p.weight_kg,
             p.nationality,
+            nationCode,
             p.club_name,
             p.league_name,
             p.league_rank,
@@ -145,15 +157,75 @@ async function main() {
         );
     }
 
+    const leagueCountry = [
+        {league: 'English Premier League', country: 'gb-eng'},
+        {league: 'English League Championship', country: 'gb-eng'},
+        {league: 'English League One', country: 'gb-eng'},
+        {league: 'English League Two', country: 'gb-eng'},
+        {league: 'German 1. Bundesliga', country: 'de'},
+        {league: 'German 2. Bundesliga', country: 'de'},
+        {league: 'German 3. Bundesliga', country: 'de'},
+        {league: 'Spain Primera Division', country: 'es'},
+        {league: 'Spanish Segunda División', country: 'es'},
+        {league: 'Italian Serie A', country: 'it'},
+        {league: 'Italian Serie B', country: 'it'},
+        {league: 'French Ligue 1', country: 'fr'},
+        {league: 'French Ligue 2', country: 'fr'},
+        {league: 'Holland Eredivisie', country: 'nl'},
+        {league: 'Portuguese Liga ZON SAGRES', country: 'pt'},
+        {league: 'Campeonato Brasileiro Série A', country: 'br'},
+        {league: 'Argentina Primera División', country: 'ar'},
+        {league: 'Turkish Süper Lig', country: 'tr'},
+        {league: 'Greek Super League', country: 'gr'},
+        {league: 'Ukrainian Premier League', country: 'ua'},
+        {league: 'Belgian Jupiler Pro League', country: 'be'},
+        {league: 'Mexican Liga MX', country: 'mx'},
+        {league: 'Czech Republic Gambrinus Liga', country: 'cz'},
+        {league: 'Russian Premier League', country: 'ru'},
+        {league: 'Scottish Premiership', country: 'gb-sct'},
+        {league: 'Saudi Abdul L. Jameel League', country: 'sa'},
+        {league: 'Austrian Football Bundesliga', country: 'at'},
+        {league: 'USA Major League Soccer', country: 'us'},
+        {league: 'Danish Superliga', country: 'dk'},
+        {league: 'Chilian Campeonato Nacional', country: 'cl'},
+        {league: 'Swiss Super League', country: 'ch'},
+        {league: 'Croatian Prva HNL', country: 'hr'},
+        {league: 'Paraguayan Primera División', country: 'py'},
+        {league: 'Chinese Super League', country: 'cn'},
+        {league: 'Uruguayan Primera División', country: 'uy'},
+        {league: 'Colombian Liga Postobón', country: 'co'},
+        {league: 'Swedish Allsvenskan', country: 'se'},
+        {league: 'Japanese J. League Division 1', country: 'jp'},
+        {league: 'Korean K League 1', country: 'kr'},
+        {league: 'Ecuadorian Serie A', country: 'ec'},
+        {league: 'Norwegian Eliteserien', country: 'no'},
+        {league: 'Polish T-Mobile Ekstraklasa', country: 'pl'},
+        {league: 'South African Premier Division', country: 'za'},
+        {league: 'Romanian Liga I', country: 'ro'},
+        {league: 'UAE Arabian Gulf League', country: 'ae'},
+        {league: 'Liga de Fútbol Profesional Boliviano', country: 'bo'},
+        {league: 'Peruvian Primera División', country: 'pe'},
+        {league: 'Australian Hyundai A-League', country: 'au'},
+        {league: 'Rep. Ireland Airtricity League', country: 'ie'},
+        {league: 'Finnish Veikkausliiga', country: 'fi'},
+        {league: 'Venezuelan Primera División', country: 've'},
+    ];
+    map = new Map();
+    for (let obj of leagueCountry) {
+        map.set(obj.league, obj.country.toLowerCase());
+    }
+
     // seed teams data
     for (let i in teamJsonData) {
-        const id = Number ( teamUrlJsonData[i].str_url.match(/[0-9]+/)[0] );
+        id = Number ( teamUrlJsonData[i].str_url.match(/[0-9]+/)[0] );
+        nationCode = map.get(teamJsonData[i].str_league);
         await teams.addTeam(
             id,
             teamJsonData[i].str_team_name,
             `https://cdn.sofifa.com/teams/${id}/120.png`,
             teamUrlJsonData[i].str_url,
             teamJsonData[i].str_league,
+            nationCode,
             teamIdJsonData[i].int_league_id,
             teamJsonData[i].int_overall,
             teamJsonData[i].int_attack,
