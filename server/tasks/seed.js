@@ -7,7 +7,7 @@ const playerJsonData = require('../src/players.json');
 const teamUrlJsonData = require('../src/teams_url.json');
 const teamIdJsonData = require('../src/teams_league_id.json');
 const teamJsonData = require('../src/teams.json');
-const countryCode = require('../src/country_code.json');
+const countryCodeJsonData = require('../src/country_code.json');
 
 async function main() {
     const db = await dbConnection();
@@ -89,11 +89,9 @@ async function main() {
     }
 
     let id;
-    let leagueCode;
     // seed teams data
     for (let i in teamJsonData) {
         id = Number ( teamUrlJsonData[i].str_url.match(/[0-9]+/)[0] );
-        leagueCode = leagueCodeMap.get(teamJsonData[i].str_league);
         teamIdMap.set(teamJsonData[i].str_team_name, id);
         await teams.addTeam(
             id,
@@ -101,7 +99,7 @@ async function main() {
             `https://cdn.sofifa.com/teams/${id}/120.png`,
             teamUrlJsonData[i].str_url,
             teamJsonData[i].str_league,
-            leagueCode,
+            leagueCodeMap.get(teamJsonData[i].str_league),
             teamIdJsonData[i].int_league_id,
             teamJsonData[i].int_overall,
             teamJsonData[i].int_attack,
@@ -122,13 +120,10 @@ async function main() {
     }
 
     let countryCodeMap = new Map();
-    for (let obj of countryCode) {
-        countryCodeMap.set(obj.Name, obj.Code.toLowerCase());
+    for (let { Name, Code } of countryCodeJsonData) {
+        countryCodeMap.set(Name, Code.toLowerCase());
     }
 
-    let playerImageSource;
-    let nationCode;
-    let teamId;
     // seed players data
     for (let p of playerJsonData) {
         id = p.sofifa_id.toString();
@@ -136,13 +131,10 @@ async function main() {
             id = '0' + id;
         }
         id = id.substring(0, 3) + '/' + id.substring(3);
-        nationCode = countryCodeMap.get(p.nationality);
-        teamId = teamIdMap.get(p.club_name);
-        playerImageSource = `https://cdn.sofifa.com/players/${id}/21_120.png`;
         await players.addPlayer(
             p.sofifa_id,
             p.player_url,
-            playerImageSource,
+            `https://cdn.sofifa.com/players/${id}/21_120.png`,
             p.short_name,
             p.long_name,
             p.age,
@@ -150,10 +142,11 @@ async function main() {
             p.height_cm,
             p.weight_kg,
             p.nationality,
-            nationCode,
+            countryCodeMap.get(p.nationality),
             p.club_name,
-            teamId,
+            teamIdMap.get(p.club_name),
             p.league_name,
+            leagueCodeMap.get(p.league_name),
             p.league_rank,
             p.overall,
             p.potential,
