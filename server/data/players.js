@@ -73,9 +73,9 @@ module.exports = {
     },
 
     async addPlayer(
-        sofifa_id, player_url, player_img, short_name, long_name, age, dob, height_cm, weight_kg, 
-        nationality, nation_code, club_name, club_id, league_name, league_rank, overall, potential, 
-        value_eur, wage_eur, player_positions, preferred_foot, international_reputation, 
+        sofifa_id, player_url, player_img_url, short_name, long_name, age, dob, height_cm, weight_kg, 
+        nationality, nation_code, club_name, club_id, league_name, league_code, league_rank, overall, 
+        potential, value_eur, wage_eur, player_positions, preferred_foot, international_reputation, 
         weak_foot, skill_moves, work_rate, body_type, real_face, release_clause_eur, player_tags, 
         team_position, team_jersey_number, loaned_from, joined, contract_valid_until, nation_position, 
         nation_jersey_number, pace, shooting, passing, dribbling, defending, physic, gk_diving, 
@@ -95,7 +95,7 @@ module.exports = {
         const newPlayer = {
             _id: sofifa_id,
             player_url: player_url,
-            player_img: player_img,
+            player_img_url: player_img_url,
             short_name: short_name,
             long_name: long_name,
             age: age,
@@ -107,6 +107,7 @@ module.exports = {
             club_name: club_name,
             club_id: club_id,
             league_name: league_name,
+            league_code: league_code,
             league_rank: league_rank,
             overall: overall,
             potential: potential,
