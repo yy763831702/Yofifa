@@ -124,6 +124,8 @@ async function main() {
         countryCodeMap.set(Name, Code.toLowerCase());
     }
 
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
     // seed players data
     for (let p of playerJsonData) {
         id = p.sofifa_id.toString();
@@ -131,6 +133,13 @@ async function main() {
             id = '0' + id;
         }
         id = id.substring(0, 3) + '/' + id.substring(3);
+
+        const dateOfBirth = p.dob.split('-');
+        const birthday = `${months[Number(dateOfBirth[1])]} ${dateOfBirth[2]}, ${dateOfBirth[0]}`;
+
+        const dateOfJoin = p.joined.split('-');
+        const joinedday = `${months[Number(dateOfJoin[1])]} ${dateOfJoin[2]}, ${dateOfJoin[0]}`;
+
         await players.addPlayer(
             p.sofifa_id,
             p.player_url,
@@ -138,7 +147,7 @@ async function main() {
             p.short_name,
             p.long_name,
             p.age,
-            p.dob,
+            birthday,
             p.height_cm,
             p.weight_kg,
             p.nationality,
@@ -165,7 +174,7 @@ async function main() {
             p.team_position,
             p.team_jersey_number,
             p.loaned_from,
-            p.joined,
+            joinedday,
             p.contract_valid_until,
             p.nation_position,
             p.nation_jersey_number,
