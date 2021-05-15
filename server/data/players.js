@@ -32,29 +32,29 @@ module.exports = {
      */
     async getPlayersByFilter(
         minAge = 16, maxAge = 53, 
-        minHeight = 155, maxHeight = 206, 
-        minWeight = 50, maxWeight = 110, 
+        // minHeight = 155, maxHeight = 206, 
+        // minWeight = 50, maxWeight = 110, 
         minOverall = 0, maxOverall = 99, 
         minPotential = 0, maxPotential = 99, 
-        minValue = 0, maxValue = 105500000, 
-        minWage = 0, maxWage = 560000, 
-        minInterReputation = 1, maxInterReputation = 5, 
-        minWeakFoot = 1, maxWeakFoot = 5, 
-        minSkillMoves = 1, maxSkillMoves = 5,
+        // minValue = 0, maxValue = 105500000, 
+        // minWage = 0, maxWage = 560000, 
+        // minInterReputation = 1, maxInterReputation = 5, 
+        // minWeakFoot = 1, maxWeakFoot = 5, 
+        // minSkillMoves = 1, maxSkillMoves = 5,
         nationality, clubName, leagueName
     ) {
         const playerCollection = await players();
         let filterArray = [
             {'age': {$gte: minAge, $lte: maxAge}},
-            {'height_cm': {$gte: minHeight, $lte: maxHeight}},
-            {'weight_kg': {$gte: minWeight, $lte: maxWeight}},
+            // {'height_cm': {$gte: minHeight, $lte: maxHeight}},
+            // {'weight_kg': {$gte: minWeight, $lte: maxWeight}},
             {'overall': {$gte: minOverall, $lte: maxOverall}},
             {'potential': {$gte: minPotential, $lte: maxPotential}},
-            {'value_eur': {$gte: minValue, $lte: maxValue}},
-            {'wage_eur': {$gte: minWage, $lte: maxWage}},
-            {'international_reputation': {$gte: minInterReputation, $lte: maxInterReputation}},
-            {'weak_foot': {$gte: minWeakFoot, $lte: maxWeakFoot}},
-            {'skill_moves': {$gte: minSkillMoves, $lte: maxSkillMoves}}
+            // {'value_eur': {$gte: minValue, $lte: maxValue}},
+            // {'wage_eur': {$gte: minWage, $lte: maxWage}},
+            // {'international_reputation': {$gte: minInterReputation, $lte: maxInterReputation}},
+            // {'weak_foot': {$gte: minWeakFoot, $lte: maxWeakFoot}},
+            // {'skill_moves': {$gte: minSkillMoves, $lte: maxSkillMoves}}
         ];
 
         if (nationality !== undefined) {
@@ -69,7 +69,7 @@ module.exports = {
         // filterArray.push({'player_positions': {$all: [playerPositions]}});
         // filterArray.push({'preferred_foot': preferredFoot});
 
-        return await playerCollection.find({ $and: filterArray }).toArray();
+        return await playerCollection.find({ $and: filterArray }).skip(0).limit(5).toArray();
     },
 
     async addPlayer(

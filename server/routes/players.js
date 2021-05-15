@@ -39,4 +39,31 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.post("/", async (req, res) => {
+    console.log("filter route")
+
+    let minAge =  req.body.minAge ? parseInt(req.body.minAge) : 16
+    let maxAge =  req.body.maxAge ? parseInt(req.body.maxAge) : 53
+    let minOverall =  req.body.minOverall ? parseInt(req.body.minOverall) : 0
+    let maxOverall =  req.body.maxOverall ? parseInt(req.body.maxOverall) : 99
+    let minPotential =  req.body.minPotential ? parseInt(req.body.minPotential) : 0
+    let maxPotential =  req.body.maxPotential ? parseInt(req.body.maxPotential) : 99
+
+    try {
+      res.json(
+        await playerData.getPlayersByFilter(
+            minAge,
+            maxAge,
+            minOverall,
+            maxOverall,
+            minPotential,
+            maxPotential
+        )
+      );
+    } catch (e) {
+      console.log(e);
+      res.status(500).json({ error: `Player unable to be added: ` + e });
+    }
+  });
+
 module.exports = router;
