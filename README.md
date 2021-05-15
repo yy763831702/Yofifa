@@ -1,5 +1,8 @@
 # Yofifa
 
+
+requires: GraphicsMagick (installation instructions http://www.graphicsmagick.org/README.html)
+
 YoFifa
 
 Project Member
