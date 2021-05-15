@@ -7,6 +7,7 @@ import Landing from './Landing';
 import Navigation from './Navigation';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
+import CreatePlayer from './CreatePlayer';
 import { AuthProvider } from '../firebase/Auth';
 import PrivateRoute from './PrivateRoute';
 function App() {
@@ -20,6 +21,7 @@ function App() {
         </div>
         <Route exact path="/" component={Landing} />
         <PrivateRoute path="/home" component={Home} />
+        <PrivateRoute path="/createplayer" component={CreatePlayer} />
         <PrivateRoute path="/account" component={Account} />
         <Route path="/signin" component={SignIn} />
         <Route path="/signup" component={SignUp} />

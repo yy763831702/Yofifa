@@ -24,6 +24,11 @@ const NavigationAuth = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink exact to="/createplayer" activeClassName="active">
+            Create Player
+          </NavLink>
+        </li>
+        <li>
           <NavLink exact to="/account" activeClassName="active">
             Account
           </NavLink>
