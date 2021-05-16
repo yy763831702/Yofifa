@@ -51,8 +51,8 @@ const NavigationNonAuth = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/search" activeClassName="active">
-            Search
+          <NavLink exact to="/players" activeClassName="active">
+            Players
           </NavLink>
         </li>
         <li>
