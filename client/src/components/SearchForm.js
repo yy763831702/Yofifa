@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Select from 'react-select'
-import { CountryRegionData } from 'react-country-region-selector';
+// import Select from 'react-select'
+// import { CountryRegionData } from 'react-country-region-selector';
 
-const Search = (props) => {
+const SearchForm = (props) => {
     const [searchTerm, setSearchTerm] = useState(undefined)
     // console.log(searchTerm, 'change state succeed')
     let allSearchTerm = {}
@@ -27,9 +27,9 @@ const Search = (props) => {
     // ]
 
     const country = []
-    CountryRegionData.map((e) => {
-        country.push({value: e[0], label: e[0], term: 'continents'})
-    })
+    // CountryRegionData.map((e) => {
+    //     country.push({value: e[0], label: e[0], term: 'continents'})
+    // })
 
     const handleChange = (e) => {
         allSearchTerm[e.term] = e.value
@@ -59,7 +59,7 @@ const Search = (props) => {
 			        }}
 			        name='formName'>
                     <h5>Search</h5>
-                    <Select options={country} placeholder='Nationality/Region' onChange={handleChange}/>
+                    {/* <Select options={country} placeholder='Nationality/Region' onChange={handleChange}/> */}
                     <br/>
                     <div>
                         <label className='age'>Age</label>
@@ -83,4 +83,4 @@ const Search = (props) => {
     )
 }
 
-export default Search
+export default SearchForm;
