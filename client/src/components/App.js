@@ -10,8 +10,8 @@ import SignUp from './SignUp';
 import CreatePlayer from './CreatePlayer';
 import { AuthProvider } from '../firebase/Auth';
 import PrivateRoute from './PrivateRoute';
-import Search from './Search'
-import PlayerList from './Playerlist';
+// import Search from './Search'
+import PlayerList from './PlayerList';
 function App() {
   return (
     <AuthProvider>
