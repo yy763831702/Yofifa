@@ -11,7 +11,7 @@ import CreatePlayer from './CreatePlayer';
 import { AuthProvider } from '../firebase/Auth';
 import PrivateRoute from './PrivateRoute';
 import Search from './Search'
-import Players from './Players';
+import PlayerList from './Playerlist';
 function App() {
   return (
     <AuthProvider>
@@ -23,7 +23,7 @@ function App() {
         </div>
         <Route exact path="/" component={Landing} />
         {/* <Route path='/search' component={Search} /> */}
-        <Route path='/search' component={Players} />
+        <Route path='/players' component={PlayerList} />
         <PrivateRoute path="/home" component={Home} />
         <PrivateRoute path="/createplayer" component={CreatePlayer} />
         <PrivateRoute path="/account" component={Account} />
