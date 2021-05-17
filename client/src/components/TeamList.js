@@ -50,12 +50,12 @@ const TeamList = () => {
                             <div>{team_name}</div>
                         </Link>
                         {league_id !== 0 ? 
-                            <Link to={`/league/${league_id}`} >
+                            // <Link to={`/league/${league_id}`} >
                                 <div className='table-td-info-div'>
                                     <span><img src={`https://cdn.sofifa.com/flags/${league_nation_code}.png`} alt={_id} /></span>
                                     <span className='table-td-info-span'>{league}</span>
                                 </div>
-                            </Link>
+                            // </Link>
                         :
                             <div className='table-td-info-div'>
                                 <span><img src={`https://cdn.sofifa.com/flags/${league_nation_code}.png`} alt={_id} /></span>
