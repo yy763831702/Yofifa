@@ -13,8 +13,8 @@ const Table = (props) => {
         try {
             const url = `http://localhost:3008/teams/${props.id}/${name}`;
             const { data } = await axios.get(url);
-            console.log(data.team_name);
-            history.push({ pathname: `/team/${data._id}` });
+            console.log('team id:', data._id, 'name:', data.team_name);
+            // history.push({ pathname: `/team/${data._id}` });
         } catch (error) {
             console.log(error);
         }
