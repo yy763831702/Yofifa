@@ -23,6 +23,23 @@ const NavigationAuth = () => {
             Home
           </NavLink>
         </li>
+        
+        <li>
+          <NavLink exact to="/players" activeClassName="active">
+            Players
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/teams" activeClassName="active">
+            Teams
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/standings/39" activeClassName="active">
+            Standings
+          </NavLink>
+        </li>
+
         <li>
           <NavLink exact to="/createplayer" activeClassName="active">
             Create Player
@@ -55,6 +72,17 @@ const NavigationNonAuth = () => {
             Players
           </NavLink>
         </li>
+        <li>
+          <NavLink exact to="/teams" activeClassName="active">
+            Teams
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/standings/39" activeClassName="active">
+            Standings
+          </NavLink>
+        </li>
+
         <li>
           <NavLink exact to="/signup" activeClassName="active">
             Sign-up
