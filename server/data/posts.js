@@ -15,6 +15,15 @@ module.exports = {
     if (!post) throw 'Post not found';
     return post;
   },
+  async getPostsByUser(author) {
+    if (!author) throw "You must provide an author id";
+    if (typeof author !== "string") throw "author id must be of type string";
+    const postCollection = await posts();
+    const userPosts = await postCollection
+      .find({ author: author })
+      .toArray();
+    return userPosts;
+  },
   async addPost(author, commonName, firstName, lastName, potential, rating) {
 
 

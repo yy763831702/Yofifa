@@ -16,7 +16,7 @@ const upload = multer({dest: "./img/"});
 // and if it is an image, run it through graphicsmagick to compress it and rename it,
 // then save it with the associated post's ID as the filename.
 // Modified from: https://stackoverflow.com/a/15773267
-router.post("/:id", upload.any(), async (req, res) => {
+router.post("/:userId/:id", upload.any(), async (req, res) => {
     if (!req.files[0]) {
         console.log("ERROR: No image file");
         res.status(400).json({ error: "No image in reqest" });
@@ -28,6 +28,7 @@ router.post("/:id", upload.any(), async (req, res) => {
     let originalFile = req.files[0];
     const tempPath = originalFile.path;
     const postId = req.params.id;
+    const userId = req.params.userId;
     const fileExtension = path.extname(originalFile.originalname).toLowerCase();
     const targetPath = path.join(__dirname, `./../img/${postId}`);
 

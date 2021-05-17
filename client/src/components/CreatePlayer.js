@@ -45,7 +45,7 @@ function CreatePlayer() {
     // let postId = data._id;
     if (image !== "empty") {
       console.log("IMAGE DETECTED");
-      const { imageResult } = await API.post("/images/" + data._id, image, {
+      const { imageResult } = await API.post("/images/" + currentUser.uid +'/'+ data._id, image, {
         headers: {
           "Content-Type": "multipart/form-data, boundary=${form._boundary}",
         },
@@ -62,7 +62,9 @@ function CreatePlayer() {
     console.log(postData);
     if (postData && postData._id)
       if (!alert("Your post has been added.")) {
-        return <Redirect to={"/post/" + postData._id} />;
+        console.log("yeah")
+        return <Redirect to={`/posts/users/${currentUser.uid}`} />;
+        console.log("yeah")
       }
     else alert("Could not add post, please try again");
   }
