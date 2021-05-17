@@ -5,7 +5,7 @@ const userData = data.users;
 
 router.get('/:id', async (req, res) => {
   try {
-      const id = parseInt(req.params.id);
+      const id = req.params.id;
       const user = await userData.getUserById(id);
       res.json(user);
   } catch (e) {
