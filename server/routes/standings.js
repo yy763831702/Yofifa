@@ -6,10 +6,10 @@ const client = redis.createClient();
 
 router.get('/:id', async (req, res) => {
     try {
-        // const cacheForStandings = await client.get(`standings${req.params.id}`);
-        // if (cacheForStandings) {
-        //     return res.send(cacheForStandings);
-        // }
+        const cacheForStandings = await client.get(`standings${req.params.id}`);
+        if (cacheForStandings) {
+            return res.send(cacheForStandings);
+        }
 
         const apiKey = '1f74c8dcdef29d20f55ebd7803ec65e0';
         const requestOptions = {
@@ -30,9 +30,9 @@ router.get('/:id', async (req, res) => {
         } else {
             url = `https://v3.football.api-sports.io/standings?league=${req.params.id}&season=2020`;
         }
-        const { data } = await axios.get(url, requestOptions);
+        const { data: { response: [data] } } = await axios.get(url, requestOptions);
         // await client.set(`standings${req.params.id}`, JSON.stringify(data), 'EX', 60 * 60 * 24);
-        // await client.set(`standings${req.params.id}`, JSON.stringify(data));
+        await client.set(`standings${req.params.id}`, JSON.stringify(data));
         console.log(data)
         res.json(data);
     } catch (e) {
