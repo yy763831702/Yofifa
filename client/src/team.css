@@ -1,180 +1,223 @@
 .t-map {
-    position: relative;
-    width: 600px;
-    height: 480px;
-    background: transparent url('https://cdn.sofifa.com/img/field.png') no-repeat scroll center top;
-    background-size: cover;
+  position: relative;
+  width: 45%;
+  height: 480px;
+  background: transparent url('https://cdn.sofifa.com/img/field.png') no-repeat
+    scroll center top;
+  background-size: cover;
+  float: right;
+}
+.Team_header {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 66%;
+  margin: 0 auto 20px;
+  text-align: center;
+  float: right;
+}
+.team--Infor-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  width: 20%;
+  text-align: left;
+  float: right;
 }
 
 @media screen and (max-width: 600px) {
-    .t-map {
-        width: 100%;
-        height: calc(100vw * 0.8);
-    }
+  .t-map {
+    width: 100%;
+    height: calc(100vw * 0.8);
+  }
 }
 
-.t-LS, .t-RS, .t-ST, .t-LW, .t-RW, .t-CF, .t-LF, .t-RF, 
-.t-LM, .t-RM, .t-CAM, .t-LAM, .t-RAM, .t-CM, .t-LCM, .t-RCM, .t-CDM, .t-LDM, .t-RDM, 
-.t-LB, .t-RB, .t-LWB, .t-RWB, .t-CB, .t-LCB, .t-RCB, 
+.holder {
+  width: 88%;
+}
+
+.t-LS,
+.t-RS,
+.t-ST,
+.t-LW,
+.t-RW,
+.t-CF,
+.t-LF,
+.t-RF,
+.t-LM,
+.t-RM,
+.t-CAM,
+.t-LAM,
+.t-RAM,
+.t-CM,
+.t-LCM,
+.t-RCM,
+.t-CDM,
+.t-LDM,
+.t-RDM,
+.t-LB,
+.t-RB,
+.t-LWB,
+.t-RWB,
+.t-CB,
+.t-LCB,
+.t-RCB,
 .t-GK {
-    position: absolute;
+  position: absolute;
 }
 
 .t-LS {
-    top: 0;
-    left: 24%;
+  top: 0;
+  left: 24%;
 }
 .t-RS {
-    top: 0;
-    right: 24%;
+  top: 0;
+  right: 24%;
 }
 .t-ST {
-    top: 0;
-    left: calc(50% - 150px / 2);
+  top: 0;
+  left: calc(50% - 150px / 2);
 }
 .t-LW {
-    top: 7%;
-    left: 4%;
+  top: 7%;
+  left: 4%;
 }
 .t-RW {
-    top: 7%;
-    right: 4%;
+  top: 7%;
+  right: 4%;
 }
 .t-CF {
-    top: 12%;
-    left: calc(50% - 150px / 2);
+  top: 12%;
+  left: calc(50% - 150px / 2);
 }
 .t-LF {
-    top: 12%;
-    left: 24%;
+  top: 12%;
+  left: 24%;
 }
 .t-RF {
-    top: 12%;
-    right: 24%;
+  top: 12%;
+  right: 24%;
 }
 .t-LM {
-    top: 24%;
-    left: 4%;
+  top: 24%;
+  left: 4%;
 }
 .t-RM {
-    top: 24%;
-    right: 4%;
+  top: 24%;
+  right: 4%;
 }
 .t-CAM {
-    top: 24%;
-    left: calc(50% - 150px / 2);
+  top: 24%;
+  left: calc(50% - 150px / 2);
 }
 .t-LAM {
-    top: 24%;
-    left: 24%;
+  top: 24%;
+  left: 24%;
 }
 .t-RAM {
-    top: 24%;
-    right: 24%;
+  top: 24%;
+  right: 24%;
 }
 .t-CM {
-    bottom: 55%;
-    left: calc(50% - 150px / 2);
+  bottom: 55%;
+  left: calc(50% - 150px / 2);
 }
 .t-LCM {
-    bottom: 55%;
-    left: 24%;
+  bottom: 55%;
+  left: 24%;
 }
 .t-RCM {
-    bottom: 55%;
-    right: 24%;
+  bottom: 55%;
+  right: 24%;
 }
 .t-CDM {
-    bottom: 38%;
-    left: calc(50% - 150px / 2);
+  bottom: 38%;
+  left: calc(50% - 150px / 2);
 }
 .t-LDM {
-    bottom: 38%;
-    left: 24%;
+  bottom: 38%;
+  left: 24%;
 }
 .t-RDM {
-    bottom: 38%;
-    right: 24%;
+  bottom: 38%;
+  right: 24%;
 }
 .t-LWB {
-    bottom: 45%;
-    left: 4%;
+  bottom: 45%;
+  left: 4%;
 }
-.t-RWB{
-    bottom: 45%;
-    right: 4%;
+.t-RWB {
+  bottom: 45%;
+  right: 4%;
 }
 .t-LB {
-    bottom: 26%;
-    left: 4%;
+  bottom: 26%;
+  left: 4%;
 }
 .t-RB {
-    bottom: 26%;
-    right: 4%;
+  bottom: 26%;
+  right: 4%;
 }
 .t-CB {
-    bottom: 17%;
-    left: calc(50% - 150px / 2);
+  bottom: 17%;
+  left: calc(50% - 150px / 2);
 }
 .t-LCB {
-    bottom: 22%;
-    left: 24%;
+  bottom: 22%;
+  left: 24%;
 }
 .t-RCB {
-    bottom: 22%;
-    right: 24%;
+  bottom: 22%;
+  right: 24%;
 }
 .t-GK {
-    bottom: 2%;
-    left: calc(50% - 150px / 2);
+  bottom: 2%;
+  left: calc(50% - 150px / 2);
 }
 
 /********/
 
 .team-card-section {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .team-card {
-    margin: 0.8rem;
-    padding: 0.6rem 1rem 0;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 1%);
+  margin: 0.8rem;
+  padding: 0.6rem 1rem 0;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 1%);
 }
 
 .team-card h2 {
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-block-start: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-block-start: 0;
 }
 .team-card h3 {
-    text-transform: capitalize;
-    font-size: 1rem;
-    font-weight: 400;  
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .team-lineup-img {
-    position: relative;
-    width: 60px;
-    display: block;
-    margin-left: 45px;
-    z-index: 1;
+  position: relative;
+  width: 60px;
+  display: block;
+  margin-left: 45px;
+  z-index: 1;
 }
 .team-lineup-div {
-    width: 150px;
-    background-color: rgba(0, 0, 0, 0.9);
-    opacity: 0.9;
-    color: #ffffff;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.9;
+  color: #ffffff;
 }
 .team-lineup-link {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 .team-lineup-number {
-    padding: 5px;
+  padding: 5px;
 }
 .team-lineup-name {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
