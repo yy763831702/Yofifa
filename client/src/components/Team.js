@@ -121,23 +121,23 @@ const Team = (props) => {
         return (
             <div>
                 <div>Data come from <a href={team_url}>Sofifa.com</a></div>
-                <img src={team_img} alt={_id} />
-                <div>
-                    <h1>{team_name}</h1>
-                    <img width='30px' src={`https://media.api-sports.io/flags/${league_nation_code}.svg`} alt={league_nation_code}/>
-                    {league_id !== 0 ? <Link to={`/standings/${league_id}`}>{league}</Link> : <span>{league}</span>}
-                </div>
-                <div>
-                    <span className={`p-${overall}`}>{overall}</span>overall
-                    <span className={`p-${attack}`}>{attack}</span>attack
-                    <span className={`p-${midfield}`}>{midfield}</span>midfield
-                    <span className={`p-${defence}`}>{defence}</span>defence
-                </div>
-
-                <hr />
-
-                <section className='team-card-section'>
-                    <div className='team-card'>
+                <div className='holder'>
+                    <div className='Team_header'> 
+                        <img src={team_img} alt={_id} />
+                        <div>
+                            <h1>{team_name}</h1>
+                            <img width='30px' src={`https://media.api-sports.io/flags/${league_nation_code}.svg`} alt={league_nation_code}/>
+                            {league_id !== 0 ? <Link to={`/standings/${league_id}`}>{league}</Link> : <span>{league}</span>}
+                        </div>
+                        <div>
+                            <span className={`p-${overall}`}>{overall}</span>overall
+                            <span className={`p-${attack}`}>{attack}</span>attack
+                            <span className={`p-${midfield}`}>{midfield}</span>midfield
+                            <span className={`p-${defence}`}>{defence}</span>defence
+                        </div>
+                    </div>
+                    <div className={`t-map`}>{lineUpMap}</div>
+                    <div className='team--Infor-card'>
                         <h2>Information</h2>
                         <div>international prestige: {international_prestige}</div>
                         <div>domestic prestige: {domestic_prestige}</div>
@@ -145,6 +145,14 @@ const Team = (props) => {
                         <div>starting XI Average Age: {startingXIAverAge}</div>
                         <div>whole Team Average Age: {wholeTeamAverAge}</div>
                     </div>
+                </div>
+                
+                
+
+                <hr />
+
+                <section className='team-card-section'>
+                    
                     <div className='team-card'>
                         <h2>Tactics</h2>
                         <h3>defensive style: {defensive_style}</h3>
@@ -170,7 +178,7 @@ const Team = (props) => {
                     }
                 </section>
 
-                <div className={`t-map`}>{lineUpMap}</div>
+                
 
                 <table>
                     <thead>
