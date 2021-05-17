@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+
 import '../App.css';
+import '../team.css';
 
 const Team = (props) => {
     const [ teamData, setTeamData ] = useState(undefined);
