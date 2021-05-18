@@ -48,7 +48,7 @@ const Standings = (props) => {
         return (
             <div>
                 <div className='standings-select'>
-                    <label htmlFor='select'>Select League:</label>
+                    <label className='standings-label' htmlFor='select'>Select League:</label>
                     <div>
                         <select id='select' onChange={handlechange}>
                             <optgroup label='Top 5'>
