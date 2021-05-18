@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import CardGroup from 'react-bootstrap/CardGroup'
 import { Link } from 'react-router-dom';
-
+import {
+    Grid,
+    Card,
+    CardContent
+  } from '@material-ui/core';
+import 'font-awesome/css/font-awesome.min.css';
 import '../App.css';
 import '../player.css';
-
+import StarRatings from 'react-star-ratings';
 import Canvas from './Canvas';
 
 const Player = (props) => {
@@ -71,24 +77,10 @@ const Player = (props) => {
             goalkeeping_reflexes
         ) / 5;
         return (
-            <div>
-                <h1>{short_name}</h1>
-                Data come from<a href={player_url}>Sofifa.com</a>
-
-                <div>
-                    <img src={player_img_url} alt={_id} />
-                    <span>
-                        {long_name}
-                        <img width='30px' src={`https://cdn.sofifa.com/flags/${nation_code}.png`} alt={nation_code} />
-                        {positions} {age} years old ({dob}) {height_cm}cm {weight_kg}kg
-                        <div>overall rating: <span className={`p-${overall}`}>{overall}</span></div>
-                        <div>potential: <span className={`p-${potential}`}>{potential}</span></div>
-                        <div>value: {value_eur}</div>
-                        <div>wage per week: {wage_eur}</div>
-                    </span>
-                </div>
-
-                <section className='p-map'>
+            <section class="indent-1">
+  
+            <section>
+            <section className='p-map'>
                     <div></div>
                     <div className={`p-${ls.substring(0, 2)}`}>ls<br />{ls}</div>
                     <div className={`p-${st.substring(0, 2)}`}>st<br />{st}</div>
@@ -135,7 +127,9 @@ const Player = (props) => {
                     <div></div>
                     <div></div>
                 </section>
-                <section>
+
+                
+                <div>
                     {player_positions[0] === 'GK' ? 
                         <Canvas
                             isgk={1}
@@ -156,17 +150,63 @@ const Player = (props) => {
                             topright={shooting}
                         />
                     }
-                </section>
+                    </div>
+            </section>
 
-                <hr />
-
-                <div className='player-card-section'>
+  
+            <section>
+                <div>
+                    <Card className="cards">
+                        <CardContent>
+                        <div className = "row">
+                            <div className = "columnHeader">
+                                <img src={player_img_url} alt={_id} />
+                            </div>
+                            <div className = "columnHeader " >
+                                <h1>{long_name}</h1>
+                                <img width='30px' src={`https://cdn.sofifa.com/flags/${nation_code}.png`} alt={nation_code} />
+                                {positions} {age} years old ({dob}) {height_cm}cm {weight_kg}kg
+                            </div>
+                        </div>
+                        <div className = "row">
+                        <div className = "column"><div><span className={`p-${overall}`}>{overall}</span></div>overall rating</div>
+                        <div className = "column"><div><span className={`p-${potential}`}>{potential}</span></div>potential</div>
+                        <div className = "column" ><div>{value_eur}</div>value</div>
+                        <div className = "column"><div>{wage_eur}</div>wage</div>
+                        </div>
+                        </CardContent>
+                    </Card>
+                </div>
+                
+                <div>
+                    <CardGroup className='cardGroup'>
                     <div className='player-card'>
                         <h4>profile</h4>
                         <div>preferred foot: {preferred_foot}</div>
-                        <div>international reputation: {international_reputation}</div>
-                        <div>weak foot: {weak_foot}</div>
-                        <div>skill moves: {skill_moves}</div>
+                        <div>international reputation: 
+                        <StarRatings
+                            rating={international_reputation}
+                            starRatedColor="orange"
+                            name='rating'
+                            starDimension="15px"
+                            starSpacing="1px"
+                        /></div>
+                        <div>weak foot: 
+                        <StarRatings
+                            rating={weak_foot}
+                            starRatedColor="orange"
+                            name='rating'
+                            starDimension="15px"
+                            starSpacing="1px"
+                        /></div>
+                        <div>skill moves: 
+                            <StarRatings
+                            rating={skill_moves}
+                            starRatedColor="orange"
+                            name='rating'
+                            starDimension="15px"
+                            starSpacing="1px"
+                        /></div>
                         <div>work rate: {work_rate}</div>
                         <div>release clause: {release_clause_eur}</div>
                     </div>
@@ -205,12 +245,15 @@ const Player = (props) => {
                             <div>jersey number: {nation_jersey_number}</div>
                         </div>
                     }
+                    </CardGroup>
                 </div>
+                </section>
 
-                <hr />
-
-                <div className='player-ability'>
-                    <div className='player-ability-card'>
+  
+            <section >
+                <Grid container className="grid" spacing={5}>
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <div className='player-ability-card'>
                         <h5>Attacking</h5>
                         <ul>
                             <li>
@@ -235,7 +278,9 @@ const Player = (props) => {
                             </li>
                         </ul>
                     </div>
-                    <div className='player-ability-card'>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <div className='player-ability-card'>
                         <h5>Skill</h5>
                         <ul>
                             <li>
@@ -260,8 +305,10 @@ const Player = (props) => {
                             </li>
                         </ul>
                     </div>
-                    <div className='player-ability-card'>
-                        <h5>Movement</h5>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <div className='player-ability-card'>
+                <h5>Movement</h5>
                         <ul>
                             <li>
                                 <span className={`p-${movement_acceleration}`}>{movement_acceleration}</span>
@@ -285,8 +332,11 @@ const Player = (props) => {
                             </li>
                         </ul>
                     </div>
-                    <div className='player-ability-card'>
-                        <h5>Power</h5>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <div className='player-ability-card'>
+                <h5>Power</h5>
                         <ul>
                             <li>
                                 <span className={`p-${power_shot_power}`}>{power_shot_power}</span>
@@ -310,8 +360,11 @@ const Player = (props) => {
                             </li>
                         </ul>
                     </div>
-                    <div className='player-ability-card'>
-                        <h5>Mentality</h5>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <div className='player-ability-card'>
+                <h5>Mentality</h5>
                         <ul>
                             <li>
                                 <span className={`p-${mentality_aggression}`}>{mentality_aggression}</span>
@@ -339,8 +392,11 @@ const Player = (props) => {
                             </li>
                         </ul>
                     </div>
-                    <div className='player-ability-card'>
-                        <h5>Defending</h5>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <div className='player-ability-card'>
+                <h5>Defending</h5>
                         <ul>
                             <li>
                                 <span className={`p-${defending_standing_tackle}`}>{defending_standing_tackle}</span>
@@ -352,8 +408,11 @@ const Player = (props) => {
                             </li>
                         </ul>
                     </div>
-                    <div className='player-ability-card'>
-                        <h5>Goalkeeping</h5>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <div className='player-ability-card'>
+                <h5>Goalkeeping</h5>
                         <ul>
                             <li>
                                 <span className={`p-${goalkeeping_diving}`}>{goalkeeping_diving}</span>
@@ -377,14 +436,21 @@ const Player = (props) => {
                             </li>
                         </ul>
                     </div>
-                    {player_traits.length > 1 && 
+                </Grid>
+
+                {player_traits.length > 1 && 
+                         <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
                         <div className='player-ability-card'>
                             <h5>Traits</h5>
                             <ul>{traits}</ul>
                         </div>
+                        </Grid>
                     }
-                </div>
-            </div>
+                </Grid>
+            </section>
+
+            
+            </section>  
         );
     }
 };
