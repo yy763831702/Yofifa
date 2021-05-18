@@ -49,6 +49,7 @@ router.get('/', async (req, res) => {
 		let maxPotential =  result.maxPotential ? parseInt(result.maxPotential) : 99
 		// let nationality = result.continents ? countryCode : undefined
 		let nationality
+		let leagueName = result.league ? result.league.replace(/%20/g, ' ') : undefined
 		const findCountryCode = (country) => {
 			for(let item in countryCode) {
 				if(countryCode[item].Code == result.continents) {
@@ -67,7 +68,8 @@ router.get('/', async (req, res) => {
 				maxOverall,
 				minPotential,
 				maxPotential,
-				nationality
+				nationality,
+				leagueName
 			)
 		);
 		} catch (e) {
