@@ -1,43 +1,37 @@
 import React, { useState, useEffect } from 'react';
-// import Select from 'react-select'
-// import { CountryRegionData } from 'react-country-region-selector';
+import Select from 'react-select'
+import { CountryRegionData } from 'react-country-region-selector';
 
 const SearchForm = (props) => {
     const [searchTerm, setSearchTerm] = useState(undefined)
     // console.log(searchTerm, 'change state succeed')
     let allSearchTerm = {}
 
-    // const type = [
-    //     {value: 'all players', label: 'All Players', term: 'type'},
-    //     {value: 'added players', label: 'Added Players', term: 'type'},
-    //     {value: 'updated players', label: 'Updated Players', term: 'type'},
-    //     {value: 'free players', label: 'Free Players', term: 'type'},
-    //     {value: 'on loan players', label: 'On Loan Players', term: 'type'},
-    //     {value: 'removed players', label: 'Removed Players', term: 'type'},
-    //     {value: 'customized players', label: 'Customized Players', term: 'type'}
-    // ]
-
-    // const continents = [
-    //     {value: 'europe', label: 'Europe', term: 'continents'},
-    //     {value: 'south america', label: 'South America', term: 'continents'},
-    //     {value: 'north america', label: 'North America', term: 'continents'},
-    //     {value: 'africa', label: 'Africa', term: 'continents'},
-    //     {value: 'asia', label: 'Asia', term: 'continents'},
-    //     {value: 'oceania', label: 'Oceania', term: 'continents'}
-    // ]
-
     const country = []
-    // CountryRegionData.map((e) => {
-    //     country.push({value: e[0], label: e[0], term: 'continents'})
-    // })
+    CountryRegionData.map((e) => {
+        country.push({value: e[1], label: e[0], term: 'continents'})
+    })
 
     const handleChange = (e) => {
         allSearchTerm[e.term] = e.value
-        console.log(allSearchTerm, 'curState in search component')
+        // console.log(allSearchTerm, 'curState in search component')
+    }
+
+    const setUrl = (obj) => {
+        if(JSON.stringify(obj) == "{}") return ''
+        let queryString = ''
+        for(let key in obj) {
+            queryString += '&' + key + '=' + obj[key]
+        }
+        return queryString
     }
 
     const handleSubmit = () => {
         let updateSearchTerm = {...searchTerm, ...allSearchTerm}
+        let newStr = setUrl(updateSearchTerm).substring(1)
+        console.log(`http://localhost:3000/players?${newStr}`)
+        window.location.search = newStr
+        // props.history.push(`http://localhost:3000/players?${newStr}`)
         props.searchValue(updateSearchTerm);
     }
 
@@ -59,7 +53,7 @@ const SearchForm = (props) => {
 			        }}
 			        name='formName'>
                     <h5>Search</h5>
-                    {/* <Select options={country} placeholder='Nationality/Region' onChange={handleChange}/> */}
+                    <Select options={country} placeholder='Nationality/Region' onChange={handleChange}/>
                     <br/>
                     <div>
                         <label className='age'>Age</label>
