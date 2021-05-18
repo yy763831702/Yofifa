@@ -42,6 +42,7 @@ module.exports = {
         minOverall = 0, maxOverall = 99, 
         minAttack = 16, maxAttack= 53,
         minDefence = 0, maxDefence = 99,
+        minMidfield = 0, maxMidfield = 99,
         leagueName, nationality
     ) {
         const teamCollection = await teams();
@@ -49,6 +50,7 @@ module.exports = {
             {'overall': {$gte: minOverall, $lte: maxOverall}},
             {'attack': {$gte: minAttack, $lte: maxAttack}},
             {'defence': {$gte: minDefence, $lte: maxDefence}},
+            {'midfield': {$gte: minMidfield, $lte: maxMidfield}}
         ];
 
         if (leagueName !== undefined) {

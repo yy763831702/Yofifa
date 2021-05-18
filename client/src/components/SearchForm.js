@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select'
+import { Link } from "react-router-dom";
 import { CountryRegionData } from 'react-country-region-selector';
 
 const SearchForm = (props) => {
@@ -126,13 +127,6 @@ const SearchForm = (props) => {
                         method='POST'
                         onSubmit={async(e) => {
                             e.preventDefault();
-                            let updateSearchTerm = {...searchTerm, ...allSearchTerm}
-                            console.log(updateSearchTerm, 'updateSearchTerm')
-                            setSearchTerm(updateSearchTerm)
-                            // if(JSON.stringify(allSearchTerm) !== "{}") {
-                            //     setSearchTerm(allSearchTerm)
-                            // }
-                            handleSubmit()
                         }}
                         name='formName'>
                         <h5>Search</h5>
@@ -155,7 +149,17 @@ const SearchForm = (props) => {
                             <input className='minPotential' type='number' name='minPotential' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minPotential = e.target.value}}/>
                             <input className='maxPotential' type='number' name='maxPotential' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxPotential = e.target.value}}/>
                         </div>
-                        <button className='search-button' type='submit'>Submit</button>
+                        <button className='search-button' type='submit' onClick={(e)=>{
+                            let updateSearchTerm = {...searchTerm, ...allSearchTerm}
+                            setSearchTerm(updateSearchTerm)
+                            handleSubmit()
+                        }}>Submit</button>
+                        <Link to="/players">
+                            <button className='search-button' type='submit' onClick={(e)=>{
+                                setSearchTerm(undefined)
+                                handleSubmit()
+                            }}>Reset</button>
+                        </Link>
                     </form>
                 </div>
             </div>
@@ -169,10 +173,6 @@ const SearchForm = (props) => {
                         method='POST'
                         onSubmit={async(e) => {
                             e.preventDefault();
-                            let updateSearchTerm = {...searchTerm, ...allSearchTerm}
-                            console.log(updateSearchTerm, 'updateSearchTerm')
-                            setSearchTerm(updateSearchTerm)
-                            handleSubmit()
                         }}
                         name='formName'>
                         <h5>Search</h5>
@@ -195,7 +195,22 @@ const SearchForm = (props) => {
                             <input className='minDefence' type='number' name='minDefence' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minDefence = e.target.value}}/>
                             <input className='maxDefence' type='number' name='maxDefence' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxDefence = e.target.value}}/>
                         </div>
-                        <button className='search-button' type='submit'>Submit</button>
+                        <div>
+                            <label className='age'>Midfield</label>
+                            <input className='minMidfield' type='number' name='minMidfield' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minMidfield = e.target.value}}/>
+                            <input className='maxMidfield' type='number' name='maxMidfield' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxMidfield = e.target.value}}/>
+                        </div>
+                        <button className='search-button' type='submit' onClick={(e)=>{
+                            let updateSearchTerm = {...searchTerm, ...allSearchTerm}
+                            setSearchTerm(updateSearchTerm)
+                            handleSubmit()
+                        }}>Submit</button>
+                        <Link to="/teams">
+                            <button className='search-button' type='submit' onClick={(e)=>{
+                                setSearchTerm(undefined)
+                                handleSubmit()
+                            }}>Reset</button>
+                        </Link>
                     </form>
                 </div>
             </div>
