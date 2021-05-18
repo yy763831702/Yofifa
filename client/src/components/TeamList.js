@@ -5,7 +5,7 @@ import { Pagination } from '@material-ui/lab';
 import SearchForm from './SearchForm';
 import '../App.css';
 
-const TeamList = () => {
+const TeamList = (props) => {
     const [ listData, setListData ] = useState(undefined);
     const [ loading, setLoading ] = useState(true);
     const [ searchTerm, setSearchTerm ] = useState('');
@@ -19,10 +19,11 @@ const TeamList = () => {
                 if (searchTerm || JSON.stringify(searchTermFromUrl) !== "{}") {
                     try {
                         console.log('searchTerm', searchTerm);
-                        // const url = `http://localhost:3008/teams${window.location.search}`;
-                        // const { data } = await axios.get(url);
-                        // setListData(data);
-                        // setLoading(false);
+                        const url = `http://localhost:3008/teams${window.location.search}`;
+                        console.log(url)
+                        const { data } = await axios.get(url);
+                        setListData(data);
+                        setLoading(false);
                     } catch (error) {
                         console.log(error);
                     }
@@ -40,7 +41,7 @@ const TeamList = () => {
             };
             fetchData();
         },
-        [ page, take ]
+        [ page, take, searchTerm, props.match.location ]
     );
 
     const getSearchTerm = () => {

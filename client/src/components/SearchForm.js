@@ -8,10 +8,10 @@ const SearchForm = (props) => {
     let allSearchTerm = {}
 
     const leagueCountry = [
-        {league: 'English Premier League', country: 'gb-eng'},
-        {league: 'English League Championship', country: 'gb-eng'},
-        {league: 'English League One', country: 'gb-eng'},
-        {league: 'English League Two', country: 'gb-eng'},
+        {league: 'English Premier League', country: 'gb'},
+        {league: 'English League Championship', country: 'gb'},
+        {league: 'English League One', country: 'gb'},
+        {league: 'English League Two', country: 'gb'},
         {league: 'German 1. Bundesliga', country: 'de'},
         {league: 'German 2. Bundesliga', country: 'de'},
         {league: 'German 3. Bundesliga', country: 'de'},
@@ -32,7 +32,7 @@ const SearchForm = (props) => {
         {league: 'Mexican Liga MX', country: 'mx'},
         {league: 'Czech Republic Gambrinus Liga', country: 'cz'},
         {league: 'Russian Premier League', country: 'ru'},
-        {league: 'Scottish Premiership', country: 'gb-sct'},
+        {league: 'Scottish Premiership', country: 'gb'},
         {league: 'Saudi Abdul L. Jameel League', country: 'sa'},
         {league: 'Austrian Football Bundesliga', country: 'at'},
         {league: 'USA Major League Soccer', country: 'us'},
@@ -60,11 +60,33 @@ const SearchForm = (props) => {
         {league: 'Finnish Veikkausliiga', country: 'fi'},
         {league: 'Venezuelan Primera División', country: 've'},
     ];
+    
+    const find = (code) => {
+        for(let item in CountryRegionData) {
+            if(CountryRegionData[item][1] == code.toUpperCase()) {
+                return CountryRegionData[item][0]
+            }
+        }
+    }
 
     let league = []
     leagueCountry.map((e) => {
         league.push({value: e.league, label: e.league, term: 'league'})
     })
+
+    let countryForLeague = []
+    leagueCountry.map((e) => {
+        let label = find(e.country)
+        countryForLeague.push({value: e.country, label: label, term: 'Nationality/Region'})
+    })
+    let newArr= [];
+    let arrId = [];
+    for(let item of countryForLeague){
+        if(arrId.indexOf(item['value']) == -1){
+            arrId.push(item['value']);
+            newArr.push(item);
+        }
+    }
 
     const country = []
     CountryRegionData.map((e) => {
@@ -93,7 +115,6 @@ const SearchForm = (props) => {
         props.searchValue(updateSearchTerm);
     }
 
-    console.log(props)
     if(props.className == 'playerComponent') {
         return (
             <div className='search-body'>
@@ -153,6 +174,8 @@ const SearchForm = (props) => {
                         }}
                         name='formName'>
                         <h5>Search</h5>
+                        <Select options={newArr} placeholder='Nationality/Region' onChange={handleChange}/>
+                        <br/>
                         <Select options={league} placeholder='League' onChange={handleChange}/>
                         <br/>
                         <div>
