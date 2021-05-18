@@ -16,13 +16,11 @@ const PlayerList = (props) => {
         () => {
             async function fetchData() {
                 const searchTermFromUrl = getSearchTerm()
-                console.log('searchTermFromUrl', searchTermFromUrl);
-                if (searchTerm || searchTermFromUrl) {
+                if (searchTerm || JSON.stringify(searchTermFromUrl) !== "{}") {
                     try {
                         console.log('searchTerm', searchTerm);
                         // query todo!!!!!
                         const url = `http://localhost:3008/players${window.location.search}`;
-                        console.log(url)
                         const { data } = await axios.get(url);
                         setListData(data);
                         setLoading(false);
@@ -33,6 +31,7 @@ const PlayerList = (props) => {
                     try {
                         const skip = (page - 1) * take;
                         const url = `http://localhost:3008/players?skip=${skip}&take=${take}`;
+                        console.log(url)
                         const { data } = await axios.get(url);
                         setListData(data);
                         setLoading(false);

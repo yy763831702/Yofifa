@@ -29,8 +29,7 @@ const SearchForm = (props) => {
     const handleSubmit = () => {
         let updateSearchTerm = {...searchTerm, ...allSearchTerm}
         let newStr = setUrl(updateSearchTerm).substring(1)
-        console.log(`http://localhost:3000/players?${newStr}`)
-        window.location.search = newStr
+        window.history.pushState(null,null,`?${newStr}`)
         // props.history.push(`http://localhost:3000/players?${newStr}`)
         props.searchValue(updateSearchTerm);
     }
