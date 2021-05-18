@@ -7,7 +7,7 @@ import {
     Card,
     CardContent
   } from '@material-ui/core';
-import 'font-awesome/css/font-awesome.min.css';
+// import 'font-awesome/css/font-awesome.min.css';
 import '../App.css';
 import '../player.css';
 import StarRatings from 'react-star-ratings';

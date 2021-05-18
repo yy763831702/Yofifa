@@ -47,34 +47,30 @@ router.get('/', async (req, res) => {
 		let maxOverall =  result.maxOverall ? parseInt(result.maxOverall) : 99
 		let minPotential =  result.minPotential ? parseInt(result.minPotential) : 0
 		let maxPotential =  result.maxPotential ? parseInt(result.maxPotential) : 99
-		// let nationality = result.continents ? countryCode : undefined
 		let nationality
 		let leagueName = result.league ? result.league.replace(/%20/g, ' ') : undefined
-		const findCountryCode = (country) => {
-			for(let item in countryCode) {
-				if(countryCode[item].Code == result.continents) {
-					nationality = countryCode[item].Name
-				}
+		for(let item in countryCode) {
+			if(countryCode[item].Code == result.continents) {
+				nationality = countryCode[item].Name
 			}
 		}
-		findCountryCode()
 
 		try {
-		res.json(
-			await playerData.getPlayersByFilter(
-				minAge,
-				maxAge,
-				minOverall,
-				maxOverall,
-				minPotential,
-				maxPotential,
-				nationality,
-				leagueName
-			)
+			res.json(
+				await playerData.getPlayersByFilter(
+					minAge,
+					maxAge,
+					minOverall,
+					maxOverall,
+					minPotential,
+					maxPotential,
+					nationality,
+					leagueName
+				)
 		);
 		} catch (e) {
-		console.log(e);
-		res.status(500).json({ error: `Player unable to be added: ` + e });
+			console.log(e);
+			res.status(500).json({ error: `Player unable to be added: ` + e });
 		}
 	}else {
 		try {

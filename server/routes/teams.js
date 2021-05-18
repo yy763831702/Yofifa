@@ -60,26 +60,30 @@ router.get('/', async (req, res) => {
 		let maxAttack =  result.maxAttack ? parseInt(result.maxAttack) : 99
 		let minDefence =  result.minDefence ? parseInt(result.minDefence) : 0
 		let maxDefence =  result.maxDefence ? parseInt(result.maxDefence) : 99
+		let minMidfield =  result.minMidfield ? parseInt(result.minMidfield) : 0
+		let maxMidfield =  result.maxMidfield ? parseInt(result.maxMidfield) : 99
 		let leagueName = result.league ? result.league.replace(/%20/g, ' ') : undefined
 		let nationality = result.nationality ? result.nationality : undefined
 
 
 		try {
-		res.json(
-			await teamData.getTeamsByFilter(
-				minOverall,
-				maxOverall,
-				minAttack,
-				maxAttack,
-				minDefence,
-				maxDefence,
-				leagueName,
-				nationality
-			)
-		);
+			res.json(
+				await teamData.getTeamsByFilter(
+					minOverall,
+					maxOverall,
+					minAttack,
+					maxAttack,
+					minDefence,
+					maxDefence,
+					minMidfield,
+					maxMidfield,
+					leagueName,
+					nationality
+				)
+			);
 		} catch (e) {
-		console.log(e);
-		res.status(500).json({ error: `Player unable to be added: ` + e });
+			console.log(e);
+			res.status(500).json({ error: `Player unable to be added: ` + e });
 		}
 	}else {
 		try {
