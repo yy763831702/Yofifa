@@ -8,10 +8,10 @@ const SearchForm = (props) => {
     let allSearchTerm = {}
 
     const leagueCountry = [
-        {league: 'English Premier League', country: 'gb'},
-        {league: 'English League Championship', country: 'gb'},
-        {league: 'English League One', country: 'gb'},
-        {league: 'English League Two', country: 'gb'},
+        {league: 'English Premier League', country: 'gb-eng'},
+        {league: 'English League Championship', country: 'gb-eng'},
+        {league: 'English League One', country: 'gb-eng'},
+        {league: 'English League Two', country: 'gb-eng'},
         {league: 'German 1. Bundesliga', country: 'de'},
         {league: 'German 2. Bundesliga', country: 'de'},
         {league: 'German 3. Bundesliga', country: 'de'},
@@ -32,7 +32,7 @@ const SearchForm = (props) => {
         {league: 'Mexican Liga MX', country: 'mx'},
         {league: 'Czech Republic Gambrinus Liga', country: 'cz'},
         {league: 'Russian Premier League', country: 'ru'},
-        {league: 'Scottish Premiership', country: 'gb'},
+        {league: 'Scottish Premiership', country: 'gb-sct'},
         {league: 'Saudi Abdul L. Jameel League', country: 'sa'},
         {league: 'Austrian Football Bundesliga', country: 'at'},
         {league: 'USA Major League Soccer', country: 'us'},
@@ -63,7 +63,7 @@ const SearchForm = (props) => {
     
     const find = (code) => {
         for(let item in CountryRegionData) {
-            if(CountryRegionData[item][1] == code.toUpperCase()) {
+            if(CountryRegionData[item][1] == code.substring(0,2).toUpperCase()) {
                 return CountryRegionData[item][0]
             }
         }
@@ -77,7 +77,7 @@ const SearchForm = (props) => {
     let countryForLeague = []
     leagueCountry.map((e) => {
         let label = find(e.country)
-        countryForLeague.push({value: e.country, label: label, term: 'Nationality/Region'})
+        countryForLeague.push({value: e.country, label: label, term: 'nationality'})
     })
     let newArr= [];
     let arrId = [];
@@ -87,6 +87,8 @@ const SearchForm = (props) => {
             newArr.push(item);
         }
     }
+    newArr[0].label = 'England'
+    newArr[16].label = 'Scotland'
 
     const country = []
     CountryRegionData.map((e) => {
