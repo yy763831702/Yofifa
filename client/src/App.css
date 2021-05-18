@@ -15,8 +15,7 @@
 
 .App-header {
 	background-color: #282c34;
-	height: 150px;
-	padding: 20px;
+	padding: 10px;
 	color: white;
 }
 
@@ -38,9 +37,15 @@
 }
 
 .navigation ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+    	display: flex;
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+}
+
+.navigation li {
+    	text-align: center;
+    	flex-grow: 1;
 }
 
 .navigation a:link,
@@ -123,9 +128,70 @@ span.pos {
 }
 
 /********************* news **********************/
-.newslink {
-    text-decoration: none;
+.news-select {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 380px) {
+    .news-label {
+        display: none;
+    }
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news-card {
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 400px;
+    height: 100%;
+    border-radius: 20px;
+}
+.news-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.news-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.news-card-container {
+    padding: 2px 16px;
+}
+.news-card-container h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-block-start: 0;
+}
+.news-card-container em {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-card-anchor {
     color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.news-card-anchor:hover {
+    color: #555555;
+}
+
+.news-card-desc {
+    font-weight: 500;
+    margin-block-end: 0;
+}
+.news-card-content {
+    font-style: oblique;
 }
 
 /********************* table **********************/
@@ -208,7 +274,7 @@ span.pos {
 #select {
     margin-left: 5px;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 0.25em;
+    border-radius: 5px;
     padding: 0.25em 0.5em;
     font-size: 1rem;
     cursor: pointer;
@@ -283,7 +349,7 @@ span.pos {
     }
 }
 @media screen and (max-width: 530px) {
-    .standings-d2 {
+    .standings-label, .standings-d2 {
         display: none;
     }
 }
