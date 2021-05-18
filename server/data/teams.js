@@ -38,6 +38,31 @@ module.exports = {
         return team.length === 0 ? null : team[0].team_name;
     },
 
+    async getTeamsByFilter(
+        minOverall = 0, maxOverall = 99, 
+        minAttack = 16, maxAttack= 53,
+        minDefence = 0, maxDefence = 99,
+        leagueName, nationality
+    ) {
+        const teamCollection = await teams();
+        let filterArray = [
+            {'overall': {$gte: minOverall, $lte: maxOverall}},
+            {'attack': {$gte: minAttack, $lte: maxAttack}},
+            {'defence': {$gte: minDefence, $lte: maxDefence}},
+        ];
+
+        if (leagueName !== undefined) {
+            filterArray.push({ 'league': leagueName });
+        }
+        if (nationality !== undefined) {
+            filterArray.push({ 'league_nation_code': nationality });
+        }
+        // filterArray.push({'player_positions': {$all: [playerPositions]}});
+        // filterArray.push({'preferred_foot': preferredFoot});
+
+        return await teamCollection.find({ $and: filterArray }).toArray();
+    },
+
     /**
      * [defensive_style]
      * team_width: Determines how Narrow or Wide the team shape is set up when not have possession of the ball.
