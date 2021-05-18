@@ -5,7 +5,7 @@ import SearchForm from './SearchForm';
 import { Pagination } from '@material-ui/lab';
 import '../App.css';
 
-const PlayerList = () => {
+const PlayerList = (props) => {
     const [ listData, setListData ] = useState(undefined);
     const [ searchTerm, setSearchTerm ] = useState('');
     const [ loading, setLoading ] = useState(true);
@@ -15,14 +15,17 @@ const PlayerList = () => {
     useEffect(
         () => {
             async function fetchData() {
-                if (searchTerm) {
+                const searchTermFromUrl = getSearchTerm()
+                console.log('searchTermFromUrl', searchTermFromUrl);
+                if (searchTerm || searchTermFromUrl) {
                     try {
                         console.log('searchTerm', searchTerm);
                         // query todo!!!!!
-                        // const url = `http://localhost:3008/players?`;
-                        // const { data } = await axios.get(url);
-                        // setListData(data);
-                        // setLoading(false);
+                        const url = `http://localhost:3008/players${window.location.search}`;
+                        console.log(url)
+                        const { data } = await axios.get(url);
+                        setListData(data);
+                        setLoading(false);
                     } catch (error) {
                         console.log(error);
                     }
@@ -40,8 +43,25 @@ const PlayerList = () => {
             };
             fetchData();
         },
-        [ page, take, searchTerm ]
+        [ page, take, searchTerm, props.match.location ]
     );
+
+    const getSearchTerm = () => {
+        const result = {}
+        const queryString = window.location.search
+        const reg = /[?&][^?&]+=[^?&]+/g
+        const found = queryString.match(reg)
+
+        if(found) {
+            found.forEach(item => {
+                let temp = item.substring(1).split('=')
+                let key = temp[0]
+                let value = temp[1]
+                result[key] = value
+            })
+        }
+        return result
+    }
 
     const searchValue = value => setSearchTerm(value);
     const handlechange = event => setTake(Number(event.target.value));

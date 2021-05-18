@@ -69,7 +69,7 @@ module.exports = {
         // filterArray.push({'player_positions': {$all: [playerPositions]}});
         // filterArray.push({'preferred_foot': preferredFoot});
 
-        return await playerCollection.find({ $and: filterArray }).skip(0).limit(5).toArray();
+        return await playerCollection.find({ $and: filterArray }).skip(0).limit(50).toArray();
     },
 
     async addPlayer(
