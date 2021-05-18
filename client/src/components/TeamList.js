@@ -2,32 +2,66 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Pagination } from '@material-ui/lab';
+import SearchForm from './SearchForm';
 import '../App.css';
 
-const TeamList = () => {
+const TeamList = (props) => {
     const [ listData, setListData ] = useState(undefined);
     const [ loading, setLoading ] = useState(true);
+    const [ searchTerm, setSearchTerm ] = useState('');
     const [ page, setPage ] = useState(1);
     const [ take, setTake ] = useState(20);
 
     useEffect(
         () => {
             async function fetchData() {
-                try {
-                    const skip = (page - 1) * take;
-                    const url = `http://localhost:3008/teams?skip=${skip}&take=${take}`;
-                    const { data } = await axios.get(url);
-                    setListData(data);
-                    setLoading(false);
-                } catch (error) {
-                    console.log(error);
+                const searchTermFromUrl = getSearchTerm()
+                if (searchTerm || JSON.stringify(searchTermFromUrl) !== "{}") {
+                    try {
+                        console.log('searchTerm', searchTerm);
+                        const url = `http://localhost:3008/teams${window.location.search}`;
+                        console.log(url)
+                        const { data } = await axios.get(url);
+                        setListData(data);
+                        setLoading(false);
+                    } catch (error) {
+                        console.log(error);
+                    }
+                } else {
+                    try {
+                        const skip = (page - 1) * take;
+                        const url = `http://localhost:3008/teams?skip=${skip}&take=${take}`;
+                        const { data } = await axios.get(url);
+                        setListData(data);
+                        setLoading(false);
+                    } catch (error) {
+                        console.log(error);
+                    }
                 }
             };
             fetchData();
         },
-        [ page, take ]
+        [ page, take, searchTerm, props.match.location ]
     );
-    
+
+    const getSearchTerm = () => {
+        const result = {}
+        const queryString = window.location.search
+        const reg = /[?&][^?&]+=[^?&]+/g
+        const found = queryString.match(reg)
+
+        if(found) {
+            found.forEach(item => {
+                let temp = item.substring(1).split('=')
+                let key = temp[0]
+                let value = temp[1]
+                result[key] = value
+            })
+        }
+        return result
+    }
+
+    const searchValue = value => setSearchTerm(value);
     const handlechange = (event) => {
         setTake(Number(event.target.value));
     };
@@ -72,41 +106,46 @@ const TeamList = () => {
             );
         });
         return (
-            <div>
-                <Pagination 
-                    variant='outlined' 
-                    shape='rounded'
-                    count={Math.ceil(681 / take)} 
-                    page={page} 
-                    onChange={(e, newPage) => setPage(newPage)}
-                />
+            <section className='player-list-section'>
+                <div>
+                    <SearchForm searchValue={searchValue} className='teamComponent'/>
+                </div>
+                <div>
+                    <Pagination 
+                        variant='outlined' 
+                        shape='rounded'
+                        count={Math.ceil(681 / take)} 
+                        page={page} 
+                        onChange={(e, newPage) => setPage(newPage)}
+                    />
 
-                <label >
-                    <select onChange={handlechange}>
-                        <option value="20">20</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                    </select>
-                    per page
-                </label>
+                    <label >
+                        <select onChange={handlechange}>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                        per page
+                    </label>
 
-                <table className='table'>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>ova</th>
-                            <th>att</th>
-                            <th>mid</th>
-                            <th>def</th>
-                            <th>transfer budget</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {li}
-                    </tbody>
-                </table>
-            </div>
+                    <table className='table'>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>ova</th>
+                                <th>att</th>
+                                <th>mid</th>
+                                <th>def</th>
+                                <th>transfer budget</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {li}
+                        </tbody>
+                    </table>
+                </div>
+            </section>
         );
     }
 };
