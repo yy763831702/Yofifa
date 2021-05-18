@@ -1,3 +1,4 @@
+const express = require("express");
 const playerRoutes = require('./players');
 const teamRoutes = require('./teams');
 const newsRoutes = require('./news');
@@ -13,7 +14,8 @@ const constructorMethod = app => {
     app.use("/teams", teamRoutes);
     app.use("/news", newsRoutes);
     app.use("/standings", standingRoutes);
-    app.use('/users', users)
+    app.use('/users', users);
+    app.use("/img", express.static(__dirname + "/../img"));
     app.use("*", (req, res) => {
         res.sendStatus(404);
     });

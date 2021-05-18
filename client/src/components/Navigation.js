@@ -10,6 +10,7 @@ const Navigation = () => {
 };
 
 const NavigationAuth = () => {
+  const { currentUser } = useContext(AuthContext);
   return (
     <nav className="navigation">
       <ul>
@@ -23,9 +24,31 @@ const NavigationAuth = () => {
             Home
           </NavLink>
         </li>
+
+        <li>
+          <NavLink exact to="/players" activeClassName="active">
+            Players
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/teams" activeClassName="active">
+            Teams
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/standings/39" activeClassName="active">
+            Standings
+          </NavLink>
+        </li>
+
         <li>
           <NavLink exact to="/createplayer" activeClassName="active">
             Create Player
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={`/posts/users/${currentUser.uid}`} activeClassName="active">
+            My Posts
           </NavLink>
         </li>
         <li>
@@ -51,10 +74,21 @@ const NavigationNonAuth = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/search" activeClassName="active">
-            Search
+          <NavLink exact to="/players" activeClassName="active">
+            Players
           </NavLink>
         </li>
+        <li>
+          <NavLink exact to="/teams" activeClassName="active">
+            Teams
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/standings/39" activeClassName="active">
+            Standings
+          </NavLink>
+        </li>
+
         <li>
           <NavLink exact to="/signup" activeClassName="active">
             Sign-up

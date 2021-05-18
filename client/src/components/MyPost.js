@@ -25,30 +25,50 @@ const MyPost = (props) => {
     fetchData();
   }, []);
 
-  const buildListItem = (post) => {
-    return (
-      <li key={post._id}>
-        <Link to={`/posts/${post._id}`}>{post.commonName}</Link>
-      </li>
-    );
-  };
-
-  const imagePath = "http://localhost:5000/img/";
-  const handleSelect = (newKey) => {
-    setKey(newKey);
-  };
-
   return (
     <Container>
       <Row>
         <Col>
           <div className="post-index">
+          <table className='table'>
+              <thead>
+                  <tr>
+                      <th></th>
+                      <th>Name</th>
+                      <th>Age</th>
+                      <th>Ova</th>
+                      <th>team & contract</th>
+                      <th>value</th>
+                      <th>wage</th>
+                  </tr>
+              </thead>
+              <tbody>
             {postData &&
               postData.map((post) => (
-                // <img alt="" src={imagePath}></img>
-                  <Link to={`/posts/${post._id}`}>{post.commonName}
-                  </Link>
+                <tr key={post._id}>
+                    <td className='table-td-img'>  <img alt="" src={`http://localhost:3008/img/${post._id}`}/></td>
+                    <td className='table-td-info'>
+                        <Link to={`/post/${post._id}`} >
+                            <div className='table-td-info-div'>
+                                <span>{post.commonName}</span>
+                            </div>
+                            <div><span className={`pos ${post.position}`} key={post.position}>{post.position}</span></div>
+                        </Link>
+                    </td>
+                    <td>{post.age}</td>
+                    <td><span className={`p-${post.rating}`}>{post.rating}</span></td>
+                    <td className='table-td-info table-player-teaminfo'>
+                        <div className='table-td-info-div'>
+                            <span>{post.nationality}</span>
+                        </div>
+                        <div className='table-td-info-contract'>{post.end_year}</div>
+                    </td>
+                    <td>{post.value}</td>
+                    <td>{post.wage}</td>
+                </tr>
               ))}
+              </tbody>
+              </table>
           </div>
         </Col>
       </Row>

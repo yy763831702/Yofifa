@@ -1,6 +1,6 @@
-.App {
+/* .App {
 	text-align: center;
-}
+} */
 
 .App-logo {
 	height: 40vmin;
@@ -70,4 +70,194 @@
 .forgotPassword:hover {
 	text-decoration: none;
 	color: red;
+}
+
+/*****************************************************************************/
+
+span.pos {
+    padding-right: 5px;
+}
+
+.LS, .RS, .ST, .LW, .RW, .CF, .LF, .RF {
+    color: #2871ee !important;
+}
+.LM, .RM, .CAM, .LAM, .RAM, .CM, .LCM, .RCM, .CDM, .LDM, .RDM {
+    color: #2c832f !important;
+}
+.LB, .RB, .LWB, .RWB, .CB, .LCB, .RCB {
+    color: #e77e23 !important;
+}
+.GK {
+    color: #d13913 !important;
+}
+
+.p-0, .p-1, .p-2, .p-3, .p-4, .p-5, .p-6, .p-7, .p-8, .p-9, .p-10, 
+.p-11, .p-12, .p-13, .p-14, .p-15, .p-16, .p-17, .p-18, .p-19, .p-20, 
+.p-21, .p-22, .p-23, .p-24, .p-25, .p-26, .p-27, .p-28, .p-29, .p-30, 
+.p-31, .p-32, .p-33, .p-34, .p-35, .p-36, .p-37, .p-38, .p-39, .p-40, 
+.p-41, .p-42, .p-43, .p-44, .p-45, .p-46, .p-47, .p-48, .p-49, .p-50 {
+    background: #d13913 !important;
+    color: #ffffff !important;
+    padding: 0 5px;
+}
+.p-51, .p-52, .p-53, .p-54, .p-55, .p-56, .p-57, .p-58, .p-59, .p-60 {
+    background: #e77e23 !important;
+    color: #ffffff !important;
+    padding: 0 5px;
+}
+.p-61, .p-62, .p-63, .p-64, .p-65, .p-66, .p-67, .p-68, .p-69, .p-70 {
+    background: #ffc940 !important;
+    color: #ffffff !important;
+    padding: 0 5px;
+}
+.p-71, .p-72, .p-73, .p-74, .p-75, .p-76, .p-77, .p-78, .p-79, .p-80 {
+    background: #9bbf30 !important;
+    color: #ffffff !important;
+    padding: 0 5px;
+}
+.p-81, .p-82, .p-83, .p-84, .p-85, .p-86, .p-87, .p-88, .p-89, .p-90, 
+.p-91, .p-92, .p-93, .p-94, .p-95, .p-96, .p-97, .p-98, .p-99 {
+    background: #2c832f !important;
+    color: #ffffff !important;
+    padding: 0 5px;
+}
+
+/********************* news **********************/
+.newslink {
+    text-decoration: none;
+    color: #000000;
+}
+
+/********************* table **********************/
+.table {
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 1.05rem;
+}
+.table tr {
+    border-bottom: 1px solid #dcdcdc;
+}
+.table th {
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.table th:nth-child(2) {
+    text-align: left;
+}
+.table th:nth-child(5) {
+    text-align: left;
+}
+
+.table-td-img {
+    height: 60px;
+}
+.table-td-img img {
+    height: 60px;
+    width: auto;
+    vertical-align: middle;
+    display: table-cell;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.table-team-td-img img {
+    height: 80%;
+}
+
+.table-td-info {
+    text-align: left;
+}
+.table-td-info a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.table-td-info-span {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.table-player-td-info {
+    width: 200px;
+}
+.table-team-td-info {
+    width: 300px;
+}
+
+.table-td-info-div {
+    display: table;
+}
+.table-td-info-div span {
+    vertical-align: middle;
+    display: table-cell;
+}
+.table-td-info-div img {
+    max-height: 30px;
+    vertical-align: middle;
+    display: table-cell;
+    margin-right: 5px;
+}
+
+/*************** standings ***************/
+.standings {
+    margin: 20px auto 60px;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 1.05rem;
+}
+.standings tr {
+    border-bottom: 1px solid #dcdcdc;
+}
+.standings th {
+    font-weight: 500;
+    padding: 5px;
+}
+.standings th:nth-child(2) {
+    text-align: left;
+}
+
+.standings td {
+    padding: 2px 5px;
+}
+.standings-td-rank {
+    padding: 0 10px;
+}
+.standings-td-name {
+    width: 220px;
+    text-align: left;
+}
+.standings-td-name:hover {
+    cursor: pointer;
+}
+.standings-img {
+    width: 30px;
+    vertical-align: middle;
+    display: table-cell;
+}
+@media screen and (max-width: 600px) {
+    .standings-d {
+        display: none;
+    }
+}
+
+.standings-pro {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+.standings-pla {
+    background-color: rgba(0, 0, 255, 0.06);
+}
+.standings-euro {
+    background-color: rgb(255, 83, 0, 0.1);
+}
+.standings-conf {
+    background-color: rgba(0, 255, 255, 0.1);
+}
+.standings-rele {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+/********************/
+.player-list-section {
+    display: flex;
+    flex-wrap: wrap;
 }
