@@ -61,6 +61,8 @@ router.get('/', async (req, res) => {
 		let minDefence =  result.minDefence ? parseInt(result.minDefence) : 0
 		let maxDefence =  result.maxDefence ? parseInt(result.maxDefence) : 99
 		let leagueName = result.league ? result.league.replace(/%20/g, ' ') : undefined
+		let nationality = result.nationality ? result.nationality : undefined
+
 
 		try {
 		res.json(
@@ -71,7 +73,8 @@ router.get('/', async (req, res) => {
 				maxAttack,
 				minDefence,
 				maxDefence,
-				leagueName
+				leagueName,
+				nationality
 			)
 		);
 		} catch (e) {
