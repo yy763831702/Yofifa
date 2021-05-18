@@ -48,7 +48,7 @@ const MyPost = (props) => {
                 <tr key={post._id}>
                     <td className='table-td-img'>  <img alt="" src={`http://localhost:3008/img/${post._id}`}/></td>
                     <td className='table-td-info'>
-                        <Link to={`/post/${post._id}`} >
+                        <Link to={`/posts/${post._id}`} >
                             <div className='table-td-info-div'>
                                 <span>{post.commonName}</span>
                             </div>

@@ -11,6 +11,7 @@ import CreatePlayer from './CreatePlayer';
 import { AuthProvider } from '../firebase/Auth';
 import PrivateRoute from './PrivateRoute';
 import MyPost from './MyPost';
+import SinglePost from './SinglePost';
 // import Search from './Search'
 import PlayerList from './PlayerList';
 import Player from './Player';
@@ -41,6 +42,7 @@ function App() {
         <PrivateRoute path="/createplayer" component={CreatePlayer} />
         <PrivateRoute path="/account" component={Account} />
         <PrivateRoute path="/posts/users/:id" component={MyPost} />
+        <PrivateRoute path="/posts/:id" component={SinglePost} />
         <Route path="/signin" component={SignIn} />
         <Route path="/signup" component={SignUp} />
       </Router>
