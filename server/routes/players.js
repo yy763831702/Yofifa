@@ -3,6 +3,7 @@ const router = express.Router();
 const data = require('../data');
 const playerData = data.players;
 const teamData = data.teams;
+const countryCode = require('../src/country_code.json')
 
 router.get('/:id', async (req, res) => {
 	try {
@@ -26,7 +27,6 @@ router.get('/team/:id', async (req, res) => {
 });
 
 router.get('/', async (req, res) => {
-	console.log(req.url)
 	let url = req.url.substring(1)
 	if(url) {
 		const result = {}
@@ -40,7 +40,6 @@ router.get('/', async (req, res) => {
                 let value = temp[1]
                 result[key] = value
             })
-			console.log(result.minAge)
         }
 		let minAge =  result.minAge ? parseInt(result.minAge) : 16
 		let maxAge =  result.maxAge ? parseInt(result.maxAge) : 53
@@ -48,7 +47,16 @@ router.get('/', async (req, res) => {
 		let maxOverall =  result.maxOverall ? parseInt(result.maxOverall) : 99
 		let minPotential =  result.minPotential ? parseInt(result.minPotential) : 0
 		let maxPotential =  result.maxPotential ? parseInt(result.maxPotential) : 99
-		console.log(minAge, maxAge)
+		// let nationality = result.continents ? countryCode : undefined
+		let nationality
+		const findCountryCode = (country) => {
+			for(let item in countryCode) {
+				if(countryCode[item].Code == result.continents) {
+					nationality = countryCode[item].Name
+				}
+			}
+		}
+		findCountryCode()
 
 		try {
 		res.json(
@@ -58,7 +66,8 @@ router.get('/', async (req, res) => {
 				minOverall,
 				maxOverall,
 				minPotential,
-				maxPotential
+				maxPotential,
+				nationality
 			)
 		);
 		} catch (e) {
