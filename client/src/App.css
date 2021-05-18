@@ -199,24 +199,58 @@ span.pos {
 }
 
 /*************** standings ***************/
-.standings {
-    margin: 20px auto 60px;
+.standings-select {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 1.1rem;
+}
+#select {
+    margin-left: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f0f0f0, #fff 33%);
+}
+
+.standings-header {
+    display: flex;
+    justify-content: center;
+}
+.standings-header img {
+    height: 50px;
+    margin-right: 3px;
+}
+.standings-header h1 {
+    font-size: 1.15rem;
+}
+.standings-header h1 span:nth-child(2) {
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.standings-table {
+    margin: 10px auto 30px;
     text-align: center;
     border-collapse: collapse;
     font-size: 1.05rem;
 }
-.standings tr {
+.standings-table tr {
     border-bottom: 1px solid #dcdcdc;
 }
-.standings th {
+.standings-table th {
     font-weight: 500;
     padding: 5px;
 }
-.standings th:nth-child(2) {
+.standings-table th:nth-child(2) {
     text-align: left;
 }
 
-.standings td {
+.standings-table td {
     padding: 2px 5px;
 }
 .standings-td-rank {
@@ -230,14 +264,45 @@ span.pos {
     cursor: pointer;
 }
 .standings-img {
-    width: 30px;
+    height: 30px;
+    max-width: 35px;
     vertical-align: middle;
     display: table-cell;
+}
+.standings-last-five {
+    vertical-align: middle;
+    display: table-cell;
+    min-width: 100px;
+}
+.standings-last-five span {
+    margin-right: 2px;
 }
 @media screen and (max-width: 600px) {
     .standings-d {
         display: none;
     }
+}
+@media screen and (max-width: 530px) {
+    .standings-d2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 420px) {
+    .standings-d3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 390px) {
+    .standings-d4 {
+        display: none;
+    }
+}
+
+.standings-statement {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .standings-pro {
