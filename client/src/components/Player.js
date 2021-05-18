@@ -77,10 +77,11 @@ const Player = (props) => {
             goalkeeping_reflexes
         ) / 5;
         return (
-            <section class="indent-1">
-  
-            <section>
-            <section className='p-map'>
+            <div class='some-page-wrapper'>
+            <div class='row'>
+                <div class='column'>
+                     <div class='blue-column'>
+                     <section className='p-map'>
                     <div></div>
                     <div className={`p-${ls.substring(0, 2)}`}>ls<br />{ls}</div>
                     <div className={`p-${st.substring(0, 2)}`}>st<br />{st}</div>
@@ -151,11 +152,11 @@ const Player = (props) => {
                         />
                     }
                     </div>
-            </section>
-
-  
-            <section>
-                <div>
+                     </div>
+                    </div>
+                <div class='column'>
+                    <div class='green-column'>
+                    <div>
                     <Card className="cards">
                         <CardContent>
                         <div className = "row">
@@ -247,13 +248,10 @@ const Player = (props) => {
                     }
                     </CardGroup>
                 </div>
-                </section>
-
-  
-            <section >
-                <Grid container className="grid" spacing={5}>
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
-                <div className='player-ability-card'>
+                    <div>
+                    <Grid container className="grid" spacing={-1}>
+                    <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                     <div className='player-ability-card'>
                         <h5>Attacking</h5>
                         <ul>
                             <li>
@@ -447,10 +445,11 @@ const Player = (props) => {
                         </Grid>
                     }
                 </Grid>
-            </section>
-
-            
-            </section>  
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         );
     }
 };
