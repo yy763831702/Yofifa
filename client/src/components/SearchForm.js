@@ -7,6 +7,65 @@ const SearchForm = (props) => {
     // console.log(searchTerm, 'change state succeed')
     let allSearchTerm = {}
 
+    const leagueCountry = [
+        {league: 'English Premier League', country: 'gb-eng'},
+        {league: 'English League Championship', country: 'gb-eng'},
+        {league: 'English League One', country: 'gb-eng'},
+        {league: 'English League Two', country: 'gb-eng'},
+        {league: 'German 1. Bundesliga', country: 'de'},
+        {league: 'German 2. Bundesliga', country: 'de'},
+        {league: 'German 3. Bundesliga', country: 'de'},
+        {league: 'Spain Primera Division', country: 'es'},
+        {league: 'Spanish Segunda División', country: 'es'},
+        {league: 'Italian Serie A', country: 'it'},
+        {league: 'Italian Serie B', country: 'it'},
+        {league: 'French Ligue 1', country: 'fr'},
+        {league: 'French Ligue 2', country: 'fr'},
+        {league: 'Holland Eredivisie', country: 'nl'},
+        {league: 'Portuguese Liga ZON SAGRES', country: 'pt'},
+        {league: 'Campeonato Brasileiro Série A', country: 'br'},
+        {league: 'Argentina Primera División', country: 'ar'},
+        {league: 'Turkish Süper Lig', country: 'tr'},
+        {league: 'Greek Super League', country: 'gr'},
+        {league: 'Ukrainian Premier League', country: 'ua'},
+        {league: 'Belgian Jupiler Pro League', country: 'be'},
+        {league: 'Mexican Liga MX', country: 'mx'},
+        {league: 'Czech Republic Gambrinus Liga', country: 'cz'},
+        {league: 'Russian Premier League', country: 'ru'},
+        {league: 'Scottish Premiership', country: 'gb-sct'},
+        {league: 'Saudi Abdul L. Jameel League', country: 'sa'},
+        {league: 'Austrian Football Bundesliga', country: 'at'},
+        {league: 'USA Major League Soccer', country: 'us'},
+        {league: 'Danish Superliga', country: 'dk'},
+        {league: 'Chilian Campeonato Nacional', country: 'cl'},
+        {league: 'Swiss Super League', country: 'ch'},
+        {league: 'Croatian Prva HNL', country: 'hr'},
+        {league: 'Paraguayan Primera División', country: 'py'},
+        {league: 'Chinese Super League', country: 'cn'},
+        {league: 'Uruguayan Primera División', country: 'uy'},
+        {league: 'Colombian Liga Postobón', country: 'co'},
+        {league: 'Swedish Allsvenskan', country: 'se'},
+        {league: 'Japanese J. League Division 1', country: 'jp'},
+        {league: 'Korean K League 1', country: 'kr'},
+        {league: 'Ecuadorian Serie A', country: 'ec'},
+        {league: 'Norwegian Eliteserien', country: 'no'},
+        {league: 'Polish T-Mobile Ekstraklasa', country: 'pl'},
+        {league: 'South African Premier Division', country: 'za'},
+        {league: 'Romanian Liga I', country: 'ro'},
+        {league: 'UAE Arabian Gulf League', country: 'ae'},
+        {league: 'Liga de Fútbol Profesional Boliviano', country: 'bo'},
+        {league: 'Peruvian Primera División', country: 'pe'},
+        {league: 'Australian Hyundai A-League', country: 'au'},
+        {league: 'Rep. Ireland Airtricity League', country: 'ie'},
+        {league: 'Finnish Veikkausliiga', country: 'fi'},
+        {league: 'Venezuelan Primera División', country: 've'},
+    ];
+
+    let league = []
+    leagueCountry.map((e) => {
+        league.push({value: e.league, label: e.league, term: 'league'})
+    })
+
     const country = []
     CountryRegionData.map((e) => {
         country.push({value: e[1], label: e[0], term: 'continents'})
@@ -34,46 +93,89 @@ const SearchForm = (props) => {
         props.searchValue(updateSearchTerm);
     }
 
-    return (
-        <div className='search-body'>
-            <h1>this is search component</h1>
-            <div className='search-term'>
-                <form className='search-form center'
-                    method='POST'
-                    onSubmit={async(e) => {
-				        e.preventDefault();
-                        let updateSearchTerm = {...searchTerm, ...allSearchTerm}
-                        console.log(updateSearchTerm, 'updateSearchTerm')
-                        setSearchTerm(updateSearchTerm)
-                        // if(JSON.stringify(allSearchTerm) !== "{}") {
-                        //     setSearchTerm(allSearchTerm)
-                        // }
-                        handleSubmit()
-			        }}
-			        name='formName'>
-                    <h5>Search</h5>
-                    <Select options={country} placeholder='Nationality/Region' onChange={handleChange}/>
-                    <br/>
-                    <div>
-                        <label className='age'>Age</label>
-                        <input className='minAge' type='number' name='minAge' max='53' min='16' placeholder='15' onChange={(e) => {allSearchTerm.minAge = e.target.value}}/>
-                        <input className='maxAge' type='number' name='maxAge' max='53' min='16' placeholder='45' onChange={(e) => {allSearchTerm.maxAge = e.target.value}}/>
-                    </div>
-                    <div>
-                        <label className='age'>Overall Rating</label>
-                        <input className='minOverall' type='number' name='minOverall' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minOverall = e.target.value}}/>
-                        <input className='maxOverall' type='number' name='maxOverall' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxOverall = e.target.value}}/>
-                    </div>
-                    <div>
-                        <label className='age'>Potential</label>
-                        <input className='minPotential' type='number' name='minPotential' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minPotential = e.target.value}}/>
-                        <input className='maxPotential' type='number' name='maxPotential' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxPotential = e.target.value}}/>
-                    </div>
-                    <button className='search-button' type='submit'>Submit</button>
-                </form>
+    console.log(props)
+    if(props.className == 'playerComponent') {
+        return (
+            <div className='search-body'>
+                <h1>this is player search component</h1>
+                <div className='search-term'>
+                    <form className='search-form center'
+                        method='POST'
+                        onSubmit={async(e) => {
+                            e.preventDefault();
+                            let updateSearchTerm = {...searchTerm, ...allSearchTerm}
+                            console.log(updateSearchTerm, 'updateSearchTerm')
+                            setSearchTerm(updateSearchTerm)
+                            // if(JSON.stringify(allSearchTerm) !== "{}") {
+                            //     setSearchTerm(allSearchTerm)
+                            // }
+                            handleSubmit()
+                        }}
+                        name='formName'>
+                        <h5>Search</h5>
+                        <Select options={country} placeholder='Nationality/Region' onChange={handleChange}/>
+                        <br/>
+                        <Select options={league} placeholder='League' onChange={handleChange}/>
+                        <br/>
+                        <div>
+                            <label className='age'>Age</label>
+                            <input className='minAge' type='number' name='minAge' max='53' min='16' placeholder='15' onChange={(e) => {allSearchTerm.minAge = e.target.value}}/>
+                            <input className='maxAge' type='number' name='maxAge' max='53' min='16' placeholder='45' onChange={(e) => {allSearchTerm.maxAge = e.target.value}}/>
+                        </div>
+                        <div>
+                            <label className='age'>Overall Rating</label>
+                            <input className='minOverall' type='number' name='minOverall' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minOverall = e.target.value}}/>
+                            <input className='maxOverall' type='number' name='maxOverall' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxOverall = e.target.value}}/>
+                        </div>
+                        <div>
+                            <label className='age'>Potential</label>
+                            <input className='minPotential' type='number' name='minPotential' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minPotential = e.target.value}}/>
+                            <input className='maxPotential' type='number' name='maxPotential' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxPotential = e.target.value}}/>
+                        </div>
+                        <button className='search-button' type='submit'>Submit</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }else {
+        return (
+            <div className='search-body'>
+                <h1>this is team search component</h1>
+                <div className='search-term'>
+                    <form className='search-form center'
+                        method='POST'
+                        onSubmit={async(e) => {
+                            e.preventDefault();
+                            let updateSearchTerm = {...searchTerm, ...allSearchTerm}
+                            console.log(updateSearchTerm, 'updateSearchTerm')
+                            setSearchTerm(updateSearchTerm)
+                            handleSubmit()
+                        }}
+                        name='formName'>
+                        <h5>Search</h5>
+                        <Select options={league} placeholder='League' onChange={handleChange}/>
+                        <br/>
+                        <div>
+                            <label className='age'>Overall Rating</label>
+                            <input className='minOverall' type='number' name='minOverall' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minOverall = e.target.value}}/>
+                            <input className='maxOverall' type='number' name='maxOverall' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxOverall = e.target.value}}/>
+                        </div>
+                        <div>
+                            <label className='age'>Attack</label>
+                            <input className='minAttack' type='number' name='minAttack' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minAttack = e.target.value}}/>
+                            <input className='maxAttack' type='number' name='maxAttack' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxAttack = e.target.value}}/>
+                        </div>
+                        <div>
+                            <label className='age'>Defence</label>
+                            <input className='minDefence' type='number' name='minDefence' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minDefence = e.target.value}}/>
+                            <input className='maxDefence' type='number' name='maxDefence' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxDefence = e.target.value}}/>
+                        </div>
+                        <button className='search-button' type='submit'>Submit</button>
+                    </form>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default SearchForm;

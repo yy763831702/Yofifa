@@ -41,7 +41,7 @@ module.exports = {
         // minInterReputation = 1, maxInterReputation = 5, 
         // minWeakFoot = 1, maxWeakFoot = 5, 
         // minSkillMoves = 1, maxSkillMoves = 5,
-        nationality, clubName, leagueName
+        nationality, leagueName, clubName
     ) {
         const playerCollection = await players();
         let filterArray = [

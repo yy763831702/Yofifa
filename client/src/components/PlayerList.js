@@ -134,7 +134,7 @@ const PlayerList = (props) => {
         return (
             <section className='player-list-section'>
                 <div>
-                    <SearchForm searchValue={searchValue} />
+                    <SearchForm searchValue={searchValue} className='playerComponent'/>
                 </div>
                 
                 <div>
