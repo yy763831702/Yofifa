@@ -11,6 +11,7 @@ const TeamList = (props) => {
     const [ searchTerm, setSearchTerm ] = useState('');
     const [ page, setPage ] = useState(1);
     const [ take, setTake ] = useState(20);
+    const [ error, setError ] = useState(false)
 
     useEffect(
         () => {
@@ -20,8 +21,12 @@ const TeamList = (props) => {
                     try {
                         console.log('searchTerm', searchTerm);
                         const url = `http://localhost:3008/teams${window.location.search}`;
-                        console.log(url)
                         const { data } = await axios.get(url);
+                        if(data.length == 0) {
+                            setError(true)
+                        }else {
+                            setError(false)
+                        }
                         setListData(data);
                         setLoading(false);
                     } catch (error) {
@@ -65,6 +70,55 @@ const TeamList = (props) => {
     const handlechange = (event) => {
         setTake(Number(event.target.value));
     };
+
+    if(error) {
+        return (
+            <section className='player-list-section'>
+                <div>
+                    <SearchForm searchValue={searchValue} className='teamComponent'/>
+                </div>
+                <div>
+                    <Pagination 
+                        variant='outlined' 
+                        shape='rounded'
+                        count={Math.ceil(681 / take)} 
+                        page={page} 
+                        onChange={(e, newPage) => setPage(newPage)}
+                    />
+
+                    <label >
+                        <select onChange={handlechange}>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                        per page
+                    </label>
+
+                    <table className='table'>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>ova</th>
+                                <th>att</th>
+                                <th>mid</th>
+                                <th>def</th>
+                                <th>transfer budget</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2>No teams with those terms</h2>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        )
+    }
 
     if (loading) {
         return (
