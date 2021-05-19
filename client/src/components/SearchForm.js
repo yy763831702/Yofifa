@@ -10,57 +10,57 @@ const SearchForm = (props) => {
     let allSearchTerm = {};
 
     const leagueCountry = [
-        {league: 'English Premier League', country: 'gb-eng'},
-        {league: 'English League Championship', country: 'gb-eng'},
-        {league: 'English League One', country: 'gb-eng'},
-        {league: 'English League Two', country: 'gb-eng'},
-        {league: 'German 1. Bundesliga', country: 'de'},
-        {league: 'German 2. Bundesliga', country: 'de'},
-        {league: 'German 3. Bundesliga', country: 'de'},
-        {league: 'Spain Primera Division', country: 'es'},
-        {league: 'Spanish Segunda División', country: 'es'},
-        {league: 'Italian Serie A', country: 'it'},
-        {league: 'Italian Serie B', country: 'it'},
-        {league: 'French Ligue 1', country: 'fr'},
-        {league: 'French Ligue 2', country: 'fr'},
-        {league: 'Holland Eredivisie', country: 'nl'},
-        {league: 'Portuguese Liga ZON SAGRES', country: 'pt'},
-        {league: 'Campeonato Brasileiro Série A', country: 'br'},
-        {league: 'Argentina Primera División', country: 'ar'},
-        {league: 'Turkish Süper Lig', country: 'tr'},
-        {league: 'Greek Super League', country: 'gr'},
-        {league: 'Ukrainian Premier League', country: 'ua'},
-        {league: 'Belgian Jupiler Pro League', country: 'be'},
-        {league: 'Mexican Liga MX', country: 'mx'},
-        {league: 'Czech Republic Gambrinus Liga', country: 'cz'},
-        {league: 'Russian Premier League', country: 'ru'},
-        {league: 'Scottish Premiership', country: 'gb-sct'},
-        {league: 'Saudi Abdul L. Jameel League', country: 'sa'},
-        {league: 'Austrian Football Bundesliga', country: 'at'},
-        {league: 'USA Major League Soccer', country: 'us'},
-        {league: 'Danish Superliga', country: 'dk'},
-        {league: 'Chilian Campeonato Nacional', country: 'cl'},
-        {league: 'Swiss Super League', country: 'ch'},
-        {league: 'Croatian Prva HNL', country: 'hr'},
-        {league: 'Paraguayan Primera División', country: 'py'},
-        {league: 'Chinese Super League', country: 'cn'},
-        {league: 'Uruguayan Primera División', country: 'uy'},
-        {league: 'Colombian Liga Postobón', country: 'co'},
-        {league: 'Swedish Allsvenskan', country: 'se'},
-        {league: 'Japanese J. League Division 1', country: 'jp'},
-        {league: 'Korean K League 1', country: 'kr'},
-        {league: 'Ecuadorian Serie A', country: 'ec'},
-        {league: 'Norwegian Eliteserien', country: 'no'},
-        {league: 'Polish T-Mobile Ekstraklasa', country: 'pl'},
-        {league: 'South African Premier Division', country: 'za'},
-        {league: 'Romanian Liga I', country: 'ro'},
-        {league: 'UAE Arabian Gulf League', country: 'ae'},
-        {league: 'Liga de Fútbol Profesional Boliviano', country: 'bo'},
-        {league: 'Peruvian Primera División', country: 'pe'},
-        {league: 'Australian Hyundai A-League', country: 'au'},
-        {league: 'Rep. Ireland Airtricity League', country: 'ie'},
-        {league: 'Finnish Veikkausliiga', country: 'fi'},
-        {league: 'Venezuelan Primera División', country: 've'},
+        {league: 'English Premier League', country: 'gb-eng', id: 39},
+        {league: 'English League Championship', country: 'gb-eng', id: 40},
+        {league: 'English League One', country: 'gb-eng', id: 41},
+        {league: 'English League Two', country: 'gb-eng', id: 42},
+        {league: 'German 1. Bundesliga', country: 'de', id: 78},
+        {league: 'German 2. Bundesliga', country: 'de', id: 79},
+        {league: 'German 3. Bundesliga', country: 'de', id: 80},
+        {league: 'Spain Primera Division', country: 'es', id: 140},
+        {league: 'Spanish Segunda División', country: 'es', id: 141},
+        {league: 'Italian Serie A', country: 'it', id: 135},
+        {league: 'Italian Serie B', country: 'it', id: 136},
+        {league: 'French Ligue 1', country: 'fr', id: 61},
+        {league: 'French Ligue 2', country: 'fr', id: 62},
+        {league: 'Holland Eredivisie', country: 'nl', id: 88},
+        {league: 'Portuguese Liga ZON SAGRES', country: 'pt', id: 94},
+        {league: 'Campeonato Brasileiro Série A', country: 'br', id: 71},
+        {league: 'Argentina Primera División', country: 'ar', id: 128},
+        {league: 'Turkish Süper Lig', country: 'tr', id: 203},
+        {league: 'Greek Super League', country: 'gr', id: 401},
+        {league: 'Ukrainian Premier League', country: 'ua', id: 402},
+        {league: 'Belgian Jupiler Pro League', country: 'be', id: 144},
+        {league: 'Mexican Liga MX', country: 'mx', id: 262},
+        {league: 'Czech Republic Gambrinus Liga', country: 'cz', id: 403},
+        {league: 'Russian Premier League', country: 'ru', id: 404},
+        {league: 'Scottish Premiership', country: 'gb-sct', id: 179},
+        {league: 'Saudi Abdul L. Jameel League', country: 'sa', id: 307},
+        {league: 'Austrian Football Bundesliga', country: 'at', id: 218},
+        {league: 'USA Major League Soccer', country: 'us', id: 253},
+        {league: 'Danish Superliga', country: 'dk', id: 119},
+        {league: 'Chilian Campeonato Nacional', country: 'cl', id: 405},
+        {league: 'Swiss Super League', country: 'ch', id: 207},
+        {league: 'Croatian Prva HNL', country: 'hr', id: 406},
+        {league: 'Paraguayan Primera División', country: 'py', id: 407},
+        {league: 'Chinese Super League', country: 'cn', id: 169},
+        {league: 'Uruguayan Primera División', country: 'uy', id: 408},
+        {league: 'Colombian Liga Postobón', country: 'co', id: 409},
+        {league: 'Swedish Allsvenskan', country: 'se', id: 113},
+        {league: 'Japanese J. League Division 1', country: 'jp', id: 98},
+        {league: 'Korean K League 1', country: 'kr', id: 292},
+        {league: 'Ecuadorian Serie A', country: 'ec', id: 410},
+        {league: 'Norwegian Eliteserien', country: 'no', id: 103},
+        {league: 'Polish T-Mobile Ekstraklasa', country: 'pl', id: 106},
+        {league: 'South African Premier Division', country: 'za', id: 411},
+        {league: 'Romanian Liga I', country: 'ro', id: 283},
+        {league: 'UAE Arabian Gulf League', country: 'ae', id: 412},
+        {league: 'Liga de Fútbol Profesional Boliviano', country: 'bo', id: 413},
+        {league: 'Peruvian Primera División', country: 'pe', id: 414},
+        {league: 'Australian Hyundai A-League', country: 'au', id: 188},
+        {league: 'Rep. Ireland Airtricity League', country: 'ie', id: 357},
+        {league: 'Finnish Veikkausliiga', country: 'fi', id: 415},
+        {league: 'Venezuelan Primera División', country: 've', id: 416},
     ];
     
     const find = (code) => {
@@ -73,7 +73,7 @@ const SearchForm = (props) => {
 
     let league = [];
     leagueCountry.map((e) => {
-        return league.push({value: e.league, label: e.league, term: 'league'});
+        return league.push({value: e.id, label: e.league, term: 'lg'});
     })
 
     let countryForLeague = [];
@@ -94,12 +94,22 @@ const SearchForm = (props) => {
 
     const country = [];
     CountryRegionData.map((e) => {
-        return country.push({value: e[1], label: e[0], term: 'continents'});
+        return country.push({value: e[1].toLowerCase(), label: e[0], term: 'code'});
     })
 
     const handleChange = (e) => {
-        allSearchTerm[e.term] = e.value;
-        // console.log(allSearchTerm, 'curState in search component')
+        console.log(e);
+        delete allSearchTerm['lgcode'];
+        if (e.term === 'lg' && e.value > 400) {
+            for (let l of leagueCountry) {
+                if (l.league === e.label) {
+                    allSearchTerm['lgcode'] = l.country;
+                    break;
+                }
+            }
+        } else {
+            allSearchTerm[e.term] = e.value;
+        }
     }
 
     const setUrl = (obj) => {
@@ -154,14 +164,12 @@ const SearchForm = (props) => {
                             setSearchTerm(updateSearchTerm);
                             handleSubmit();
                         }}>Submit</button>
-
                         <Link to="/players">
                             <button className='search-button' type='submit' onClick={(e)=>{
                                 setSearchTerm(undefined);
                                 handleSubmit();
                             }}>Reset</button>
                         </Link>
-                       
                     </form>
                 </div>
             </div>
@@ -196,7 +204,7 @@ const SearchForm = (props) => {
                             <input className='space' type='number' name='maxDefence' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxDefence = e.target.value}}/>
                             <input className='space' type='number' name='minDefence' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minDefence = e.target.value}}/>
                         </div>
-                        <div className='search-item'>
+                        <div className='search-item'> 
                             <label className='item'>Midfield</label>
                             <input className='space' type='number' name='maxMidfield' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxMidfield = e.target.value}}/>
                             <input className='space' type='number' name='minMidfield' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minMidfield = e.target.value}}/>
