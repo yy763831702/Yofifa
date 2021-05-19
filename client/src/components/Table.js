@@ -138,3 +138,165 @@ const Table = (props) => {
 };
 
 export default Table;
+
+
+
+// Wolves: Wolverhampton Wanderers
+// Lyon:Olympique Lyonnais
+// Rennes: Stade Rennais FC
+// Nimes: Nîmes Olympique
+// Alaves Alaves: Deportivo Alavés
+// Hertha Berlin: Hertha BSC
+// FC Koln : 1. FC Köln
+// Lanus: Club Atlético Lanús
+// Western Sydney: Western Sydney Wanderers
+// St. Truiden: Sint-Truidense VV
+// Atletico Goiani… : Atlético Clube Goianiense
+// Atletico Parana... : Club Athletico Paranaense
+// Shanghai Shenhua :Shanghai Greenland Shenhua FC
+// FC Nordsjælland, 
+// FC Copenhagen: FC København
+// Brondby: Brøndby IF
+// Sonderjyske: SønderjyskE
+// QPR: Queens Park Rangers
+// Niort: Chamois Niortais Football Club
+// FC Heidenheim : 1. FC Heidenheim 1846
+// FC Nurnberg: 1. FC Nürnberg
+// FC Saarbrucken: 1. FC Saarbrücken
+// FC Magdeburg: 1. FC Magdeburg
+// FC Viktoria Koln: Viktoria Köln
+// FC Kaiserslautern: 1. FC Kaiserslautern
+// FC JuareZ :FC Juárez
+// Club Queretaro: Club Necaxa
+// Stabaek: Stabæk Fotball
+// Stromsgodset: Strømsgodset IF
+// Mjondalen:Mjøndalen IF
+// Wisla Plock:Wisła Płock
+// CS Universitate…: Universitatea Craiova
+// Arges Pitesti: FC Argeș
+// Al-Hilal Saudi FC: Al Hilal
+// Al-Nassr: Al Nassr
+// Al Wehda Club: Al Wehda
+//  Al-Faisaly FC: Al Faisaly
+//  Al-Raed: Al Raed
+//  Al-Ettifaq: Ettifaq FC
+//  Al-Ittihad FC: Al Ittihad
+//  Al Taawon: Al Taawoun 
+//  Al-Fateh: Al Fateh
+//  Al-Fayha: Al Fayha 
+//  Al-Hazm:Al Hazem
+// Dhamk: Damac FC
+// Malmo FF: Malmö FF,
+// Hammarby FF:  Hammarby IF
+// kalmar FF:Kalmar FF 
+// FC ST. Gallen: FC St. Gallen 
+// FC Zurich :FC Zürich
+// Leganes: CD Leganés
+// Mirandes, C.D. Castellón missing
+// Besiktas: Beşiktaş JK
+// Goztepe: Göztepe SK
+// Istanbul Basaks…: Medipol Başakşehir FK
+
+
+
+
+
+
+// 39 wolves
+
+// 39:
+// Wolves: Wolverhampton Wanderers
+
+// 61 Lyon:Olympique Lyonnais
+// Rennes: Stade Rennais FC
+
+// Nimes: Nîmes Olympique
+
+// 140: Alaves Alaves: Deportivo Alavés
+
+// 78:
+// Hertha Berlin- > 1. FC Union Berlin should be Hertha BSC
+// FC Koln ->FC Augsburg should be 1. FC Köln
+
+// 128
+
+// Lanus: Club Atlético Lanús
+
+
+// 188: Western Sydney->Sydney FC should be Western Sydney Wanderers
+
+// 144: St. Truiden: Sint-Truidense VV
+
+// 71: Atletico Goiani…, Atletico Parana... -> Atlético Mineiro should be Club Athletico Paranaense, Atlético Clube Goianiense
+
+// Bragantino, Corinthians missing
+
+// 169 Shanghai Shenhua ->SHANGHAI SIPG should be Shanghai Greenland Shenhua FC
+
+// 119: FC Nordsjælland, 
+// FC Copenhagen: FC København
+// Brondby: Brøndby IF
+// Sonderjyske: SønderjyskE
+
+// 40 
+// QPR: Queens Park Rangers
+
+
+// 62:
+
+// FC Sochaux-Montbéliard postmen -> Pau FC
+
+// Niort: Chamois Niortais Football Club
+
+// 79:
+// (FC Heidenheim, FC Nurnberg) -> FC Würzburger Kickers should be -> 1. FC Heidenheim 1846, 1. FC Nürnberg
+
+// 80:
+
+//  (FC Saarbrucken, FC Magdeburg, FC Viktoria Koln, FC Kaiserslautern) -> Hallescher FC  should be 1. FC Saarbrücken, 1. FC Magdeburg, Viktoria Köln, 1. FC Kaiserslautern
+
+// Türkgücü München cannot get valid data from postman
+
+// 262: Club América postman cannot get correct data. 
+// FC JuareZ -> Mazatlán FC should be FC Juárez
+// Club Queretaro-> Club Necaxa
+
+// 103: FK Bodø/Glimt postman
+
+// Stabaek: Stabæk Fotball
+// Stromsgodset: Strømsgodset IF
+// Mjondalen:Mjøndalen IF
+
+// 106:
+// Wisla Plock:Wisła Płock
+
+// 283
+// CS Universitate…: Universitatea Craiova
+// Arges Pitesti: FC Argeș
+
+// 307: 
+// Al-Hilal Saudi FC, Al-Nassr, Al Wehda Club, Al-Faisaly FC, Al-Raed, Al-Ettifaq, Al-Ittihad FC, Al Taawon, Al-Fateh, Al-Fayha, Al-Hazm-> Al Adalah should be Al Hilal, Al Nassr, Al Wehda, Al Faisaly, Al Raed, Ettifaq FC, Al Ittihad, Al Taawoun, Al Fateh, Al Fayha,Al Hazem
+
+// Dhamk: Damac FC
+
+// 113:
+// Malmo FF, Hammarby FF, kalmar FF-> Falkenbergs FF should be Malmö FF, Hammarby IF, Kalmar FF
+
+// 207: 
+// FC ST. Gallen, FC Zurich -> FC Vaduz should be FC St. Gallen, FC Zürich
+
+// 141: 
+// Leganes: CD Leganés
+// Mirandes, C.D. Castellón missing
+// Only 20 in teams.
+
+// 203:
+// Besiktas: Beşiktaş JK
+// Goztepe: Göztepe SK
+// Istanbul Basaks…: Medipol Başakşehir FK
+// BB Erzurumspor missing 
+// Only 20 in teams
+
+
+
+
