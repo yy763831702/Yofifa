@@ -22,7 +22,7 @@ module.exports = {
     },
 
     async getTeamsByLeagueId(league_id) {
-        if (!league_id) throw 'You must provide league id';
+        if (!league_id && league_id !== 0) throw 'You must provide league id';
         const teamCollection = await teams();
         return await teamCollection.find({ 'league_id': league_id }).toArray();
     },
@@ -43,7 +43,7 @@ module.exports = {
         minAttack = 16, maxAttack= 53,
         minDefence = 0, maxDefence = 99,
         minMidfield = 0, maxMidfield = 99,
-        leagueName, nationality
+        leagueId, nationality, league_code
     ) {
         const teamCollection = await teams();
         let filterArray = [
@@ -53,11 +53,14 @@ module.exports = {
             {'midfield': {$gte: minMidfield, $lte: maxMidfield}}
         ];
 
-        if (leagueName !== undefined) {
-            filterArray.push({ 'league': leagueName });
+        if (leagueId !== undefined) {
+            filterArray.push({ 'league_id': leagueId });
         }
         if (nationality !== undefined) {
             filterArray.push({ 'league_nation_code': nationality });
+        }
+        if (league_code !== undefined) {
+            filterArray.push({ 'league_nation_code': league_code });
         }
         // filterArray.push({'player_positions': {$all: [playerPositions]}});
         // filterArray.push({'preferred_foot': preferredFoot});

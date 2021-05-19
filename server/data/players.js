@@ -41,7 +41,9 @@ module.exports = {
         // minInterReputation = 1, maxInterReputation = 5, 
         // minWeakFoot = 1, maxWeakFoot = 5, 
         // minSkillMoves = 1, maxSkillMoves = 5,
-        nationality, leagueName, clubName
+        league,
+        leagueCode,
+		nationcode
     ) {
         const playerCollection = await players();
         let filterArray = [
@@ -57,19 +59,20 @@ module.exports = {
             // {'skill_moves': {$gte: minSkillMoves, $lte: maxSkillMoves}}
         ];
 
-        if (nationality !== undefined) {
-            filterArray.push({ 'nationality': nationality });
+        if (league !== undefined) {
+            filterArray.push({ 'league_name': league });
         }
-        if (clubName !== undefined) {
-            filterArray.push({ 'club_name': clubName });
+        if (leagueCode !== undefined) {
+            filterArray.push({ 'league_code': leagueCode });
         }
-        if (leagueName !== undefined) {
-            filterArray.push({ 'league_name': leagueName });
+        if (nationcode !== undefined) {
+            filterArray.push({ 'nation_code': nationcode });
         }
+        
         // filterArray.push({'player_positions': {$all: [playerPositions]}});
         // filterArray.push({'preferred_foot': preferredFoot});
 
-        return await playerCollection.find({ $and: filterArray }).skip(0).limit(50).toArray();
+        return await playerCollection.find({ $and: filterArray }).toArray();
     },
 
     async addPlayer(
