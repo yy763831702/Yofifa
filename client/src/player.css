@@ -1,287 +1,290 @@
 .p-map {
-    position: relative;
-    width: 600px;
-    height: 480px;
-    background: transparent url('https://cdn.sofifa.com/img/field.png') no-repeat scroll center top;
-    background-size: cover;
+  position: relative;
+  width: 600px;
+  height: 480px;
+  background: transparent url('https://cdn.sofifa.com/img/field.png') no-repeat
+    scroll center top;
+  background-size: cover;
 }
 .p-map {
-    width: 320px;
-    height: 400px;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    padding: 10px;
+  width: 320px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
 }
 .p-map div {
-    text-transform: uppercase;
-    text-align: center;
-    margin: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px;
 }
 
-.player-card, .player-ability-card {
-    width:200px;
-    margin: 0.8rem;
-    padding: 0.6rem 1rem 0;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 1%);
+.player-card,
+.player-ability-card {
+  width: 200px;
+  margin: 0.8rem;
+  padding: 0.6rem 1rem 0;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 1%);
 }
 .player-card h4 {
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin-block-start: 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-block-start: 0;
 }
 
 .player-ability-card {
-    width: 150px;
+  width: 150px;
 }
 .player-ability-card h5 {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 0.8rem;
-    margin-block-start: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-block-start: 0;
 }
-.player-ability-card ul, .player-card ul {
-    list-style: none;
-    padding-inline-start: 0;
+.player-ability-card ul,
+.player-card ul {
+  list-style: none;
+  padding-inline-start: 0;
 }
 .player-ability-card ul li {
-    font-size: .75rem;
-    font:times;
-    margin-bottom: 5px;
+  font-size: 0.75rem;
+  font: times;
+  margin-bottom: 5px;
 }
 .player-ability-card ul li span:nth-child(1) {
-    float: left;
-    width: 20px;
-    text-align: center;
+  float: left;
+  width: 20px;
+  text-align: center;
 }
 .player-ability-card ul li span:nth-child(2) {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-.cardGroup{
-    display: flex;
-    line-height: 200%;
+.cardGroup {
+  display: flex;
+  line-height: 200%;
 }
 
 .grid {
-    flex-Grow: 1;
-    flex-Direction: row;
-    width: fit-content;
-  }
+  flex-grow: 1;
+  flex-direction: row;
+  width: fit-content;
+}
 
-.cards{
-    max-Width: 200;
-    height: auto;
-    margin-Left: auto;
-    margin-Right: auto;
-    border-Radius: 5;
-    line-height: 200%;
+.cards {
+  max-width: 200;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5;
+  line-height: 200%;
 }
 
 .column {
-    float: left;
-    width: 20%;
-    padding: 10px; 
-  }
-  
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
 
 .row:after {
-    display: table;
-    clear: both;
-  }
+  display: table;
+  clear: both;
+}
 
 .some-page-wrapper {
-    margin: 15px;
-    color: #655e5e;
-    justify-content: center;
-  }
-  
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 40%;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    position: absolute;
-    left: 15%;
-    justify-content: center;
-  }
+  margin: 15px;
+  color: #655e5e;
+  justify-content: center;
+}
 
-  .player-header {
-    width: 500px;
-    max-width: 100%;
-    text-align: center;
-    margin: 10px auto;
-    height: 120px;
-    }
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  position: absolute;
+  left: 15%;
+  justify-content: center;
+}
+
+.player-header {
+  width: 500px;
+  max-width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  height: 120px;
+}
 
 .player-header-div {
-        width: 700px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        color: #655e5e;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: #655e5e;
 }
 
-.player-header-data{
-    height: 80px;
-    width: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    color: #655e5e;
-    font-size: 0.9rem;
-} 
+.player-header-data {
+  height: 80px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: #655e5e;
+  font-size: 0.9rem;
+}
 
-.player-header-column{
-    position:relative; 
-    left:-33px;
-    margin: 0 auto;
-   text-align: left;
-    color: #655e5e;
-    font-size: 0.9rem;
-} 
+.player-header-column {
+  position: relative;
+  left: -33px;
+  margin: 0 auto;
+  text-align: left;
+  color: #655e5e;
+  font-size: 0.9rem;
+}
 
 .player-header-div h1 {
-    margin: 0;
-    font-size: 1rem;
-    text-align: left;
-    color: inherit;
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  color: inherit;
 }
 .player-header-div h2 {
-    margin: auto;
-    font-size: 0.7rem;
-    text-align: left;
-    color: inherit;
-    line-height: 1.5rem;
+  margin: auto;
+  font-size: 0.7rem;
+  text-align: left;
+  color: inherit;
+  line-height: 1.5rem;
 }
 
-.profile-card{
-    width: 900px;
-    position:relative; 
+.profile-card {
+  width: 900px;
+  position: relative;
 }
 
-.ability-card{
-    width: 900px;
-    position:relative; 
+.ability-card {
+  width: 900px;
+  position: relative;
 }
-  
-  .blue-column {
-    height: 1000px;
-    width:fit-content;
-  }
-  
-  .green-column {
-    height: 1000px;
-    width: fit-content;
-  }
+
+.blue-column {
+  height: 1000px;
+  width: fit-content;
+}
+
+.green-column {
+  height: 1000px;
+  width: fit-content;
+}
 
 /********************* create player **************************/
 .create-player-section {
-    width: 80vw;
-    max-width: 100%;
-    margin: 20px auto 50px;
+  width: 80vw;
+  max-width: 100%;
+  margin: 20px auto 50px;
 }
 .create-player-div {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .create-player-card {
-    width: 260px;
-    max-width: 100%;
-    margin: 0.8rem;
-    padding: 0.6rem 1rem 0;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 1%);
+  width: 260px;
+  max-width: 100%;
+  margin: 0.8rem;
+  padding: 0.6rem 1rem 0;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 1%);
 }
 .create-player-card h3 {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin-block-start: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-block-start: 0;
 }
 .create-player-card ul {
-    list-style: none;
-    padding-inline-start: 0;
+  list-style: none;
+  padding-inline-start: 0;
 }
 .create-player-card ul li {
-    margin: 5px;
+  margin: 5px;
 }
 .create-player-card ul li label {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .create-player-card input {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 .create-player-h4 {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .create-player-ability-card {
-    width: 200px;
-    margin: 0.8rem;
-    padding: 0.6rem 1rem 0;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 1%);
+  width: 200px;
+  margin: 0.8rem;
+  padding: 0.6rem 1rem 0;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 1%);
 }
 .create-player-ability-card input {
-    width: 30px;
-    margin-right: 3px;
+  width: 30px;
+  margin-right: 3px;
 }
 .create-player-ability-card h5 {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1rem;
-    margin-block-start: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-block-start: 0;
 }
-.create-player-ability-card ul, .player-card ul {
-    list-style: none;
-    padding-inline-start: 0;
+.create-player-ability-card ul,
+.player-card ul {
+  list-style: none;
+  padding-inline-start: 0;
 }
 .create-player-ability-card ul li {
-    font-size: 0.95rem;
-    font:times;
-    margin-bottom: 5px;
+  font-size: 0.95rem;
+  font: times;
+  margin-bottom: 5px;
 }
 .create-player-ability-card ul li span:nth-child(1) {
-    float: left;
-    width: 20px;
-    text-align: center;
+  float: left;
+  width: 20px;
+  text-align: center;
 }
 .create-player-ability-card ul li span:nth-child(2) {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .create-player-submit-btn {
-    outline: none;
-    border: none;
-    cursor: pointer;
-    display: block;
-    position: relative;
-    background: #cc3f1b;
-    font-size: 16px;
-    font-weight: 300;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 25px 80px;
-    margin: 0 auto;
-    box-shadow: 0 6px #942c12;
-    border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  background: #cc3f1b;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 25px 80px;
+  margin: 0 auto;
+  box-shadow: 0 6px #942c12;
+  border-radius: 20px;
 }
 .create-player-submit-btn:hover {
-	box-shadow: 0 4px #942c12;
-	top: 2px;
+  box-shadow: 0 4px #942c12;
+  top: 2px;
 }
 .create-player-submit-btn:active {
-	box-shadow: 0 0 #942c12;
-	top: 6px;
+  box-shadow: 0 0 #942c12;
+  top: 6px;
 }

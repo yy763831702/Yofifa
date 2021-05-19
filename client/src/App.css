@@ -308,10 +308,8 @@ span.pos {
   margin-block-end: 0;
 }
 .news-card-content {
-
-    font-size: 0.85rem;
-    font-style: oblique;
-
+  font-size: 0.85rem;
+  font-style: oblique;
 }
 
 /********************* table **********************/
@@ -348,10 +346,8 @@ span.pos {
 }
 
 .table-team-td-img img {
-
-    height: 80%;
-    max-width: 60px;
-
+  height: 80%;
+  max-width: 60px;
 }
 
 .table-td-info {
@@ -515,9 +511,9 @@ span.pos {
 /********************/
 .player-list-section {
   margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .form-control {
@@ -526,49 +522,49 @@ span.pos {
 
 .login-form {
   width: 300px;
-  box-shadow:0 0 5px 4px rgba(0,0,0,0.06);
-  border-radius:10px;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
   color: #655e5e;
   position: absolute;
   left: 40%;
-  right:50%;
-  top:25%
+  right: 50%;
+  top: 25%;
 }
 
-.login-form h1{
+.login-form h1 {
   text-align: center;
 }
 
-.form-control{
-  width: 90%;
+.form-control {
+  width: 50%;
   margin: 2px;
-  padding:5px;
+  padding: 5px;
   margin-left: 9px;
-  border: .05rem solid #e5e5e5;
-  border-radius:10px;
+  border: 0.05rem solid #e5e5e5;
+  border-radius: 10px;
 }
 
-.signButton{
+.signButton {
   background: #f5f5f5;
-    border: .05rem solid transparent;
-    padding: 5px 32px;
-    text-transform: uppercase;
-    color:#4c8bf5;
-    line-height: 1.7rem;
-    cursor: pointer;
-    margin: 10px;
-    margin-left: 9px;
-    border-radius:10px;
+  border: 0.05rem solid transparent;
+  padding: 5px 32px;
+  text-transform: uppercase;
+  color: #4c8bf5;
+  line-height: 1.7rem;
+  cursor: pointer;
+  margin: 10px;
+  margin-left: 9px;
+  border-radius: 10px;
 }
 
-.signButton:hover{
-    background-color: #4c8bf5;
-    color:white;
+.signButton:hover {
+  background-color: #4c8bf5;
+  color: white;
 }
 
-.List-border{
-  box-shadow:0 0 5px 4px rgba(105, 105, 105, 0.06);
-  border-radius:7px;
+.List-border {
+  box-shadow: 0 0 5px 4px rgba(105, 105, 105, 0.06);
+  border-radius: 7px;
   color: #655e5e;
   padding: 20px;
 }
