@@ -1,10 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
+const redis = require('async-redis');
+const client = redis.createClient();
 
 router.get('/:country', async (req, res) => {
     try {
-        const apiKey = '';
+        const cacheForNews = await client.get(`news${req.params.country}`);
+        if (cacheForNews) {
+            return res.send(cacheForNews);
+        }
+        const apiKey = process.env.NEWS_API_PUBLICKEY;
 
         let query = null;
         let domains = null;
@@ -49,28 +55,8 @@ router.get('/:country', async (req, res) => {
             url = `https://newsapi.org/v2/everything?domains=${domains}&pageSize=100&sortBy=publishedAt&apiKey=${apiKey}`;
         }
         const { data } = await axios.get(url);
+        await client.set(`news${req.params.country}`, JSON.stringify(data), 'EX', 60 * 60 * 24);
         res.json(data);
-
-        // // sp
-        // const queryForSP = 'f%C3%BAtbol%20OR%20football%20OR%20soccer%20NOT%20%28f%C3%B3rmula%20OR%20baloncesto%29';
-        // const domainsForSP = 'marca.com';
-        // // us
-        // const queryForUS = '%28club%20OR%20league%29%20AND%20soccer%20NOT%20%28NFL%20OR%20MLB%20OR%20NBA%20OR%20pilot%29';
-        // const domainsForUS = 'axios.com,espn.com,aljazeera.com,apnews.com,foxsports.com,bleacherreport.com,cbsnews.com';
-        // // it
-        // const domainsForIT = 'football-italia.net';
-        // // fr
-        // const queryForFR = 'football%20NOT%20%28basketball%20OR%20NBA%20OR%20F1%20OR%20Golf%20OR%20Rugby%20OR%20tennis%20OR%20CFL%29';
-        // const domainsForFR = 'lequipe.fr';
-        // // gb
-        // const queryForGB = 'football%20AND%20club%20AND%20league%20AND%20player%20NOT%20rugby';
-        // const domainsForGB = 'independent.co.uk,bbc.co.uk';
-        // // de
-        // const queryForDE = 'Fu%C3%9Fball%20AND%20%28liga%20OR%20verein%29';
-        // const domainsForDE = 'bild.de,focus.de,tagesspiegel.de';
-        // // br
-        // const queryForBR = 'futebol%20AND%20%28liga%20OR%20clube%29%20NOT%20%28filme%20OR%20economista%29';
-        // const domainsForBR = 'globo.com';
     } catch (e) {
 	    res.sendStatus(500);
     }

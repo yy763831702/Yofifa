@@ -40,7 +40,7 @@ router.get('/:league/:teamname', async (req, res) => {
 
 router.get('/', async (req, res) => {
 	let url = req.url.substring(1)
-	if(url) {
+	if(!req.query.skip) {
 		const result = {}
         const reg = /[?&][^?&]+=[^?&]+/g
         const found = url.match(reg)
