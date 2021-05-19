@@ -16,29 +16,32 @@ const PlayerList = (props) => {
     useEffect(
         () => {
             async function fetchData() {
-                const searchTermFromUrl = getSearchTerm()
+                try {
+                    const skip = (page - 1) * take;
+                    const url = `http://localhost:3008/players?skip=${skip}&take=${take}`;
+                    const { data } = await axios.get(url);
+                    setListData(data);
+                    setLoading(false);
+                } catch (error) {
+                    console.log(error);
+                }
+            };
+            fetchData();
+        },
+        [ page, take ]
+    );
+
+    useEffect(
+        () => {
+            async function fetchData() {
+                const searchTermFromUrl = getSearchTerm();
                 if (searchTerm || JSON.stringify(searchTermFromUrl) !== "{}") {
                     try {
-                        console.log('searchTerm', searchTerm);
-                        // query todo!!!!!
+                        console.log('searchTerm:', searchTerm);
                         const url = `http://localhost:3008/players${window.location.search}`;
+                        console.log(url);
                         const { data } = await axios.get(url);
-                        if(data.length === 0) {
-                            setError(true);
-                        }else {
-                            setError(false);
-                        }
-                        setListData(data);
-                        setLoading(false);
-                    } catch (error) {
-                        console.log(error);
-                    }
-                } else {
-                    try {
-                        const skip = (page - 1) * take;
-                        const url = `http://localhost:3008/players?skip=${skip}&take=${take}`;
-                        console.log(url)
-                        const { data } = await axios.get(url);
+                        data.length === 0 ? setError(true) : setError(false);
                         setListData(data);
                         setLoading(false);
                     } catch (error) {
@@ -48,7 +51,7 @@ const PlayerList = (props) => {
             };
             fetchData();
         },
-        [ page, take, searchTerm, props.match.location ]
+        [ searchTerm, props.match.location ]
     );
 
     const getSearchTerm = () => {
@@ -59,13 +62,13 @@ const PlayerList = (props) => {
 
         if(found) {
             found.forEach(item => {
-                let temp = item.substring(1).split('=')
-                let key = temp[0]
-                let value = temp[1]
-                result[key] = value
+                let temp = item.substring(1).split('=');
+                let key = temp[0];
+                let value = temp[1];
+                result[key] = value;
             })
         }
-        return result
+        return result;
     }
 
     const searchValue = value => setSearchTerm(value);
@@ -77,45 +80,8 @@ const PlayerList = (props) => {
                 <div>
                     <SearchForm searchValue={searchValue} className='playerComponent'/>
                 </div>
-                
                 <div>
-                    <Pagination 
-                        variant='outlined' 
-                        shape='rounded'
-                        count={Math.ceil(18944 / take)} 
-                        page={page} 
-                        onChange={(e, newPage) => setPage(newPage)}
-                    />
-
-                    <label >
-                        <select onChange={handlechange}>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                            <option value="200">200</option>
-                        </select>
-                        per page
-                    </label>
-
-                    <table className='table'>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Name</th>
-                                <th>Age</th>
-                                <th>Ova</th>
-                                <th>team & contract</th>
-                                <th>value</th>
-                                <th>wage</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h2>No players with those terms</h2>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h1>No players with those terms</h1>
                 </div>
             </section>
 		);
@@ -129,9 +95,8 @@ const PlayerList = (props) => {
         );
     } else {
         const playerTableRow = listData.map((player) => {
-            const { _id, short_name, player_img_url, age, nation_code, club_name, club_id, overall, 
-                player_positions, joined, value_eur, wage_eur, contract_valid_until, loaned_from, 
-                nationality 
+            const { _id, short_name, player_img_url, age, nation_code, club_name, club_id, overall, potential, 
+                player_positions, joined, value_eur, wage_eur, contract_valid_until, loaned_from, nationality 
             } = player;
             const club = club_name ? (club_name.length > 22 ? club_name.substring(0, 19)+'...' : club_name) : null;
             const positions = player_positions.map((pos) => {
@@ -161,6 +126,7 @@ const PlayerList = (props) => {
                     </td>
                     <td>{age}</td>
                     <td><span className={`p-${overall}`}>{overall}</span></td>
+                    <td><span className={`p-${potential}`}>{potential}</span></td>
                     <td className='table-td-info table-player-teaminfo'>
                         {club ? (
                             <Link to={`/team/${club_id}`}>
@@ -193,23 +159,26 @@ const PlayerList = (props) => {
                     <SearchForm searchValue={searchValue} className='playerComponent'/>
                 </div>
                 
-                <div className='List-border'>
-                    <Pagination 
-                        variant='outlined' 
-                        shape='rounded'
-                        count={Math.ceil(18944 / take)} 
-                        page={page} 
-                        onChange={(e, newPage) => setPage(newPage)}
-                    />
-
-                    <label >
-                        <select onChange={handlechange}>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                            <option value="200">200</option>
-                        </select>
-                        per page
-                    </label>
+                <div>
+                    {!searchTerm && 
+                        <div className='List-border'>
+                            <Pagination 
+                                variant='outlined' 
+                                shape='rounded'
+                                count={Math.ceil(18944 / take)} 
+                                page={page} 
+                                onChange={(e, newPage) => setPage(newPage)}
+                            />
+                            <label >
+                                <select onChange={handlechange}>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
+                                per page
+                            </label>
+                        </div>
+                    }
 
                     <table className='table'>
                         <thead>
@@ -218,6 +187,7 @@ const PlayerList = (props) => {
                                 <th>Name</th>
                                 <th>Age</th>
                                 <th>Ova</th>
+                                <th>Pot</th>
                                 <th>team & contract</th>
                                 <th>value</th>
                                 <th>wage</th>
@@ -234,3 +204,4 @@ const PlayerList = (props) => {
 };
 
 export default PlayerList;
+
