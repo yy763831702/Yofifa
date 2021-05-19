@@ -16,27 +16,31 @@ const TeamList = (props) => {
     useEffect(
         () => {
             async function fetchData() {
+                try {
+                    const skip = (page - 1) * take;
+                    const url = `http://localhost:3008/teams?skip=${skip}&take=${take}`;
+                    const { data } = await axios.get(url);
+                    setListData(data);
+                    setLoading(false);
+                } catch (error) {
+                    console.log(error);
+                }
+            };
+            fetchData();
+        },
+        [ page, take ]
+    );
+
+    useEffect(
+        () => {
+            async function fetchData() {
                 const searchTermFromUrl = getSearchTerm()
                 if (searchTerm || JSON.stringify(searchTermFromUrl) !== "{}") {
                     try {
-                        console.log('searchTerm', searchTerm);
+                        console.log('searchTerm:', searchTerm);
                         const url = `http://localhost:3008/teams${window.location.search}`;
                         const { data } = await axios.get(url);
-                        if(data.length === 0) {
-                            setError(true);
-                        }else {
-                            setError(false);
-                        }
-                        setListData(data);
-                        setLoading(false);
-                    } catch (error) {
-                        console.log(error);
-                    }
-                } else {
-                    try {
-                        const skip = (page - 1) * take;
-                        const url = `http://localhost:3008/teams?skip=${skip}&take=${take}`;
-                        const { data } = await axios.get(url);
+                        data.length === 0 ? setError(true) : setError(false);
                         setListData(data);
                         setLoading(false);
                     } catch (error) {
@@ -46,7 +50,7 @@ const TeamList = (props) => {
             };
             fetchData();
         },
-        [ page, take, searchTerm, props.match.location ]
+        [ searchTerm, props.match.location ]
     );
 
     const getSearchTerm = () => {
@@ -67,9 +71,7 @@ const TeamList = (props) => {
     }
 
     const searchValue = value => setSearchTerm(value);
-    const handlechange = (event) => {
-        setTake(Number(event.target.value));
-    };
+    const handlechange = event => setTake(Number(event.target.value));
 
     if(error) {
         return (
@@ -78,43 +80,7 @@ const TeamList = (props) => {
                     <SearchForm searchValue={searchValue} className='teamComponent'/>
                 </div>
                 <div>
-                    <Pagination 
-                        variant='outlined' 
-                        shape='rounded'
-                        count={Math.ceil(681 / take)} 
-                        page={page} 
-                        onChange={(e, newPage) => setPage(newPage)}
-                    />
-
-                    <label >
-                        <select onChange={handlechange}>
-                            <option value="20">20</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                        </select>
-                        per page
-                    </label>
-
-                    <table className='table'>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Name</th>
-                                <th>ova</th>
-                                <th>att</th>
-                                <th>mid</th>
-                                <th>def</th>
-                                <th>transfer budget</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h2>No teams with those terms</h2>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h1>No teams with those terms</h1>
                 </div>
             </section>
         )
@@ -165,22 +131,25 @@ const TeamList = (props) => {
                     <SearchForm searchValue={searchValue} className='teamComponent'/>
                 </div>
                 <div>
-                    <Pagination 
-                        variant='outlined' 
-                        shape='rounded'
-                        count={Math.ceil(681 / take)} 
-                        page={page} 
-                        onChange={(e, newPage) => setPage(newPage)}
-                    />
-
-                    <label >
-                        <select onChange={handlechange}>
-                            <option value="20">20</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                        </select>
-                        per page
-                    </label>
+                    {!searchTerm && 
+                        <div>
+                            <Pagination 
+                                variant='outlined' 
+                                shape='rounded'
+                                count={Math.ceil(681 / take)} 
+                                page={page} 
+                                onChange={(e, newPage) => setPage(newPage)}
+                            />
+                            <label >
+                                <select onChange={handlechange}>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                                per page
+                            </label>
+                        </div>
+                    }
 
                     <table className='table'>
                         <thead>
