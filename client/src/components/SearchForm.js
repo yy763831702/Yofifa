@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Select from 'react-select'
 import { Link } from "react-router-dom";
 import { CountryRegionData } from 'react-country-region-selector';
 
 const SearchForm = (props) => {
-    const [searchTerm, setSearchTerm] = useState(undefined)
+    const [searchTerm, setSearchTerm] = useState(undefined);
     // console.log(searchTerm, 'change state succeed')
-    let allSearchTerm = {}
+    let allSearchTerm = {};
 
     const leagueCountry = [
         {league: 'English Premier League', country: 'gb-eng'},
@@ -64,61 +64,61 @@ const SearchForm = (props) => {
     
     const find = (code) => {
         for(let item in CountryRegionData) {
-            if(CountryRegionData[item][1] == code.substring(0,2).toUpperCase()) {
-                return CountryRegionData[item][0]
+            if(CountryRegionData[item][1] === code.substring(0,2).toUpperCase()) {
+                return CountryRegionData[item][0];
             }
         }
     }
 
-    let league = []
+    let league = [];
     leagueCountry.map((e) => {
-        league.push({value: e.league, label: e.league, term: 'league'})
+        return league.push({value: e.league, label: e.league, term: 'league'});
     })
 
-    let countryForLeague = []
+    let countryForLeague = [];
     leagueCountry.map((e) => {
-        let label = find(e.country)
-        countryForLeague.push({value: e.country, label: label, term: 'nationality'})
+        let label = find(e.country);
+        return countryForLeague.push({value: e.country, label: label, term: 'nationality'});
     })
     let newArr= [];
     let arrId = [];
     for(let item of countryForLeague){
-        if(arrId.indexOf(item['value']) == -1){
+        if(arrId.indexOf(item['value']) === -1){
             arrId.push(item['value']);
             newArr.push(item);
         }
     }
-    newArr[0].label = 'England'
-    newArr[16].label = 'Scotland'
+    newArr[0].label = 'England';
+    newArr[16].label = 'Scotland';
 
-    const country = []
+    const country = [];
     CountryRegionData.map((e) => {
-        country.push({value: e[1], label: e[0], term: 'continents'})
+        return country.push({value: e[1], label: e[0], term: 'continents'});
     })
 
     const handleChange = (e) => {
-        allSearchTerm[e.term] = e.value
+        allSearchTerm[e.term] = e.value;
         // console.log(allSearchTerm, 'curState in search component')
     }
 
     const setUrl = (obj) => {
-        if(JSON.stringify(obj) == "{}") return ''
+        if(JSON.stringify(obj) === "{}") return '';
         let queryString = ''
         for(let key in obj) {
-            queryString += '&' + key + '=' + obj[key]
+            queryString += '&' + key + '=' + obj[key];
         }
-        return queryString
+        return queryString;
     }
 
     const handleSubmit = () => {
-        let updateSearchTerm = {...searchTerm, ...allSearchTerm}
-        let newStr = setUrl(updateSearchTerm).substring(1)
-        window.history.pushState(null,null,`?${newStr}`)
+        let updateSearchTerm = {...searchTerm, ...allSearchTerm};
+        let newStr = setUrl(updateSearchTerm).substring(1);
+        window.history.pushState(null,null,`?${newStr}`);
         // props.history.push(`http://localhost:3000/players?${newStr}`)
         props.searchValue(updateSearchTerm);
     }
 
-    if(props.className == 'playerComponent') {
+    if(props.className === 'playerComponent') {
         return (
             <div className='search-body'>
                 <div className='search-term'>
@@ -150,13 +150,13 @@ const SearchForm = (props) => {
                         </div>
                         <button className='search-button' type='submit' onClick={(e)=>{
                             let updateSearchTerm = {...searchTerm, ...allSearchTerm}
-                            setSearchTerm(updateSearchTerm)
-                            handleSubmit()
+                            setSearchTerm(updateSearchTerm);
+                            handleSubmit();
                         }}>Submit</button>
                         <Link to="/players">
                             <button className='search-button' type='submit' onClick={(e)=>{
-                                setSearchTerm(undefined)
-                                handleSubmit()
+                                setSearchTerm(undefined);
+                                handleSubmit();
                             }}>Reset</button>
                         </Link>
                     </form>

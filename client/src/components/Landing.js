@@ -5,16 +5,16 @@ import { GiSoccerBall } from "react-icons/gi";
 
 function Landing() {
   return (
-    <div class="logo">
-        <div class="float-container">
+    <div className="logo">
+        <div className="float-container">
 
-        <div class="float-child">
-        <GiSoccerBall className="App-logo" />
-        </div>
-  
-          <div class="float-child">
-          <SiFifa className="fifa" />
-        </div>
+          <div className="float-child">
+            <GiSoccerBall className="App-logo" />
+          </div>
+    
+          <div className="float-child">
+            <SiFifa className="fifa" />
+          </div>
   
         </div>
     </div>

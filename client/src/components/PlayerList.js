@@ -23,10 +23,10 @@ const PlayerList = (props) => {
                         // query todo!!!!!
                         const url = `http://localhost:3008/players${window.location.search}`;
                         const { data } = await axios.get(url);
-                        if(data.length == 0) {
-                            setError(true)
+                        if(data.length === 0) {
+                            setError(true);
                         }else {
-                            setError(false)
+                            setError(false);
                         }
                         setListData(data);
                         setLoading(false);

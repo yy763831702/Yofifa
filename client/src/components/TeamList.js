@@ -22,10 +22,10 @@ const TeamList = (props) => {
                         console.log('searchTerm', searchTerm);
                         const url = `http://localhost:3008/teams${window.location.search}`;
                         const { data } = await axios.get(url);
-                        if(data.length == 0) {
-                            setError(true)
+                        if(data.length === 0) {
+                            setError(true);
                         }else {
-                            setError(false)
+                            setError(false);
                         }
                         setListData(data);
                         setLoading(false);

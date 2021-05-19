@@ -40,6 +40,11 @@ const NavigationAuth = () => {
             Standings
           </NavLink>
         </li>
+        <li>
+          <NavLink exact to="/news/gb" activeClassName="active">
+            News
+          </NavLink>
+        </li>
 
         <li>
           <NavLink exact to="/createplayer" activeClassName="active">
@@ -86,6 +91,11 @@ const NavigationNonAuth = () => {
         <li>
           <NavLink exact to="/standings/39" activeClassName="active">
             Standings
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/news/gb" activeClassName="active">
+            News
           </NavLink>
         </li>
 
