@@ -74,19 +74,73 @@ const Player = (props) => {
             <div>
                 <h1>{short_name}</h1>
                 Data come from<a href={player_url}>Sofifa.com</a>
-
-                <div>
+                <div className="column col-12">
+                <div class="column col-12">
                     <img src={player_img_url} alt={_id} />
                     <span>
                         {long_name}
                         <img width='30px' src={`https://cdn.sofifa.com/flags/${nation_code}.png`} alt={nation_code} />
                         {positions} {age} years old ({dob}) {height_cm}cm {weight_kg}kg
-                        <div>overall rating: <span className={`p-${overall}`}>{overall}</span></div>
-                        <div>potential: <span className={`p-${potential}`}>{potential}</span></div>
-                        <div>value: {value_eur}</div>
-                        <div>wage per week: {wage_eur}</div>
+                        <section className="card spacing">
+                            <div class="columns">
+                                <div class="column col-3">overall rating: <span className={`p-${overall}`}>{overall}</span></div>
+                                <div class="column col-3">potential: <span className={`p-${potential}`}>{potential}</span></div>
+                                <div class="column col-3">value: {value_eur}</div>
+                                <div class="column col-3">wage per week: {wage_eur}</div>
+                            </div>
+                        </section>
+                        
+                        
                     </span>
                 </div>
+                <div className='player-card-section'>
+                    <div className='player-card'>
+                        <h4>profile</h4>
+                        <div>preferred foot: {preferred_foot}</div>
+                        <div>international reputation: {international_reputation}</div>
+                        <div>weak foot: {weak_foot}</div>
+                        <div>skill moves: {skill_moves}</div>
+                        <div>work rate: {work_rate}</div>
+                        <div>release clause: {release_clause_eur}</div>
+                    </div>
+                    {player_tags.length > 1 && 
+                        <div className='player-card'>
+                            <h4>player specialties</h4>
+                            <ul>{tags}</ul>
+                        </div>
+                    }
+                    <div className='player-card'>
+                        <Link to={`/team/${club_id}`}><h4>{club_name}</h4></Link>
+                        <div>
+                            <span>
+                                <img width='30px' src={`https://cdn.sofifa.com/flags/${league_code}.png`} alt={club_id} />
+                            </span>
+                            <span>{league_name}</span>
+                            <span>
+                                <img width='30px' src={`https://cdn.sofifa.com/teams/${club_id}/120.png`} alt={club_id} />
+                            </span>
+                        </div>
+                        <div>position: <span className={`pos ${team_position}`}>{team_position}</span></div>
+                        <div>jersey number: {team_jersey_number}</div>
+                        {loaned_from && 
+                            <div>loaned from: {loaned_from}</div>
+                        }
+                        {!loaned_from && 
+                            <div>joined: {joined}</div>
+                        }
+                        <div>contract valid until: {contract_valid_until}</div>
+                    </div>
+                    {nation_position && 
+                        <div className='player-card'>
+                            <h4>{nationality}</h4>
+                            <img width='30px' src={`https://cdn.sofifa.com/flags/${nation_code}.png`} alt={nation_code} />
+                            <div>position: <span className={`pos ${team_position}`}>{nation_position}</span></div>
+                            <div>jersey number: {nation_jersey_number}</div>
+                        </div>
+                    }
+                </div>
+                </div>
+                
 
                 <section className='p-map'>
                     <div></div>
@@ -160,52 +214,7 @@ const Player = (props) => {
 
                 <hr />
 
-                <div className='player-card-section'>
-                    <div className='player-card'>
-                        <h4>profile</h4>
-                        <div>preferred foot: {preferred_foot}</div>
-                        <div>international reputation: {international_reputation}</div>
-                        <div>weak foot: {weak_foot}</div>
-                        <div>skill moves: {skill_moves}</div>
-                        <div>work rate: {work_rate}</div>
-                        <div>release clause: {release_clause_eur}</div>
-                    </div>
-                    {player_tags.length > 1 && 
-                        <div className='player-card'>
-                            <h4>player specialties</h4>
-                            <ul>{tags}</ul>
-                        </div>
-                    }
-                    <div className='player-card'>
-                        <Link to={`/team/${club_id}`}><h4>{club_name}</h4></Link>
-                        <div>
-                            <span>
-                                <img width='30px' src={`https://cdn.sofifa.com/flags/${league_code}.png`} alt={club_id} />
-                            </span>
-                            <span>{league_name}</span>
-                            <span>
-                                <img width='30px' src={`https://cdn.sofifa.com/teams/${club_id}/120.png`} alt={club_id} />
-                            </span>
-                        </div>
-                        <div>position: <span className={`pos ${team_position}`}>{team_position}</span></div>
-                        <div>jersey number: {team_jersey_number}</div>
-                        {loaned_from && 
-                            <div>loaned from: {loaned_from}</div>
-                        }
-                        {!loaned_from && 
-                            <div>joined: {joined}</div>
-                        }
-                        <div>contract valid until: {contract_valid_until}</div>
-                    </div>
-                    {nation_position && 
-                        <div className='player-card'>
-                            <h4>{nationality}</h4>
-                            <img width='30px' src={`https://cdn.sofifa.com/flags/${nation_code}.png`} alt={nation_code} />
-                            <div>position: <span className={`pos ${team_position}`}>{nation_position}</span></div>
-                            <div>jersey number: {nation_jersey_number}</div>
-                        </div>
-                    }
-                </div>
+                
 
                 <hr />
 

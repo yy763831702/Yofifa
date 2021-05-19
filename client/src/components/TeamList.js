@@ -91,7 +91,7 @@ const TeamList = () => {
                 </label>
 
                 <table className='table'>
-                    <thead>
+                    <thead className = 'player-thead-team'>
                         <tr>
                             <th></th>
                             <th>Name</th>

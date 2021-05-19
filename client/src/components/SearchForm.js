@@ -43,7 +43,6 @@ const SearchForm = (props) => {
 
     return (
         <div className='search-body'>
-            <h1>this is search component</h1>
             <div className='search-term'>
                 <form className='search-form center'
                     method='POST'
@@ -58,7 +57,7 @@ const SearchForm = (props) => {
                         handleSubmit()
 			        }}
 			        name='formName'>
-                    <h5>Search</h5>
+                    <h1>Search</h1>
                     {/* <Select options={country} placeholder='Nationality/Region' onChange={handleChange}/> */}
                     <br/>
                     <div>
