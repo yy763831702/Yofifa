@@ -39,32 +39,28 @@ router.get('/:league/:teamname', async (req, res) => {
 });
 
 router.get('/', async (req, res) => {
-	let url = req.url.substring(1)
-	if(!req.query.skip) {
-		const result = {}
-        const reg = /[?&][^?&]+=[^?&]+/g
-        const found = url.match(reg)
-
-        if(found) {
-            found.forEach(item => {
-                let temp = item.substring(1).split('=')
-                let key = temp[0]
-                let value = temp[1]
-                result[key] = value
-            })
-        }
-		
-		let minOverall =  result.minOverall ? parseInt(result.minOverall) : 0
-		let maxOverall =  result.maxOverall ? parseInt(result.maxOverall) : 99
-		let minAttack =  result.minAttack ? parseInt(result.minAttack) : 0
-		let maxAttack =  result.maxAttack ? parseInt(result.maxAttack) : 99
-		let minDefence =  result.minDefence ? parseInt(result.minDefence) : 0
-		let maxDefence =  result.maxDefence ? parseInt(result.maxDefence) : 99
-		let minMidfield =  result.minMidfield ? parseInt(result.minMidfield) : 0
-		let maxMidfield =  result.maxMidfield ? parseInt(result.maxMidfield) : 99
-		let leagueName = result.league ? result.league.replace(/%20/g, ' ') : undefined
-		let nationality = result.nationality ? result.nationality : undefined
-
+	console.log(req.query);
+	if (req.query.minOverall || 
+		req.query.maxOverall || 
+		req.query.minAttack || 
+		req.query.maxAttack || 
+		req.query.minMidfield || 
+		req.query.maxMidfield || 
+		req.query.minDefence || 
+		req.query.maxDefence || 
+		req.query.nationality || 
+		req.query.lg || 
+		req.query.lgcode
+	) {
+		let minOverall = req.query.minOverall ? parseInt(req.query.minOverall) : 0;
+		let maxOverall = req.query.maxOverall ? parseInt(req.query.maxOverall) : 99;
+		let minAttack = req.query.minAttack ? parseInt(req.query.minAttack) : 0;
+		let maxAttack = req.query.maxAttack ? parseInt(req.query.maxAttack) : 99;
+		let minMidfield =  req.query.minMidfield ? parseInt(req.query.minMidfield) : 0;
+		let maxMidfield =  req.query.maxMidfield ? parseInt(req.query.maxMidfield) : 99;
+		let minDefence =  req.query.minDefence ? parseInt(req.query.minDefence) : 0;
+		let maxDefence =  req.query.maxDefence ? parseInt(req.query.maxDefence) : 99;
+		let leagueId = req.query.lg ? parseInt(req.query.lg) : undefined;
 
 		try {
 			res.json(
@@ -77,15 +73,16 @@ router.get('/', async (req, res) => {
 					maxDefence,
 					minMidfield,
 					maxMidfield,
-					leagueName,
-					nationality
+					leagueId,
+					req.query.nationality,
+					req.query.lgcode
 				)
 			);
 		} catch (e) {
 			console.log(e);
 			res.status(500).json({ error: `Player unable to be added: ` + e });
 		}
-	}else {
+	} else {
 		try {
 			let skip = req.query.skip ? Number( req.query.skip ) : 0;
 			let take = req.query.take ? Number( req.query.take ) : 20;

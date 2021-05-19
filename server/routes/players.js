@@ -27,34 +27,34 @@ router.get('/team/:id', async (req, res) => {
 });
 
 router.get('/', async (req, res) => {
-	let url = req.url.substring(1)
-	if(!req.query.skip) {
-		const result = {}
-        const reg = /[?&][^?&]+=[^?&]+/g
-        const found = url.match(reg)
-
-        if(found) {
-            found.forEach(item => {
-                let temp = item.substring(1).split('=')
-                let key = temp[0]
-                let value = temp[1]
-                result[key] = value
-            })
-        }
-		let minAge =  result.minAge ? parseInt(result.minAge) : 16
-		let maxAge =  result.maxAge ? parseInt(result.maxAge) : 53
-		let minOverall =  result.minOverall ? parseInt(result.minOverall) : 0
-		let maxOverall =  result.maxOverall ? parseInt(result.maxOverall) : 99
-		let minPotential =  result.minPotential ? parseInt(result.minPotential) : 0
-		let maxPotential =  result.maxPotential ? parseInt(result.maxPotential) : 99
-		let nationality
-		let leagueName = result.league ? result.league.replace(/%20/g, ' ') : undefined
-		for(let item in countryCode) {
-			if(countryCode[item].Code == result.continents) {
-				nationality = countryCode[item].Name
+	console.log('query', req.query);
+	if (req.query.minAge || 
+		req.query.maxAge || 
+		req.query.minOverall || 
+		req.query.maxOverall || 
+		req.query.minPotential || 
+		req.query.maxPotential || 
+		req.query.lg || 
+		req.query.lgcode || 
+		req.query.code
+	) {
+		let minAge =  req.query.minAge ? parseInt(req.query.minAge) : 16;
+		let maxAge =  req.query.maxAge ? parseInt(req.query.maxAge) : 53;
+		let minOverall =  req.query.minOverall ? parseInt(req.query.minOverall) : 0;
+		let maxOverall =  req.query.maxOverall ? parseInt(req.query.maxOverall) : 99;
+		let minPotential =  req.query.minPotential ? parseInt(req.query.minPotential) : 0;
+		let maxPotential =  req.query.maxPotential ? parseInt(req.query.maxPotential) : 99;
+		let league;
+		if( req.query.lg ) {
+			let leagueId = parseInt(req.query.lg);
+			let teams;
+			try {
+				teams = await teamData.getTeamsByLeagueId(leagueId);
+			} catch (e) {
+				console.log(e);
 			}
+			league = teams[0].league;
 		}
-
 		try {
 			res.json(
 				await playerData.getPlayersByFilter(
@@ -64,15 +64,17 @@ router.get('/', async (req, res) => {
 					maxOverall,
 					minPotential,
 					maxPotential,
-					nationality,
-					leagueName
+					league,
+					req.query.lgcode,
+					req.query.code
 				)
-		);
+			);
 		} catch (e) {
 			console.log(e);
 			res.status(500).json({ error: `Player unable to be added: ` + e });
 		}
-	}else {
+	} else {
+		console.log('no search');
 		try {
 			let skip = req.query.skip ? Number( req.query.skip ) : 0;
 			let take = req.query.take ? Number( req.query.take ) : 50;
