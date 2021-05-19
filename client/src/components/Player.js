@@ -79,7 +79,7 @@ const Player = (props) => {
         return (
             <div class='some-page-wrapper'>
             <div class='row'>
-                <div class='column'>
+                <div>
                      <div class='blue-column'>
                      <section className='p-map'>
                     <div></div>
