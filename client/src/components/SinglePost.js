@@ -43,8 +43,8 @@ const Player = (props) => {
     } else {
         const {_id, author, height, weight, preferred, weakFoot, skillMove, reputation, attackingWorkRate, defensiveWorkRate,
             commonName, firstName, lastName,age, nationality,position, potential,rating,
-            value, wage, attacking_crossing, attacking_finishing, attacking_heading_accuracy,
-            attacking_short_passing, attacking_volleys, skill_dribbling, skill_fk_accuracy,
+            value, wage, attack_crossing, attack_fishing, attack_heading_accuracy,
+            attack_short_passing, attack_volleys, skill_dribbling, skill_fk_accuracy,
             skill_long_passing, skill_ball_control, movement_acceleration,
             movement_sprint_speed, movement_agility, movement_reactions, movement_balance,
             power_shot_power, power_jumping, power_stamina, power_strength, power_long_shots,
@@ -93,23 +93,23 @@ const Player = (props) => {
                         <h5>Attacking</h5>
                         <ul>
                             <li>
-                                <span className={`p-${attacking_crossing}`}>{attacking_crossing}</span>
+                                <span className={`p-${attack_crossing}`}>{attack_crossing}</span>
                                 <span>Crossing</span>
                             </li>
                             <li>
-                                <span className={`p-${attacking_finishing}`}>{attacking_finishing}</span>
+                                <span className={`p-${attack_fishing}`}>{attack_fishing}</span>
                                 <span>Finishing</span>
                             </li>
                             <li>
-                                <span className={`p-${attacking_heading_accuracy}`}>{attacking_heading_accuracy}</span>
+                                <span className={`p-${attack_heading_accuracy}`}>{attack_heading_accuracy}</span>
                                 <span>Heading Accuracy</span>
                             </li>
                             <li>
-                                <span className={`p-${attacking_short_passing}`}>{attacking_short_passing}</span>
+                                <span className={`p-${attack_short_passing}`}>{attack_short_passing}</span>
                                 <span>Short Passing</span>
                             </li>
                             <li>
-                                <span className={`p-${attacking_volleys}`}>{attacking_volleys}</span>
+                                <span className={`p-${attack_volleys}`}>{attack_volleys}</span>
                                 <span>Volleys</span>
                             </li>
                         </ul>
