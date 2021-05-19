@@ -65,7 +65,6 @@ function SignIn() {
         <form onSubmit={handleLogin} >
           <div className="form-group">
             <label className="SignIn-label">
-              Email:
               <input
                 className="form-control"
                 name="email"
@@ -78,7 +77,6 @@ function SignIn() {
           </div>
           <div className="form-group">
             <label className="SignIn-label">
-              Password:
               <input
                 className="form-control"
                 name="password"
@@ -88,13 +86,13 @@ function SignIn() {
               />
             </label>
           </div>
-          <button type="submit">Log in</button>
+          <button className='signButton' type="submit">Log in</button>
 
           <button className="forgotPassword" onClick={passwordReset}>
             Forgot Password
           </button>
         </form>
-        <SocialSignIn />
+        <SocialSignIn/>
       </div>
       
 
