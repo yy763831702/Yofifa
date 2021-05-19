@@ -121,7 +121,6 @@ const SearchForm = (props) => {
     if(props.className == 'playerComponent') {
         return (
             <div className='search-body'>
-                <h1>this is player search component</h1>
                 <div className='search-term'>
                     <form className='search-form center'
                         method='POST'
@@ -129,7 +128,7 @@ const SearchForm = (props) => {
                             e.preventDefault();
                         }}
                         name='formName'>
-                        <h5>Search</h5>
+                        <h2>Search</h2>
                         <Select options={country} placeholder='Nationality/Region' onChange={handleChange}/>
                         <br/>
                         <Select options={league} placeholder='League' onChange={handleChange}/>
@@ -167,7 +166,6 @@ const SearchForm = (props) => {
     }else {
         return (
             <div className='search-body'>
-                <h1>this is team search component</h1>
                 <div className='search-term'>
                     <form className='search-form center'
                         method='POST'
@@ -175,7 +173,7 @@ const SearchForm = (props) => {
                             e.preventDefault();
                         }}
                         name='formName'>
-                        <h5>Search</h5>
+                        <h2>Search</h2>
                         <Select options={newArr} placeholder='Nationality/Region' onChange={handleChange}/>
                         <br/>
                         <Select options={league} placeholder='League' onChange={handleChange}/>

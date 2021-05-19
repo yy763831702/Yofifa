@@ -11,6 +11,7 @@ const PlayerList = (props) => {
     const [ loading, setLoading ] = useState(true);
     const [ page, setPage ] = useState(1);
     const [ take, setTake ] = useState(50);
+    const [ error, setError ] = useState(false)
 
     useEffect(
         () => {
@@ -22,6 +23,11 @@ const PlayerList = (props) => {
                         // query todo!!!!!
                         const url = `http://localhost:3008/players${window.location.search}`;
                         const { data } = await axios.get(url);
+                        if(data.length == 0) {
+                            setError(true)
+                        }else {
+                            setError(false)
+                        }
                         setListData(data);
                         setLoading(false);
                     } catch (error) {
@@ -64,6 +70,56 @@ const PlayerList = (props) => {
 
     const searchValue = value => setSearchTerm(value);
     const handlechange = event => setTake(Number(event.target.value));
+
+    if(error) {
+		return (
+            <section className='player-list-section'>
+                <div>
+                    <SearchForm searchValue={searchValue} className='playerComponent'/>
+                </div>
+                
+                <div>
+                    <Pagination 
+                        variant='outlined' 
+                        shape='rounded'
+                        count={Math.ceil(18944 / take)} 
+                        page={page} 
+                        onChange={(e, newPage) => setPage(newPage)}
+                    />
+
+                    <label >
+                        <select onChange={handlechange}>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                        </select>
+                        per page
+                    </label>
+
+                    <table className='table'>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Ova</th>
+                                <th>team & contract</th>
+                                <th>value</th>
+                                <th>wage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2>No players with those terms</h2>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+		);
+	}
 
     if (loading) {
         return (
