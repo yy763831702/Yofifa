@@ -40,7 +40,7 @@ function ChangePassword() {
         <form onSubmit={submitForm}>
           <div className="form-group">
             <label>
-              Current Password:
+              Current Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <input
                 className="form-control"
                 name="currentPassword"
@@ -54,7 +54,7 @@ function ChangePassword() {
 
           <div className="form-group">
             <label>
-              New Password:
+              New Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; 
               <input
                 className="form-control"
                 name="newPasswordOne"
