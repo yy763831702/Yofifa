@@ -66,6 +66,7 @@
 .grid {
     flex-Grow: 1;
     flex-Direction: row;
+    width: fit-content;
   }
 
 .cards{
@@ -82,22 +83,17 @@
     width: 20%;
     padding: 10px; 
   }
-
-h1{
-    font-size: 5;
-}
   
 
 .row:after {
-    content: "";
     display: table;
     clear: both;
   }
 
-
-
 .some-page-wrapper {
     margin: 15px;
+    color: #655e5e;
+    justify-content: center;
   }
   
   .row {
@@ -112,7 +108,69 @@ h1{
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    position: absolute;
+    left: 15%;
+    justify-content: center;
   }
+
+  .player-header {
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    height: 120px;
+    }
+
+.player-header-div {
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        color: #655e5e;
+}
+
+.player-header-data{
+    height: 80px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #655e5e;
+    font-size: 0.9rem;
+} 
+
+.player-header-column{
+    position:relative; 
+    left:-33px;
+    margin: 0 auto;
+   text-align: left;
+    color: #655e5e;
+    font-size: 0.9rem;
+} 
+
+.player-header-div h1 {
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+    color: inherit;
+}
+.player-header-div h2 {
+    margin: auto;
+    font-size: 0.7rem;
+    text-align: left;
+    color: inherit;
+    line-height: 1.5rem;
+}
+
+.profile-card{
+    width: 900px;
+    position:relative; 
+}
+
+.ability-card{
+    width: 900px;
+    position:relative; 
+}
   
   .blue-column {
     height: 1000px;

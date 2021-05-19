@@ -7,7 +7,6 @@ import {
     Card,
     CardContent
   } from '@material-ui/core';
-// import 'font-awesome/css/font-awesome.min.css';
 import '../App.css';
 import '../player.css';
 import StarRatings from 'react-star-ratings';
@@ -77,61 +76,98 @@ const Player = (props) => {
             goalkeeping_reflexes
         ) / 5;
         return (
-            <div class='some-page-wrapper'>
-            <div class='row'>
-                <div>
-                     <div class='blue-column'>
-                     <section className='p-map'>
-                    <div></div>
-                    <div className={`p-${ls.substring(0, 2)}`}>ls<br />{ls}</div>
-                    <div className={`p-${st.substring(0, 2)}`}>st<br />{st}</div>
-                    <div className={`p-${rs.substring(0, 2)}`}>rs<br />{rs}</div>
-                    <div></div>
+            <div className='some-page-wrapper'>
+                <div className='column'>
+                    <div className='green-column'>
+                        <div className='player-header'>
+                        <div className='player-header-div'>
+                        <div>
+                            <img src={player_img_url} alt={_id} />
+                        </div>
+                        <div>
+                            <div>
+                                <h1>{long_name}</h1>
+                                <h2>
+                                   <img width='30px' src={`https://cdn.sofifa.com/flags/${nation_code}.png`} alt={nation_code} />
+                                    {positions} {age} years old ({dob}) {height_cm}cm {weight_kg}kg
+                                </h2>
+                            </div>
+                            <div className='player-header-data'>
+                                <div className='player-header-column'>
+                                    <span className={`p-${overall}`}>{overall}</span><div>overall rating</div>
+                                </div>
+                                <div className='player-header-column'>
+                                    <span className={`p-${potential}`}>{potential}</span><div>potential</div>
+                                </div>
+                                <div className='player-header-column'>
+                                    <div><div>{value_eur}</div>value</div>
+                                </div>
+                                <div className='player-header-column'>
+                                    <div><div>{wage_eur}</div>wage</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+
+                        <Grid container className="grid" spacing={2}>
+                        <Grid item  xs={12} sm={12} md={12} lg={5} xl={6}>
+
+                        <Grid container className="grid" spacing={2}>
+                        <Grid item  xs={12} sm={6} md={6} lg={12} xl={12}>
+                        <section className='p-map'>
+                            <div></div>
+                            <div className={`p-${ls.substring(0, 2)}`}>ls<br />{ls}</div>
+                            <div className={`p-${st.substring(0, 2)}`}>st<br />{st}</div>
+                            <div className={`p-${rs.substring(0, 2)}`}>rs<br />{rs}</div>
+                            <div></div>
                         
-                    <div className={`p-${lw.substring(0, 2)}`}>lw<br />{lw}</div>
-                    <div className={`p-${lf.substring(0, 2)}`}>lf<br />{lf}</div>
-                    <div className={`p-${cf.substring(0, 2)}`}>cf<br />{cf}</div>
-                    <div className={`p-${rf.substring(0, 2)}`}>rf<br />{rf}</div>
-                    <div className={`p-${rw.substring(0, 2)}`}>rw<br />{rw}</div>
+                             <div className={`p-${lw.substring(0, 2)}`}>lw<br />{lw}</div>
+                            <div className={`p-${lf.substring(0, 2)}`}>lf<br />{lf}</div>
+                            <div className={`p-${cf.substring(0, 2)}`}>cf<br />{cf}</div>
+                            <div className={`p-${rf.substring(0, 2)}`}>rf<br />{rf}</div>
+                            <div className={`p-${rw.substring(0, 2)}`}>rw<br />{rw}</div>
 
-                    <div></div>
-                    <div className={`p-${lam.substring(0, 2)}`}>lam<br />{lam}</div>
-                    <div className={`p-${cam.substring(0, 2)}`}>cam<br />{cam}</div>
-                    <div className={`p-${ram.substring(0, 2)}`}>ram<br />{ram}</div>
-                    <div></div>
+                            <div></div>
+                            <div className={`p-${lam.substring(0, 2)}`}>lam<br />{lam}</div>
+                            <div className={`p-${cam.substring(0, 2)}`}>cam<br />{cam}</div>
+                            <div className={`p-${ram.substring(0, 2)}`}>ram<br />{ram}</div>
+                            <div></div>
 
-                    <div className={`p-${lm.substring(0, 2)}`}>lm<br />{lm}</div>
-                    <div className={`p-${lcm.substring(0, 2)}`}>lcm<br />{lcm}</div>
-                    <div className={`p-${cm.substring(0, 2)}`}>cm<br />{cm}</div>
-                    <div className={`p-${rcm.substring(0, 2)}`}>rcm<br />{rcm}</div>
-                    <div className={`p-${rm.substring(0, 2)}`}>rm<br />{rm}</div>
+                            <div className={`p-${lm.substring(0, 2)}`}>lm<br />{lm}</div>
+                            <div className={`p-${lcm.substring(0, 2)}`}>lcm<br />{lcm}</div>
+                            <div className={`p-${cm.substring(0, 2)}`}>cm<br />{cm}</div>
+                            <div className={`p-${rcm.substring(0, 2)}`}>rcm<br />{rcm}</div>
+                            <div className={`p-${rm.substring(0, 2)}`}>rm<br />{rm}</div>
 
-                    <div className={`p-${lwb.substring(0, 2)}`}>lwb<br />{lwb}</div>
-                    <div className={`p-${ldm.substring(0, 2)}`}>ldm<br />{ldm}</div>
-                    <div className={`p-${cdm.substring(0, 2)}`}>cdm<br />{cdm}</div>
-                    <div className={`p-${rdm.substring(0, 2)}`}>rdm<br />{rdm}</div>
-                    <div className={`p-${rwb.substring(0, 2)}`}>rwb<br />{rwb}</div>
+                            <div className={`p-${lwb.substring(0, 2)}`}>lwb<br />{lwb}</div>
+                            <div className={`p-${ldm.substring(0, 2)}`}>ldm<br />{ldm}</div>
+                            <div className={`p-${cdm.substring(0, 2)}`}>cdm<br />{cdm}</div>
+                            <div className={`p-${rdm.substring(0, 2)}`}>rdm<br />{rdm}</div>
+                            <div className={`p-${rwb.substring(0, 2)}`}>rwb<br />{rwb}</div>
 
-                    <div className={`p-${lb.substring(0, 2)}`}>lb<br />{lb}</div>
-                    <div className={`p-${lcb.substring(0, 2)}`}>lcb<br />{lcb}</div>
-                    <div className={`p-${cb.substring(0, 2)}`}>cb<br />{cb}</div>
-                    <div className={`p-${rcb.substring(0, 2)}`}>rcb<br />{rcb}</div>
-                    <div className={`p-${rb.substring(0, 2)}`}>rb<br />{rb}</div>
+                            <div className={`p-${lb.substring(0, 2)}`}>lb<br />{lb}</div>
+                            <div className={`p-${lcb.substring(0, 2)}`}>lcb<br />{lcb}</div>
+                            <div className={`p-${cb.substring(0, 2)}`}>cb<br />{cb}</div>
+                            <div className={`p-${rcb.substring(0, 2)}`}>rcb<br />{rcb}</div>
+                            <div className={`p-${rb.substring(0, 2)}`}>rb<br />{rb}</div>
 
-                    <div></div>
-                    <div></div>
-                    {player_positions[0] === 'GK' ? 
-                        <div className={`p-${overall}`}>gk<br />{overall}</div>
-                    : 
-                        <div className={`p-${Math.floor(gkAbility)}`}>gk<br />{Math.floor(gkAbility)}</div>
-                    }
-                    <div></div>
-                    <div></div>
-                </section>
+                            <div></div>
+                            <div></div>
+                            {player_positions[0] === 'GK' ? 
+                                <div className={`p-${overall}`}>gk<br />{overall}</div>
+                                    : 
+                                <div className={`p-${Math.floor(gkAbility)}`}>gk<br />{Math.floor(gkAbility)}</div>
+                            }
+                            <div></div>
+                            <div></div>
+                        </section>
+                        </Grid>
 
-                
-                <div>
-                    {player_positions[0] === 'GK' ? 
+                        <Grid item  xs={12} sm={6} md={6} lg={12} xl={12}>
+                        <div>
+                            {player_positions[0] === 'GK' ? 
                         <Canvas
                             isgk={1}
                             botright={gk_kicking}
@@ -152,34 +188,16 @@ const Player = (props) => {
                         />
                     }
                     </div>
-                     </div>
-                    </div>
-                <div class='column'>
-                    <div class='green-column'>
-                    <div>
-                    <Card className="cards">
-                        <CardContent>
-                        <div className = "row">
-                            <div className = "columnHeader">
-                                <img src={player_img_url} alt={_id} />
-                            </div>
-                            <div className = "columnHeader " >
-                                <h1>{long_name}</h1>
-                                <img width='30px' src={`https://cdn.sofifa.com/flags/${nation_code}.png`} alt={nation_code} />
-                                {positions} {age} years old ({dob}) {height_cm}cm {weight_kg}kg
-                            </div>
-                        </div>
-                        <div className = "row">
-                        <div className = "column"><div><span className={`p-${overall}`}>{overall}</span></div>overall rating</div>
-                        <div className = "column"><div><span className={`p-${potential}`}>{potential}</span></div>potential</div>
-                        <div className = "column" ><div>{value_eur}</div>value</div>
-                        <div className = "column"><div>{wage_eur}</div>wage</div>
-                        </div>
-                        </CardContent>
-                    </Card>
-                </div>
-                
-                <div>
+                        </Grid>
+                        </Grid>
+                        
+                        
+
+                        
+                    </Grid>
+
+                    <Grid item xs={10} sm={10} md={10} lg={5} xl={6}>
+                    <div className='profile-card'>
                     <CardGroup className='cardGroup'>
                     <div className='player-card'>
                         <h4>profile</h4>
@@ -248,9 +266,10 @@ const Player = (props) => {
                     }
                     </CardGroup>
                 </div>
-                    <div>
-                    <Grid container className="grid" spacing={-1}>
-                    <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+
+                <div className='ability-card'>
+                    <Grid container className="grid" spacing={3}>
+                    <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
                      <div className='player-ability-card'>
                         <h5>Attacking</h5>
                         <ul>
@@ -277,7 +296,7 @@ const Player = (props) => {
                         </ul>
                     </div>
                 </Grid>
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
                 <div className='player-ability-card'>
                         <h5>Skill</h5>
                         <ul>
@@ -304,7 +323,7 @@ const Player = (props) => {
                         </ul>
                     </div>
                 </Grid>
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
                 <div className='player-ability-card'>
                 <h5>Movement</h5>
                         <ul>
@@ -332,7 +351,7 @@ const Player = (props) => {
                     </div>
                 </Grid>
 
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
                 <div className='player-ability-card'>
                 <h5>Power</h5>
                         <ul>
@@ -360,7 +379,7 @@ const Player = (props) => {
                     </div>
                 </Grid>
 
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
                 <div className='player-ability-card'>
                 <h5>Mentality</h5>
                         <ul>
@@ -392,7 +411,7 @@ const Player = (props) => {
                     </div>
                 </Grid>
 
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
                 <div className='player-ability-card'>
                 <h5>Defending</h5>
                         <ul>
@@ -408,7 +427,7 @@ const Player = (props) => {
                     </div>
                 </Grid>
 
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
                 <div className='player-ability-card'>
                 <h5>Goalkeeping</h5>
                         <ul>
@@ -437,7 +456,7 @@ const Player = (props) => {
                 </Grid>
 
                 {player_traits.length > 1 && 
-                         <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+                         <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
                         <div className='player-ability-card'>
                             <h5>Traits</h5>
                             <ul>{traits}</ul>
@@ -446,9 +465,13 @@ const Player = (props) => {
                     }
                 </Grid>
                     </div>
+                    </Grid>
+                    </Grid>
+                
+                
+                    
                     </div>
                 </div>
-            </div>
             </div>
         );
     }

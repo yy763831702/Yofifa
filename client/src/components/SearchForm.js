@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Select from 'react-select'
 import { Link } from "react-router-dom";
 import { CountryRegionData } from 'react-country-region-selector';
+import "./SearchForm.css";
 
 const SearchForm = (props) => {
     const [searchTerm, setSearchTerm] = useState(undefined);
@@ -143,20 +144,20 @@ const SearchForm = (props) => {
                         <br/>
                         <Select options={league} placeholder='League' onChange={handleChange}/>
                         <br/>
-                        <div>
-                            <label className='age'>Age</label>
-                            <input className='minAge' type='number' name='minAge' max='53' min='16' placeholder='15' onChange={(e) => {allSearchTerm.minAge = e.target.value}}/>
-                            <input className='maxAge' type='number' name='maxAge' max='53' min='16' placeholder='45' onChange={(e) => {allSearchTerm.maxAge = e.target.value}}/>
+                        <div className='search-item'>
+                            <label className='item'>Age</label>
+                            <input className='space' type='number' name='maxAge' max='53' min='16' placeholder='45' onChange={(e) => {allSearchTerm.maxAge = e.target.value}}/>
+                            <input className='space' type='number' name='minAge' max='53' min='16' placeholder='15' onChange={(e) => {allSearchTerm.minAge = e.target.value}}/>
                         </div>
-                        <div>
-                            <label className='age'>Overall Rating</label>
-                            <input className='minOverall' type='number' name='minOverall' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minOverall = e.target.value}}/>
-                            <input className='maxOverall' type='number' name='maxOverall' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxOverall = e.target.value}}/>
+                        <div className='search-item'>
+                            <label className='item'>Overall Rating</label>
+                            <input className='space' type='number' name='maxOverall' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxOverall = e.target.value}}/>
+                            <input className='space' type='number' name='minOverall' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minOverall = e.target.value}}/>
                         </div>
-                        <div>
-                            <label className='age'>Potential</label>
-                            <input className='minPotential' type='number' name='minPotential' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minPotential = e.target.value}}/>
-                            <input className='maxPotential' type='number' name='maxPotential' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxPotential = e.target.value}}/>
+                        <div className='search-item'>
+                            <label className='item'>Potential</label>
+                            <input className='space' type='number' name='maxPotential' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxPotential = e.target.value}}/>
+                            <input className='space' type='number' name='minPotential' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minPotential = e.target.value}}/>
                         </div>
                         <button className='search-button' type='submit' onClick={(e)=>{
                             let updateSearchTerm = {...searchTerm, ...allSearchTerm}
@@ -188,25 +189,25 @@ const SearchForm = (props) => {
                         <br/>
                         <Select options={league} placeholder='League' onChange={handleChange}/>
                         <br/>
-                        <div>
-                            <label className='age'>Overall Rating</label>
-                            <input className='minOverall' type='number' name='minOverall' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minOverall = e.target.value}}/>
-                            <input className='maxOverall' type='number' name='maxOverall' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxOverall = e.target.value}}/>
+                        <div className='search-item'>
+                            <label className='item'>Overall Rating</label>
+                            <input className='space' type='number' name='maxOverall' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxOverall = e.target.value}}/>
+                            <input className='space' type='number' name='minOverall' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minOverall = e.target.value}}/>
                         </div>
-                        <div>
-                            <label className='age'>Attack</label>
-                            <input className='minAttack' type='number' name='minAttack' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minAttack = e.target.value}}/>
-                            <input className='maxAttack' type='number' name='maxAttack' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxAttack = e.target.value}}/>
+                        <div className='search-item'>
+                            <label className='item'>Attack</label>
+                            <input className='space' type='number' name='maxAttack' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxAttack = e.target.value}}/>
+                            <input className='space' type='number' name='minAttack' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minAttack = e.target.value}}/>
                         </div>
-                        <div>
-                            <label className='age'>Defence</label>
-                            <input className='minDefence' type='number' name='minDefence' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minDefence = e.target.value}}/>
-                            <input className='maxDefence' type='number' name='maxDefence' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxDefence = e.target.value}}/>
+                        <div className='search-item'>
+                            <label className='item'>Defence</label>
+                            <input className='space' type='number' name='maxDefence' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxDefence = e.target.value}}/>
+                            <input className='space' type='number' name='minDefence' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minDefence = e.target.value}}/>
                         </div>
-                        <div>
-                            <label className='age'>Midfield</label>
-                            <input className='minMidfield' type='number' name='minMidfield' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minMidfield = e.target.value}}/>
-                            <input className='maxMidfield' type='number' name='maxMidfield' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxMidfield = e.target.value}}/>
+                        <div className='search-item'> 
+                            <label className='item'>Midfield</label>
+                            <input className='space' type='number' name='maxMidfield' max='99' min='0' placeholder='99' onChange={(e) => {allSearchTerm.maxMidfield = e.target.value}}/>
+                            <input className='space' type='number' name='minMidfield' max='99' min='0' placeholder='0' onChange={(e) => {allSearchTerm.minMidfield = e.target.value}}/>
                         </div>
                         <button className='search-button' type='submit' onClick={(e)=>{
                             let updateSearchTerm = {...searchTerm, ...allSearchTerm}

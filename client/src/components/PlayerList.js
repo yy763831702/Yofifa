@@ -161,7 +161,7 @@ const PlayerList = (props) => {
                 
                 <div>
                     {!searchTerm && 
-                        <div>
+                        <div className='List-border'>
                             <Pagination 
                                 variant='outlined' 
                                 shape='rounded'
@@ -204,3 +204,4 @@ const PlayerList = (props) => {
 };
 
 export default PlayerList;
+

@@ -51,13 +51,12 @@ function SignUp() {
   }
 
   return (
-    <div>
+    <div className='login-form'>
       <h1>Sign up</h1>
       {pwMatch && <h4 className="error">{pwMatch}</h4>}
       <form onSubmit={handleSignUp}>
         <div className="form-group">
           <label>
-            Name:
             <input
               className="form-control"
               required
@@ -69,7 +68,6 @@ function SignUp() {
         </div>
         <div className="form-group">
           <label>
-            Email:
             <input
               className="form-control"
               required
@@ -81,7 +79,6 @@ function SignUp() {
         </div>
         <div className="form-group">
           <label>
-            Password:
             <input
               className="form-control"
               id="passwordOne"
@@ -94,7 +91,6 @@ function SignUp() {
         </div>
         <div className="form-group">
           <label>
-            Confirm Password:
             <input
               className="form-control"
               name="passwordTwo"
@@ -104,7 +100,7 @@ function SignUp() {
             />
           </label>
         </div>
-        <button id="submitButton" name="submitButton" type="submit">
+        <button className='signButton' id="submitButton" name="submitButton" type="submit">
           Sign Up
         </button>
       </form>
