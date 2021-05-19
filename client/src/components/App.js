@@ -41,8 +41,8 @@ function App() {
         <PrivateRoute path="/home" component={Home} />
         <PrivateRoute path="/createplayer" component={CreatePlayer} />
         <PrivateRoute path="/account" component={Account} />
-        <PrivateRoute path="/posts/users/:id" component={MyPost} />
-        <PrivateRoute path="/posts/:id" component={SinglePost} />
+        <PrivateRoute exact path="/posts/users/:id" component={MyPost} />
+        <PrivateRoute exact path="/posts/:id" component={SinglePost} />
         <Route path="/signin" component={SignIn} />
         <Route path="/signup" component={SignUp} />
       </Router>
