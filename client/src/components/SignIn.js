@@ -2,6 +2,7 @@ import React, { useState, useEffect,useContext } from 'react';
 import SocialSignIn from './SocialSignIn';
 import { Redirect } from 'react-router-dom';
 import { AuthContext } from '../firebase/Auth';
+import '../App.css';
 import axios from 'axios';
 import {
   doSignInWithEmailAndPassword,
@@ -10,29 +11,6 @@ import {
 
 function SignIn() {
   const { currentUser } = useContext(AuthContext);
-  
-  
-  // useEffect(()=>{
-  //   console.log('on load useeffect');
-  //   async function fetchData(){
-  //     console.log('function running')
-  //     if(currentUser){
-  //       try{
-  //         const user = await axios.get(`http://localhost:3008/users/${currentUser.uid}`)
-  //         console.log(user)
-  //        }catch(e){
-  //         if(e.response.status === 404){
-  //         const userId = parseInt(currentUser.uid)
-  //         await axios.post('http://localhost:3008/users', userId)
-  //         console.log('add to moongo')
-  //         }
-  //       }
-  //     }else{
-  //       console.log('nouser')
-  //     }
-  //   } 
-  //   fetchData() 
-  // },[])
 
   const handleLogin = async (event) => {
     event.preventDefault();
@@ -81,42 +59,47 @@ function SignIn() {
   }
   return (
     <div>
-      <h1>Log in</h1>
-      <form onSubmit={handleLogin}>
-        <div className="form-group">
-          <label>
-            Email:
-            <input
-              className="form-control"
-              name="email"
-              id="email"
-              type="email"
-              placeholder="Email"
-              required
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label>
-            Password:
-            <input
-              className="form-control"
-              name="password"
-              type="password"
-              placeholder="Password"
-              required
-            />
-          </label>
-        </div>
-        <button type="submit">Log in</button>
+      
+      <div className='login-form'>
+        <h1>Log in</h1>
+        <form onSubmit={handleLogin} >
+          <div className="form-group">
+            <label className="SignIn-label">
+              Email:
+              <input
+                className="form-control"
+                name="email"
+                id="email"
+                type="email"
+                placeholder="Email"
+                required
+              />
+            </label>
+          </div>
+          <div className="form-group">
+            <label className="SignIn-label">
+              Password:
+              <input
+                className="form-control"
+                name="password"
+                type="password"
+                placeholder="Password"
+                required
+              />
+            </label>
+          </div>
+          <button type="submit">Log in</button>
 
-        <button className="forgotPassword" onClick={passwordReset}>
-          Forgot Password
-        </button>
-      </form>
+          <button className="forgotPassword" onClick={passwordReset}>
+            Forgot Password
+          </button>
+        </form>
+        <SocialSignIn />
+      </div>
+      
 
       <br />
-      <SocialSignIn />
+     
     </div>
   );
 }
