@@ -160,8 +160,8 @@ const PlayerList = (props) => {
                 </div>
                 
                 <div>
-                    {!searchTerm && 
-                        <div className='List-border'>
+                    {window.location.search && 
+                        <div className='list-nav'>
                             <Pagination 
                                 variant='outlined' 
                                 shape='rounded'
@@ -169,14 +169,14 @@ const PlayerList = (props) => {
                                 page={page} 
                                 onChange={(e, newPage) => setPage(newPage)}
                             />
-                            <label >
-                                <select onChange={handlechange}>
+                            <div className='list-select'>
+                                <select id='select' onChange={handlechange}>
                                     <option value="50">50</option>
                                     <option value="100">100</option>
                                     <option value="200">200</option>
                                 </select>
-                                per page
-                            </label>
+                                <label>per page</label>
+                            </div>
                         </div>
                     }
 

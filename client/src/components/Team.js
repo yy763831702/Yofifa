@@ -137,7 +137,7 @@ const Team = (props) => {
                         <div>
                             <div>
                                 <h1>{team_name}</h1>
-                                <div>
+                                <div className='team-header-lg-div'>
                                     <img width='30px' src={`https://media.api-sports.io/flags/${league_nation_code}.svg`} alt={league_nation_code}/>
                                     {league_id !== 0 ? <Link to={`/standings/${league_id}`}>{league}</Link> : <span>{league}</span>}
                                 </div>
@@ -189,8 +189,8 @@ const Team = (props) => {
                                 </span>
                             </div>
                             <div className='team-info-div'>transfer budget: <span>{transfer_budget}</span></div>
-                            <div className='team-info-div'>line up Age: <span>{startingXIAverAge}</span></div>
-                            <div className='team-info-div'>whole Team Age: <span>{wholeTeamAverAge}</span></div>
+                            <div className='team-info-div'>line up Age: <span>{startingXIAverAge} y.o.</span></div>
+                            <div className='team-info-div'>whole Team Age: <span>{wholeTeamAverAge} y.o.</span></div>
                         </div>
                         <div className='team-info'>
                             <h2>Tactics</h2>

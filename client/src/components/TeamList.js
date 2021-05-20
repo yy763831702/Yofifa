@@ -11,7 +11,7 @@ const TeamList = (props) => {
     const [ searchTerm, setSearchTerm ] = useState('');
     const [ page, setPage ] = useState(1);
     const [ take, setTake ] = useState(20);
-    const [ error, setError ] = useState(false)
+    const [ error, setError ] = useState(false);
 
     useEffect(
         () => {
@@ -103,19 +103,10 @@ const TeamList = (props) => {
                         <Link to={`/team/${_id}`} >
                             <div>{team_name}</div>
                         </Link>
-                        {league_id !== 0 ? 
-                            // <Link to={`/league/${league_id}`} >
-                                <div className='table-td-info-div'>
-                                    <span><img src={`https://cdn.sofifa.com/flags/${league_nation_code}.png`} alt={_id} /></span>
-                                    <span className='table-td-info-span'>{league}</span>
-                                </div>
-                            // </Link>
-                        :
-                            <div className='table-td-info-div'>
-                                <span><img src={`https://cdn.sofifa.com/flags/${league_nation_code}.png`} alt={_id} /></span>
-                                <span className='table-td-info-span'>{league}</span>
-                            </div>
-                        }
+                        <div className='table-td-info-div'>
+                            <span><img src={`https://cdn.sofifa.com/flags/${league_nation_code}.png`} alt={_id} /></span>
+                            <span className='table-td-info-span'>{league}</span>
+                        </div>
                     </td>
                     <td><span className={`p-${overall}`}>{overall}</span></td>
                     <td><span className={`p-${attack}`}>{attack}</span></td>
@@ -131,8 +122,8 @@ const TeamList = (props) => {
                     <SearchForm searchValue={searchValue} className='teamComponent'/>
                 </div>
                 <div>
-                    {!searchTerm && 
-                        <div>
+                    {!window.location.search && 
+                        <div className='list-nav'>
                             <Pagination 
                                 variant='outlined' 
                                 shape='rounded'
@@ -140,14 +131,14 @@ const TeamList = (props) => {
                                 page={page} 
                                 onChange={(e, newPage) => setPage(newPage)}
                             />
-                            <label >
-                                <select onChange={handlechange}>
+                            <div className='list-select'>
+                                <select id='select' onChange={handlechange}>
                                     <option value="20">20</option>
                                     <option value="50">50</option>
                                     <option value="100">100</option>
                                 </select>
-                                per page
-                            </label>
+                                <label>per page</label>
+                            </div>
                         </div>
                     }
 
