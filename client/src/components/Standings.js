@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import axios from 'axios';
 import Table from './Table';
 import '../App.css';
+import { GiSoccerBall } from "react-icons/gi";
 
 const Standings = (props) => {
     const [ listData, setListData ] = useState(undefined);
@@ -32,8 +33,8 @@ const Standings = (props) => {
     
     if (loading) {
         return (
-            <div>
-                <h2>Loading...</h2>
+            <div className='loading'>
+                <GiSoccerBall className="soccer-logo" /><h1>Loading...</h1>
             </div>
         );
     } else if (listData === undefined) {

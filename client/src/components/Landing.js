@@ -1,19 +1,20 @@
 import React from 'react';
 import "./Landing.css";
+import '../App.css';
 import { SiFifa } from "react-icons/si";
 import { GiSoccerBall } from "react-icons/gi";
 
 function Landing() {
   return (
-    <div className="logo">
-        <div className="float-container">
+    <div className="landing-logo">
+        <div className="landing-float-container">
 
-          <div className="float-child">
-            <GiSoccerBall className="App-logo" />
+          <div className="landing-float-child">
+            <GiSoccerBall className="soccer-logo" />
           </div>
     
-          <div className="float-child">
-            <SiFifa className="fifa" />
+          <div className="landing-float-child">
+            <SiFifa className="landing-fifa" />
           </div>
   
         </div>

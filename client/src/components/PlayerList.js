@@ -160,7 +160,7 @@ const PlayerList = (props) => {
                 </div>
                 
                 <div>
-                    {window.location.search && 
+                    {!window.location.search && 
                         <div className='list-nav'>
                             <Pagination 
                                 variant='outlined' 

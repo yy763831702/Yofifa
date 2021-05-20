@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router";
 import axios from 'axios';
+
 import '../App.css';
+import { GiSoccerBall } from "react-icons/gi";
 
 const News = (props) => {
     const [ newsData, setNewsData ] = useState(undefined);
@@ -31,8 +33,8 @@ const News = (props) => {
 
     if (loading) {
         return (
-            <div>
-                <h2>Loading...</h2>
+            <div className='loading'>
+                <GiSoccerBall className="soccer-logo" /><h1>Loading...</h1>
             </div>
         );
     } else {

@@ -26,22 +26,38 @@ const NavigationAuth = () => {
         </li>
 
         <li>
-          <NavLink exact to="/players" activeClassName="active">
+          <NavLink exact to="/players" activeClassName="active"
+            isActive={(match, location) => {
+              return location.pathname.includes('/players');
+            }}
+          >
             Players
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/teams" activeClassName="active">
+          <NavLink exact to="/teams" activeClassName="active"
+            isActive={(match, location) => {
+              return location.pathname.includes('/teams');
+            }}
+          >
             Teams
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/standings/39" activeClassName="active">
+          <NavLink exact to="/standings/39" activeClassName="active"
+            isActive={(match, location) => {
+              return location.pathname.includes('/standings/');
+            }}
+          >
             Standings
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/news/gb" activeClassName="active">
+          <NavLink exact to="/news/gb" activeClassName="active"
+            isActive={(match, location) => {
+              return location.pathname.includes('/news/');
+            }}
+          >
             News
           </NavLink>
         </li>
@@ -79,22 +95,38 @@ const NavigationNonAuth = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/players" activeClassName="active">
+          <NavLink exact to="/players" activeClassName="active"
+            isActive={(match, location) => {
+              return location.pathname.includes('/players');
+            }}
+          >
             Players
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/teams" activeClassName="active">
+          <NavLink exact to="/teams" activeClassName="active"
+            isActive={(match, location) => {
+              return location.pathname.includes('/teams');
+            }}
+          >
             Teams
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/standings/39" activeClassName="active">
+          <NavLink exact to="/standings/39" activeClassName="active"
+            isActive={(match, location) => {
+              return location.pathname.includes('/standings/');
+            }}
+          >
             Standings
           </NavLink>
         </li>
         <li>
-          <NavLink exact to="/news/gb" activeClassName="active">
+          <NavLink exact to="/news/gb" activeClassName="active"
+            isActive={(match, location) => {
+              return location.pathname.includes('/news/');
+            }}
+          >
             News
           </NavLink>
         </li>
