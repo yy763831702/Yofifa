@@ -7,7 +7,7 @@ import '../App.css';
 import '../player.css';
 import StarRatings from 'react-star-ratings';
 import Canvas from './Canvas';
-
+import { GiSoccerBall } from "react-icons/gi";
 const Player = (props) => {
     const [ playerData, setPlayerData ] = useState(undefined);
     const [ loading, setLoading ] = useState(true);
@@ -31,8 +31,8 @@ const Player = (props) => {
 
     if (loading) {
         return (
-            <div>
-                <h2>Loading...</h2>
+            <div className='loading'>
+                <GiSoccerBall className="soccer-logo" /><h1>Loading...</h1>
             </div>
         );
     } else {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import StarRatings from 'react-star-ratings';
-
+import { GiSoccerBall } from "react-icons/gi";
 import '../App.css';
 import '../team.css';
 
@@ -70,8 +70,8 @@ const Team = (props) => {
 
     if (loading) {
         return (
-            <div>
-                <h2>Loading...</h2>
+            <div className='loading'>
+                <GiSoccerBall className="soccer-logo" /><h1>Loading...</h1>
             </div>
         );
     } else {
