@@ -65,7 +65,7 @@ module.exports = {
         // filterArray.push({'player_positions': {$all: [playerPositions]}});
         // filterArray.push({'preferred_foot': preferredFoot});
 
-        return await teamCollection.find({ $and: filterArray }).toArray();
+        return await teamCollection.find({ $and: filterArray }).limit(50).toArray();
     },
 
     /**
