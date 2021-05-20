@@ -59,13 +59,85 @@ const Table = (props) => {
             } else if (name === 'Guangzhou R&amp;F') {
                 name = 'Guangzhou R&F FC';
             }
+        } else if (props.id === 119) {
+            if (name === 'Brondby') {
+                name = 'Brøndby IF';
+            } else if (name === 'FC Copenhagen') {
+                name = 'FC København';
+            } else if (name === 'Sonderjyske') {
+                name = 'SønderjyskE';
+            }
+        } else if (props.id === 62 && name === 'Niort') {
+            name = 'Chamois Niortais Football Club';
+        } else if (props.id === 79) {
+            if (name === 'FC Heidenheim') {
+                name = '1. FC Heidenheim 1846';
+            } else if (name === 'FC Nurnberg') {
+                name = '1. FC Nürnberg';
+            }
+        } else if (props.id === 80) {
+            if (name === 'FC Saarbrucken') {
+                name = '1. FC Saarbrücken';
+            } else if (name === 'FC Magdeburg') {
+                name = '1. FC Magdeburg';
+            } else if (name === 'FC Viktoria Koln') {
+                name = 'Viktoria Köln';
+            } else if (name === 'FC Kaiserslautern') {
+                name = '1. FC Kaiserslautern';
+            }
+        } else if (props.id === 307) {
+            if (name === 'Al-Hilal Saudi FC') {
+                name = 'Al Hilal';
+            } else if (name === 'Al-Nassr') {
+                name = 'Al Nassr';
+            } else if (name === 'Al Wehda Club') {
+                name = 'Al Wehda';
+            } else if (name === 'Al-Faisaly FC') {
+                name = 'Al Faisaly';
+            } else if (name === 'Al-Raed') {
+                name = 'Al Raed';
+            } else if (name === 'Al-Ettifaq') {
+                name = 'Ettifaq FC';
+            } else if (name === 'Al Taawon') {
+                name = 'Al Taawoun';
+            } else if (name === 'Al-Ittihad FC') {
+                name = 'Al Ittihad';
+            } else if (name === 'Al-Fateh') {
+                name = 'Al Fateh';
+            } else if (name === 'Al-Fayha') {
+                name = 'Al Fayha';
+            } else if (name === 'Al-Hazm') {
+                name = 'Al Hazem';
+            } else if (name === 'Dhamk') {
+                name = 'Damac FC';
+            }
+        } else if (props.id === 113) {
+            if (name === 'Malmo FF') {
+                name = 'Malmö FF';
+            } else if (name === 'Hammarby FF') {
+                name = 'Hammarby IF';
+            } else if (name === 'kalmar FF') {
+                name = 'Kalmar FF';
+            }
+        } else if (props.id === 203) {
+            if (name === 'Besiktas') {
+                name = 'Beşiktaş JK';
+            } else if (name === 'Goztepe') {
+                name = 'Göztepe SK';
+            } else if (name === 'Istanbul Basaks...') {
+                name = 'Medipol Başakşehir FK';
+            }
+        } else if (props.id === 141) {
+            if (name === 'Leganes') {
+                name = 'CD Leganés';
+            } else if (name === 'Mirandes') {
+                name = 'CD Mirandés';
+            }
         }
-
         name = encodeURIComponent(name);
         try {
             const url = `http://localhost:3008/teams/${props.id}/${name}`;
             const { data } = await axios.get(url);
-            // console.log('team id:', data._id, 'name:', data.team_name);
             history.push({ pathname: `/team/${data._id}` });
         } catch (error) {
             console.log(error);
@@ -195,31 +267,6 @@ export default Table;
 
 
 
-// Wolves: Wolverhampton Wanderers
-// Lyon:Olympique Lyonnais
-// Rennes: Stade Rennais FC
-// Nimes: Nîmes Olympique
-// Alaves Alaves: Deportivo Alavés
-// Hertha Berlin: Hertha BSC
-// FC Koln : 1. FC Köln
-// Lanus: Club Atlético Lanús
-// Western Sydney: Western Sydney Wanderers
-// St. Truiden: Sint-Truidense VV
-// Atletico Goiani… : Atlético Clube Goianiense
-// Atletico Parana... : Club Athletico Paranaense
-// Shanghai Shenhua :Shanghai Greenland Shenhua FC
-// FC Nordsjælland, 
-// FC Copenhagen: FC København
-// Brondby: Brøndby IF
-// Sonderjyske: SønderjyskE
-// QPR: Queens Park Rangers
-// Niort: Chamois Niortais Football Club
-// FC Heidenheim : 1. FC Heidenheim 1846
-// FC Nurnberg: 1. FC Nürnberg
-// FC Saarbrucken: 1. FC Saarbrücken
-// FC Magdeburg: 1. FC Magdeburg
-// FC Viktoria Koln: Viktoria Köln
-// FC Kaiserslautern: 1. FC Kaiserslautern
 // FC JuareZ :FC Juárez
 // Club Queretaro: Club Necaxa
 // Stabaek: Stabæk Fotball
@@ -228,95 +275,16 @@ export default Table;
 // Wisla Plock:Wisła Płock
 // CS Universitate…: Universitatea Craiova
 // Arges Pitesti: FC Argeș
-// Al-Hilal Saudi FC: Al Hilal
-// Al-Nassr: Al Nassr
-// Al Wehda Club: Al Wehda
-//  Al-Faisaly FC: Al Faisaly
-//  Al-Raed: Al Raed
-//  Al-Ettifaq: Ettifaq FC
-//  Al-Ittihad FC: Al Ittihad
-//  Al Taawon: Al Taawoun 
-//  Al-Fateh: Al Fateh
-//  Al-Fayha: Al Fayha 
-//  Al-Hazm:Al Hazem
-// Dhamk: Damac FC
-// Malmo FF: Malmö FF,
-// Hammarby FF:  Hammarby IF
-// kalmar FF:Kalmar FF 
+
 // FC ST. Gallen: FC St. Gallen 
 // FC Zurich :FC Zürich
-// Leganes: CD Leganés
-// Mirandes, C.D. Castellón missing
-// Besiktas: Beşiktaş JK
-// Goztepe: Göztepe SK
-// Istanbul Basaks…: Medipol Başakşehir FK
 
-
-
-
-
-
-// 39 wolves
-
-// 39:
-// Wolves: Wolverhampton Wanderers
-
-// 61 Lyon:Olympique Lyonnais
-// Rennes: Stade Rennais FC
-
-// Nimes: Nîmes Olympique
-
-// 140: Alaves Alaves: Deportivo Alavés
-
-// 78:
-// Hertha Berlin- > 1. FC Union Berlin should be Hertha BSC
-// FC Koln ->FC Augsburg should be 1. FC Köln
-
-// 128
-
-// Lanus: Club Atlético Lanús
-
-
-// 188: Western Sydney->Sydney FC should be Western Sydney Wanderers
-
-// 144: St. Truiden: Sint-Truidense VV
-
-// 71: Atletico Goiani…, Atletico Parana... -> Atlético Mineiro should be Club Athletico Paranaense, Atlético Clube Goianiense
-
-// Bragantino, Corinthians missing
-
-// 169 Shanghai Shenhua ->SHANGHAI SIPG should be Shanghai Greenland Shenhua FC
-
-// 119: FC Nordsjælland, 
-// FC Copenhagen: FC København
-// Brondby: Brøndby IF
-// Sonderjyske: SønderjyskE
-
-// 40 
-// QPR: Queens Park Rangers
-
-
-// 62:
-
-// FC Sochaux-Montbéliard postmen -> Pau FC
-
-// Niort: Chamois Niortais Football Club
-
-// 79:
-// (FC Heidenheim, FC Nurnberg) -> FC Würzburger Kickers should be -> 1. FC Heidenheim 1846, 1. FC Nürnberg
-
-// 80:
-
-//  (FC Saarbrucken, FC Magdeburg, FC Viktoria Koln, FC Kaiserslautern) -> Hallescher FC  should be 1. FC Saarbrücken, 1. FC Magdeburg, Viktoria Köln, 1. FC Kaiserslautern
-
-// Türkgücü München cannot get valid data from postman
 
 // 262: Club América postman cannot get correct data. 
 // FC JuareZ -> Mazatlán FC should be FC Juárez
 // Club Queretaro-> Club Necaxa
 
 // 103: FK Bodø/Glimt postman
-
 // Stabaek: Stabæk Fotball
 // Stromsgodset: Strømsgodset IF
 // Mjondalen:Mjøndalen IF
@@ -328,29 +296,5 @@ export default Table;
 // CS Universitate…: Universitatea Craiova
 // Arges Pitesti: FC Argeș
 
-// 307: 
-// Al-Hilal Saudi FC, Al-Nassr, Al Wehda Club, Al-Faisaly FC, Al-Raed, Al-Ettifaq, Al-Ittihad FC, Al Taawon, Al-Fateh, Al-Fayha, Al-Hazm-> Al Adalah should be Al Hilal, Al Nassr, Al Wehda, Al Faisaly, Al Raed, Ettifaq FC, Al Ittihad, Al Taawoun, Al Fateh, Al Fayha,Al Hazem
-
-// Dhamk: Damac FC
-
-// 113:
-// Malmo FF, Hammarby FF, kalmar FF-> Falkenbergs FF should be Malmö FF, Hammarby IF, Kalmar FF
-
 // 207: 
 // FC ST. Gallen, FC Zurich -> FC Vaduz should be FC St. Gallen, FC Zürich
-
-// 141: 
-// Leganes: CD Leganés
-// Mirandes, C.D. Castellón missing
-// Only 20 in teams.
-
-// 203:
-// Besiktas: Beşiktaş JK
-// Goztepe: Göztepe SK
-// Istanbul Basaks…: Medipol Başakşehir FK
-// BB Erzurumspor missing 
-// Only 20 in teams
-
-
-
-
