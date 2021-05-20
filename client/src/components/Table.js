@@ -7,11 +7,65 @@ const Table = (props) => {
     let res = [];
     const history = useHistory();
     const handleClick = async (event) => {
-        const name = encodeURIComponent(event.target.innerHTML);
+        let name = event.target.innerHTML;
+        console.log(name);
+        if (props.id === 39 && name === 'Wolves') {
+            name = 'Wolverhampton Wanderers';
+        } else if (props.id === 40&& name === 'QPR') {
+            name = 'Queens Park Rangers';
+        } else if (props.id === 61) {
+            if (name === 'Lyon') {
+                name = 'Olympique Lyonnais';
+            } else if (name === 'Rennes') {
+                name = 'Stade Rennais FC';
+            } else if (name === 'Nimes') {
+                name = 'Nîmes Olympique';
+            }
+        } else if (props.id === 140 && name === 'Alaves') {
+            name = 'Deportivo Alavés';
+        } else if (props.id === 78) {
+            if (name === 'Hertha Berlin') {
+                name = 'Hertha BSC';
+            } else if (name === 'FC Koln') {
+                name = '1. FC Köln';
+            }
+        } else if (props.id === 128) {
+            if (name === 'Lanus') {
+                name = 'Club Atlético Lanús';
+            } else if (name === 'Talleres Cordoba') {
+                name = 'Club Atlético Talleres';
+            }
+        } else if (props.id === 188) {
+            if (name === 'Western Sydney ...') {
+                name = 'Western Sydney Wanderers';
+            } else if (name === 'Western United') {
+                name = 'Western United FC';
+            }
+        } else if (props.id === 144 && name === 'St. Truiden') {
+            name = 'Sint-Truidense VV';
+        } else if (props.id === 71) {
+            if (name === 'Atletico Parana...') {
+                name = 'Club Athletico Paranaense';
+            } else if (name === 'Atletico Goiani...') {
+                name = 'Atlético Clube Goianiense';
+            } else if (name === 'Sport Recife') {
+                name = 'Oceânico FC';
+            }
+        } else if (props.id === 169) {
+            if (name === 'Guangzhou Everg...') {
+                name = 'Guangzhou Evergrande Taobao FC';
+            } else if (name === 'Shanghai Shenhua') {
+                name = 'Shanghai Greenland Shenhua FC';
+            } else if (name === 'Guangzhou R&amp;F') {
+                name = 'Guangzhou R&F FC';
+            }
+        }
+
+        name = encodeURIComponent(name);
         try {
             const url = `http://localhost:3008/teams/${props.id}/${name}`;
             const { data } = await axios.get(url);
-            console.log('team id:', data._id, 'name:', data.team_name);
+            // console.log('team id:', data._id, 'name:', data.team_name);
             history.push({ pathname: `/team/${data._id}` });
         } catch (error) {
             console.log(error);
