@@ -2,6 +2,36 @@
 	text-align: center;
 } */
 
+.soccer-logo {
+  height: 20vmin;
+  pointer-events: none;
+  width: 20vmin;
+  margin-top: 80px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .soccer-logo {
+    animation: Soccer-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes Soccer-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  width: 600px;
+  max-width: 100%;
+  margin: 15vh auto;
+  text-align: center;
+}
+.loading>h1 {
+  font-size: 3rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
