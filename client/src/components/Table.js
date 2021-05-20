@@ -133,6 +133,22 @@ const Table = (props) => {
             } else if (name === 'Mirandes') {
                 name = 'CD Mirandés';
             }
+        } else if (props.id === 207) {
+            if (name === 'FC ST. Gallen') {
+                name = 'FC St. Gallen';
+            } else if (name === 'FC Zurich') {
+                name = 'FC Zürich';
+            }
+        } else if (props.id === 106 && name === 'Wisla Plock') {
+            name = 'Wisła Płock';
+        } else if (props.id === 103) {
+            if (name === 'Stabaek') {
+                name = 'Stabæk Fotball';
+            } else if (name === 'Stromsgodset') {
+                name = 'Strømsgodset IF';
+            } else if (name === 'Mjondalen') {
+                name = 'Mjøndalen IF';
+            }
         }
         name = encodeURIComponent(name);
         try {
@@ -265,36 +281,15 @@ const Table = (props) => {
 
 export default Table;
 
-
-
 // FC JuareZ :FC Juárez
 // Club Queretaro: Club Necaxa
-// Stabaek: Stabæk Fotball
-// Stromsgodset: Strømsgodset IF
-// Mjondalen:Mjøndalen IF
-// Wisla Plock:Wisła Płock
 // CS Universitate…: Universitatea Craiova
 // Arges Pitesti: FC Argeș
-
-// FC ST. Gallen: FC St. Gallen 
-// FC Zurich :FC Zürich
-
 
 // 262: Club América postman cannot get correct data. 
 // FC JuareZ -> Mazatlán FC should be FC Juárez
 // Club Queretaro-> Club Necaxa
 
-// 103: FK Bodø/Glimt postman
-// Stabaek: Stabæk Fotball
-// Stromsgodset: Strømsgodset IF
-// Mjondalen:Mjøndalen IF
-
-// 106:
-// Wisla Plock:Wisła Płock
-
 // 283
 // CS Universitate…: Universitatea Craiova
 // Arges Pitesti: FC Argeș
-
-// 207: 
-// FC ST. Gallen, FC Zurich -> FC Vaduz should be FC St. Gallen, FC Zürich
