@@ -41,13 +41,13 @@ const Team = (props) => {
         });
         return (
             <tr key={_id}>
-                <td><img width="60px" src={player_img_url} alt={_id} /></td>
+                <td className='table-td-img'><img src={player_img_url} alt={_id} /></td>
                 <td>{team_jersey_number}</td>
-                <td>
+                <td className='table-td-info'>
                     <Link to={`/player/${_id}`} >
-                        <div>
+                        <div className='table-td-info-div'>
                             <span>
-                                <img width='30px' src={`https://cdn.sofifa.com/flags/${nation_code}.png`} alt={_id} />
+                                <img src={`https://cdn.sofifa.com/flags/${nation_code}.png`} alt={_id} />
                             </span>
                             <span>{short_name}</span>
                         </div>
@@ -267,7 +267,7 @@ const Team = (props) => {
                 </section>
 
                 <div className='team-table-div'>
-                    <h4>Line Up</h4>
+                    <h4>LINE UP</h4>
                     <table>
                         <thead>
                             <tr>
@@ -288,7 +288,7 @@ const Team = (props) => {
                 </div>
                 
                 <div className='team-table-div'>
-                    <h4>Sub</h4>
+                    <h4>SUBSTITUTE</h4>
                     <table>
                         <thead>
                             <tr>
@@ -310,7 +310,7 @@ const Team = (props) => {
 
                 {resList.length > 0 && 
                     <div className='team-table-div'>
-                        <h4>Res</h4>
+                        <h4>RESERVE</h4>
                         <table>
                             <thead>
                                 <tr>
