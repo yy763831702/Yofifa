@@ -11,5 +11,5 @@ REACT_APP_FIREBASE_APP_ID = "YOUR FB APP ID"
 
 ## Login Providers
 
-Email/Password, Google Sign-in, Facebook Sign-in
+Email/Password, Google Sign-in Sign-in
 
