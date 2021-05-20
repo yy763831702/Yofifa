@@ -1,18 +1,18 @@
 import React from 'react';
-// import { useHistory } from "react-router";
+import { useHistory } from "react-router";
 import axios from 'axios';
 import '../App.css';
 
 const Table = (props) => {
     let res = [];
-    // const history = useHistory();
+    const history = useHistory();
     const handleClick = async (event) => {
         const name = encodeURIComponent(event.target.innerHTML);
         try {
             const url = `http://localhost:3008/teams/${props.id}/${name}`;
             const { data } = await axios.get(url);
             console.log('team id:', data._id, 'name:', data.team_name);
-            // history.push({ pathname: `/team/${data._id}` });
+            history.push({ pathname: `/team/${data._id}` });
         } catch (error) {
             console.log(error);
         }
