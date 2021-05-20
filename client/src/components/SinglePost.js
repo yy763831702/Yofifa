@@ -1,14 +1,12 @@
-import React, { useContext,useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
-import { AuthContext } from "../firebase/Auth";
+// import { AuthContext } from "../firebase/Auth";
 import '../App.css';
 import '../player.css';
-
-import Canvas from './Canvas';
+import { GiSoccerBall } from "react-icons/gi";
 
 const Player = (props) => {
-    const { currentUser } = useContext(AuthContext);
+    // const { currentUser } = useContext(AuthContext);
     const [ playerData, setPlayerData ] = useState(undefined);
 
     const [ loading, setLoading ] = useState(true);
@@ -17,12 +15,8 @@ const Player = (props) => {
         () => {
             async function fetchData() {
                 try {
-
                     const url = `http://localhost:3008/posts/${props.match.params.id}`;
-
-
                     const { data } = await axios.get(url);
-
                     setPlayerData(data);
                     setLoading(false);
                 } catch (error) {
@@ -36,13 +30,13 @@ const Player = (props) => {
 
     if (loading) {
         return (
-            <div>
-                <h2>Loading...</h2>
+            <div className='loading'>
+                <GiSoccerBall className="soccer-logo" /><h1>Loading...</h1>
             </div>
         );
     } else {
-        const {_id, author, height, weight, preferred, weakFoot, skillMove, reputation, attackingWorkRate, defensiveWorkRate,
-            commonName, firstName, lastName,age, nationality,position, potential,rating,
+        const {_id, height, weight, preferred, weakFoot, skillMove, reputation, attackingWorkRate,
+            commonName, age, position, potential,rating,
             value, wage, attack_crossing, attack_fishing, attack_heading_accuracy,
             attack_short_passing, attack_volleys, skill_dribbling, skill_fk_accuracy,
             skill_long_passing, skill_ball_control, movement_acceleration,

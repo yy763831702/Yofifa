@@ -2,11 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CardGroup from 'react-bootstrap/CardGroup'
 import { Link } from 'react-router-dom';
-import {
-    Grid,
-    Card,
-    CardContent
-  } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import '../App.css';
 import '../player.css';
 import StarRatings from 'react-star-ratings';
@@ -40,7 +36,7 @@ const Player = (props) => {
             </div>
         );
     } else {
-        const {_id, player_url, player_img_url, short_name, long_name, age, dob, height_cm, weight_kg, 
+        const {_id, player_img_url, long_name, age, dob, height_cm, weight_kg, 
             nationality, nation_code, club_name, club_id, league_name, league_code, overall, potential, 
             value_eur, wage_eur, player_positions, preferred_foot, international_reputation, weak_foot, 
             skill_moves, work_rate, release_clause_eur, player_tags, team_position, 

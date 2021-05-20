@@ -1,16 +1,13 @@
 import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../firebase/Auth";
-import { Container, Row, Col, Tabs, Tab, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "../App.css";
 import API from "../API";
 
-const MyPost = (props) => {
+const MyPost = () => {
   const [postData, setPostData] = useState(undefined);
   const { currentUser } = useContext(AuthContext);
-  const [key, setKey] = useState(undefined);
-  let li = null;
-
 
   useEffect(() => {
     async function fetchData() {
@@ -23,7 +20,7 @@ const MyPost = (props) => {
         }
     }
     fetchData();
-  }, []);
+  }, [currentUser.uid]);
 
   return (
     <Container>

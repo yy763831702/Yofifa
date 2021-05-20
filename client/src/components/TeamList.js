@@ -94,7 +94,7 @@ const TeamList = (props) => {
         );
     } else {
         const li = listData.map((team) => {
-            const { _id, team_name, team_img, league, league_id, league_nation_code, overall, attack, 
+            const { _id, team_name, team_img, league, league_nation_code, overall, attack, 
                 midfield, defence, transfer_budget } = team;
             return (
                 <tr key={_id}>
