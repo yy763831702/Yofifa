@@ -244,6 +244,22 @@ span.pos {
   padding: 0 5px;
 }
 
+.list-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 0 5px 4px rgba(105, 105, 105, 0.06);
+  border-radius: 7px;
+  color: #655e5e;
+  padding: 15px 0;
+}
+
+.list-select {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
 /********************* news **********************/
 .news-select {
   display: flex;
@@ -560,11 +576,4 @@ span.pos {
 .signButton:hover {
   background-color: #4c8bf5;
   color: white;
-}
-
-.List-border {
-  box-shadow: 0 0 5px 4px rgba(105, 105, 105, 0.06);
-  border-radius: 7px;
-  color: #655e5e;
-  padding: 20px;
 }

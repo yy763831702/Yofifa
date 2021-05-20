@@ -164,6 +164,15 @@
     color: #3366ff;
 }
 
+.team-header-lg-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-header-lg-div img {
+    margin-right: 5px;
+}
+
 .team-header-data {
     display: flex;
     flex-wrap: wrap;
@@ -210,6 +219,7 @@
 .team-star-rating, .team-info-div {
     display: flex;
     justify-content: space-between;
+    text-transform: capitalize;
 }
 
 .team-lineup-img {
